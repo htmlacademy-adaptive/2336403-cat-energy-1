@@ -31,71 +31,92 @@
     </header>
     <main class="page-main">
       <div class="container">
-        <section class="promo">
-          <div class="promo__container">
-            <h1 class="promo__title">Функциональное питание для котов</h1>
-            <p class="promo__text">Занялся собой? Займись котом!</p>
-            <img src="./img/promo-section-mobile.svg" alt="280" width="270" alt="Корм со вкусом курицы в упаковке">
-            <a class="promo__button" href="#">Подобрать программу</a>
-          </div>
-        </section>
-        <section class="catalog-select">
-          <div class="catalog-select__container">
-            <ul class="catalog-select__list">
-              <li class="catalog-select__item">
-                <h2 class="catalog-select__title">Похудение</h2>
-                <p class="catalog-select__subtitle">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-                <a class="catalog-select__link" href="#">Каталог Slim</a>
+        <div class="page-main__header">
+          <h1 class="page-main__title">Подбор программы</h1>
+          <p class="page-main__subtitle">
+            Заполните анкету, и мы подберем программу питания для вашего кота
+          </p>
+        </div>
+        <form class="profile" action="https://echo.htmlacademy.ru" method="post" name="questionnaire">
+          <fieldset class="profile__info-input-block">
+            <legend class="visually-hidden">Укажите данные питомца</legend>
+            <p class="profile__item">
+              <label class="profile__label">Имя:<sup aria-hidden="true">*</sup>
+                <input class="profile__input" id="input-name" type="text" name="pet-name" placeholder="Барсик">
+              </label>
+            </p>
+            <p class="profile__item">
+              <label class="profile__label">Вес (кг):<sup aria-hidden="true">*</sup>
+                <input class="profile__input" id="input-weidth" type="text" name="pet-weidth" placeholder="7">
+              </label>
+            </p>
+            <p class="profile__item">
+              <label class="profile__label">Возраст (лет):
+                <input class="profile__input" id="input-age" type="text" name="pet-age" placeholder="7">
+              </label>
+            </p>
+          </fieldset>
+          <fieldset class="profile__target-radio-block">
+            <legend class="visually-hidden">Укажите цель программы</legend>
+            <ul class="profile__list">
+              <li class="profile__item">
+                <input class="profile__radio-input" id="slimming" value="slimming" type="radio" name="program" checked="checked">
+                <label class="profile__label" for="slimming">Похудение</label>
               </li>
-              <li class="catalog-select__item">
-                <h2 class="catalog-select__title">Набор массы</h2>
-                <p class="catalog-select__subtitle">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-                <a class="catalog-select__link" href="#">Каталог Pro</a>
+              <li class="profile__item">
+                <input class="profile__radio-input" id="fattening"  value="fattening" type="radio" name="program">
+                <label class="profile__label" for="fattening">Набор массы</label>
+              </li>
+              <li class="profile__item">
+                <input class="profile__radio-input" id="undefined" value="undefined" type="radio" name="program">
+                <label class="profile__label" for="undefined">Не знаю (нужен ваш совет)</label>
               </li>
             </ul>
-          </div>
-        </section>
-        <section class="process">
-          <h2 class="process__header">Как это работает</h2>
-          <ol class="process__list">
-            <li class="process__item">
-              <p class="process__description">Функциональное питание содержит только полезные питательные вещества.</p>
-            </li>
-            <li class="process__item">
-              <p class="process__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-            </li>
-            <li class="process__item">
-              <p class="process__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
-            </li>
-            <li class="process__item">
-              <p class="process__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
-            </li>
-          </ol>
-        </section>
-        <section class="example">
-          <h2 class="example__title">Живой пример</h2>
-          <p class="example__text">
-            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-            Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-          </p>
-          <div class="example__statics">
-            <p class="example__number">5 кг
-              <span class="example__description">снижение веса</span>
+          </fieldset>
+          <fieldset class="profile__сontaсt-input-block">
+            <legend class="visually-hidden">Укажите контактные данные владельца кота</legend>
+            <p class="profile__title">Контактные данные (владельца кота)</p>
+            <p class="profile__item">
+              <label class="profile__label">E-mail:<sup aria-hidden="true">*</sup>
+                <input class="profile__input" id="e-mail" name="e-mail" type="text" placeholder="kuklachev@gmail.com">
+              </label>
             </p>
-            <p class="example__number">60 дней
-              <span class="example__description">затрачено времени</span>
+            <p class="profile__item">
+              <label class="profile__label">Телефон:<sup aria-hidden="true">*</sup>
+                <input class="profile__input" id="phone" name="phone" type="text" placeholder="8 (960) 900-60-90">
+              </label>
             </p>
-            <p class="example__costs">Затраты на питание:
-              <span>15 000 руб.</span>
-            </p>
-          </div>
-          <div class="example__compare-slider">
-            <img class="example__compare-img" src="./img/slides-cat-compare.png" width="280" height="256" alt="До и после кот">
-            <button class="example__compare-button">
-              <span class="visually-hidden">кнопка-бегунок</span>
-            </button>
-          </div>
-        </section>
+          </fieldset>
+          <fieldset class="profile__comment-area-block">
+            <legend class="visually-hidden">Комментарий</legend>
+            <label class="profile__label" for="client-message">Комментарий</label>
+            <textarea class="profile__message" id="client-message" name="client-message" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </fieldset>
+          <fieldset class="profile__extra-checkbox-block">
+            <legend class="visually-hidden">Дополнительно</legend>
+            <p class="profile-title">Дополнительно</p>
+            <ul class="profile__list">
+              <li class="profile__item">
+                <input class="profile__checkbox-input" id="sweetener" value="sweetener" type="checkbox" name="extra" checked="checked">
+                <label class="profile__label" for="sweetener">Сахарозаменитель</label>
+              </li>
+              <li class="profile__item">
+                <input class="profile__checkbox-input" id="water" value="water" type="checkbox" name="extra">
+                <label class="profile__label" for="water">Питьевая вода</label>
+              </li>
+              <li class="profile__item">
+                <input class="profile__checkbox-input" id="milk" value="milk" type="checkbox" name="extra">
+                <label class="profile__label" for="milk">Молоко</label>
+              </li>
+              <li class="profile__item">
+                <input class="profile__checkbox-input" id="vitamins" value="vitamins" type="checkbox" name="extra">
+                <label class="profile__label" for="vitamins">Витамины</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button profile__button" type="submit">Отправить заявку</button>
+          <p class="profile__note" aria-hidden="true"><sup>*</sup> - обязательные поля</p>
+        </form>
       </div>
     </main>
     <section class="contacts">
