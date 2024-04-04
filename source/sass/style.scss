@@ -1,2 +1,5 @@
-// Начните писать стили здесь
-body { background: blue; }
+// Базовые свойства
+@use "./base/fonts.scss";
+@use "./base/base.scss";
+
+// Блоки компонентов
