@@ -4,6 +4,6 @@
   "rules": {
     "declaration-no-important": true,
     "indentation": [2, {"ignore": ["inside-parens"]}],
-    "at-rule-no-unknow": null
+    "at-rule-no-unknown": null
   }
 }
