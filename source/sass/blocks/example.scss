@@ -1,0 +1,47 @@
+@use "./base/variables.scss";
+
+.example {
+
+  background-color: variables.$gray-light;
+
+  &__title {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: #000000;
+  }
+
+  &__text {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: variables.$gray-darken;
+  }
+
+  &__number {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #000000;
+  }
+
+  &__description {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: variables.$gray-darken;
+  }
+
+  &__costs {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+    text-transform: uppercase;
+  }
+
+  &__compare-button {
+    border: none;
+  }
+
+}

@@ -1,0 +1,29 @@
+@use "./base/variables.scss";
+
+.promo {
+  background-color: variables.$basic-dark;
+
+  &__title {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: #ffffff;
+  }
+
+  &__text {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  &__button {
+    display: block;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: uppercase;
+    }
+}

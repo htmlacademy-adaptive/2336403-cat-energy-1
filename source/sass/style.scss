@@ -1,5 +1,14 @@
-// Базовые свойства
+// Базовые стили
 @use "./base/fonts.scss";
 @use "./base/base.scss";
+@use "./base/visually-hidden.scss";
 
 // Блоки компонентов
+@use "./blocks/page.scss";
+@use "./blocks/page-navigation.scss";
+@use "./blocks/promo.scss";
+@use "./blocks/catalog-select.scss";
+@use "./blocks/process.scss";
+@use "./blocks/example.scss";
+@use "./blocks/contacts.scss";
+@use "./blocks/page-footer.scss"

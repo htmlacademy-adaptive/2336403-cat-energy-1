@@ -1,0 +1,22 @@
+@use "./base/variables.scss";
+
+.process {
+
+  &__title {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: #000000;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__description {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: variables.$gray-darken;
+  }
+}

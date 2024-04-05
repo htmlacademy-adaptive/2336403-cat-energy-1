@@ -1,0 +1,21 @@
+.page-navigation {
+
+  background-color: #ffffff;
+
+  &__list {
+    list-style: none;
+  }
+
+  &__link {
+    font-family: "Oswald";
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+    text-transform: uppercase;
+  }
+
+  &__toggle {
+    border: none;
+    background-color: #ffffff;
+  }
+}
