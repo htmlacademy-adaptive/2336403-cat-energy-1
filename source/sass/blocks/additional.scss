@@ -1,0 +1,13 @@
+@use "./base/variables.scss";
+
+.additional {
+  &__title {
+    font-weight: 400;
+    font-size: 24px;
+    color: #000000;
+  }
+
+  &__list {
+    list-style: none;
+  }
+}
