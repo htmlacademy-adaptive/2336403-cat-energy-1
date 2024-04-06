@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -17,13 +18,13 @@
           </button>
           <ul class="page-navigation__list">
             <li class="page-navigation__item">
-              <a class="page-navigation__link" href="#">Главная</a>
+              <a class="page-navigation__link" href="index.html">Главная</a>
             </li>
             <li class="page-navigation__item">
               <a class="page-navigation__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="page-navigation__item">
-              <a class="page-navigation__link" href="form.html">Подбор программы</a>
+              <a class="page-navigation__link" href="#">Подбор программы</a>
             </li>
           </ul>
         </nav>
@@ -89,12 +90,12 @@
           </fieldset>
           <fieldset class="profile__comment-area-block">
             <legend class="visually-hidden">Комментарий</legend>
-            <label class="profile__label" for="client-message">Комментарий</label>
+            <label class="profile__line-label" for="client-message">Комментарий</label>
             <textarea class="profile__message" id="client-message" name="client-message" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
           <fieldset class="profile__extra-checkbox-block">
             <legend class="visually-hidden">Дополнительно</legend>
-            <p class="profile-title">Дополнительно</p>
+            <p class="profile__title">Дополнительно</p>
             <ul class="profile__list">
               <li class="profile__item">
                 <input class="profile__checkbox-input" id="sweetener" value="sweetener" type="checkbox" name="extra" checked="checked">
@@ -114,11 +115,11 @@
               </li>
             </ul>
           </fieldset>
-          <button class="button profile__button" type="submit">Отправить заявку</button>
+          <button class="profile__button" type="submit">Отправить заявку</button>
           <p class="profile__note" aria-hidden="true"><sup>*</sup> - обязательные поля</p>
         </form>
       </div>
-      <section class="contacts">
+      <section class="contacts contacts--dark">
         <div class="container">
           <div class="contacts__header">
             <h2 class="visually-hidden">Как нас найти</h2>

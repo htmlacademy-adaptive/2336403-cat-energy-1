@@ -18,4 +18,8 @@
     font-size: 14px;
     color: variables.$gray-darken;
   }
+
+  &--dark {
+    background-color: variables.$gray-lighten;
+  }
 }
