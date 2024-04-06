@@ -4,6 +4,7 @@
 @use "./base/visually-hidden.scss";
 
 // Блоки компонентов
+@use "./blocks/container.scss";
 @use "./blocks/page.scss";
 @use "./blocks/page-navigation.scss";
 @use "./blocks/promo.scss";
