@@ -30,5 +30,10 @@
     color: #ffffff;
     background-color: variables.$basic-light;
     text-transform: uppercase;
+
+    &--alternative {
+      color: variables.$gray-darken;
+      background-color: variables.$gray-lighten;
+    }
   }
 }
