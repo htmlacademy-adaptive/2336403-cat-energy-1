@@ -6,17 +6,20 @@
 // Блоки компонентов
 @use "./blocks/container.scss";
 @use "./blocks/page.scss";
+@use "./blocks/page-header.scss";
+@use "./blocks/page-main.scss";
+@use "./blocks/page-footer.scss";
 @use "./blocks/page-navigation.scss";
+@use "./blocks/navigation.scss";
 @use "./blocks/promo.scss";
 @use "./blocks/catalog-select.scss";
 @use "./blocks/process.scss";
 @use "./blocks/example.scss";
 @use "./blocks/contacts.scss";
-@use "./blocks/page-footer.scss";
 @use "./blocks/products.scss";
 @use "./blocks/product-card.scss";
 @use "./blocks/additional.scss";
 @use "./blocks/item-inner.scss";
 @use "./blocks/special-offer.scss";
-@use "./blocks/page-main.scss";
 @use "./blocks/profile.scss";
+

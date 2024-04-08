@@ -1,6 +1,8 @@
 @use "./base/variables.scss";
 
 .page-main {
+  position: relative;
+
   &__title {
     font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;

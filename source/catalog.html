@@ -6,28 +6,29 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header">
+    <header class="page__header page-header">
       <div class="container">
-        <a class="page-header__logo" href="#">
-          <img src="./img/head-logopic-mobile.svg" width="33" height="38" alt="Картинка логотипа Cat Energy">
-          <img src="./img/head-logotext-mobile.svg" width="101" height="38" alt="Текст логотипа Cat Energy">
-        </a>
-        <nav class="page-navigation">
-          <button class="page-navigation__toggle" type="button">
+        <div class="page-header__inner">
+          <a class="page-header__logo" href="index.html">
+            <img src="./img/head-logopic-mobile.svg" width="33" height="38" alt="Картинка логотипа Cat Energy">
+          </a>
+          <img src="./img/head-logotext-mobile.svg" width="101" height="18" alt="Текст логотипа Cat Energy">
+          <button class="page-header__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <ul class="page-navigation__list">
-            <li class="page-navigation__item">
-              <a class="page-navigation__link" href="index.html">Главная</a>
-            </li>
-            <li class="page-navigation__item">
-              <a class="page-navigation__link" href="#">Каталог продукции</a>
-            </li>
-            <li class="page-navigation__item">
-              <a class="page-navigation__link" href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </nav>
+          <nav class="page-header__nav navigation">
+            <ul class="page-header__list">
+              <li class="page-header__item">
+                <a class="page-header__link" href="index.html">Главная</a>
+              </li>
+              <li class="page-header__item">
+                <a class="page-header__link" href="#">Каталог продукции</a>
+              </li>
+              <li class="page-header__item">
+                <a class="page-header__link" href="form.html">Подбор программы</a>
+              </li>
+            </ul>
+          </nav>
       </div>
     </header>
     <main class="page-main">
