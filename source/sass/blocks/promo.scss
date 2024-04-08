@@ -1,13 +1,15 @@
 @use "./base/variables.scss";
 
 .promo {
-  background-color: variables.$basic-dark;
+  //background-color: variables.$basic-dark;
+  outline: red 2px solid;
 
   &__title {
     font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
     font-size: 36px;
     color: #ffffff;
+    margin: 0;
   }
 
   &__text {
@@ -25,5 +27,9 @@
     font-size: 16px;
     color: #ffffff;
     text-transform: uppercase;
+  }
+  &__inner {
+    //background-color: aqua;
+    background-image: url("../blocks/promo-mobile.jpg");
   }
 }
