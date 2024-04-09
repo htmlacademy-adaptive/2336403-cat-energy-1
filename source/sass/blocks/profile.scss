@@ -3,22 +3,28 @@
 .profile {
   &__info-input-block {
     border: none;
+    padding: 0;
   }
 
   &__target-radio-block {
     border: none;
+    padding: 0;
+    margin-top: 25px;
   }
 
   &__сontaсt-input-block {
     border: none;
+    padding: 0;
   }
 
   &__comment-area-block {
     border: none;
+    padding: 0;
   }
 
   &__extra-checkbox-block {
     border: none;
+    padding: 0;
   }
 
   &__button {
@@ -37,6 +43,7 @@
     font-size: 16px;
     text-transform: uppercase;
     color: variables.$gray-darken;
+    margin: 34px 0 0;
   }
 
   &__line-label {
@@ -45,6 +52,7 @@
     font-weight: 400;
     font-size: 24px;
     color: #000000;
+    margin: 24px 0 0;
   }
 
   &__message {
@@ -55,6 +63,7 @@
     color: variables.$gray-darken;
     border: 1px solid #e7e7e7;
     height: 150px;
+    margin-top: 38px;
   }
 
   &__input {
@@ -67,6 +76,7 @@
 
   &__list {
     list-style: none;
+    padding: 0;
   }
 
   &__title {
@@ -74,6 +84,11 @@
     font-weight: 400;
     font-size: 24px;
     color: #000000;
+    margin: 20px 0 20px;
+  }
+
+  &__item {
+    margin: 13px 0 0;
   }
 
   &__note {
