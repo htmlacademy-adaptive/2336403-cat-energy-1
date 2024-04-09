@@ -2,6 +2,7 @@
 @use "./base/fonts.scss";
 @use "./base/base.scss";
 @use "./base/visually-hidden.scss";
+@use "./base/button.scss";
 
 // Блоки компонентов
 @use "./blocks/container.scss";
@@ -20,5 +21,5 @@
 @use "./blocks/item-inner.scss";
 @use "./blocks/special-offer.scss";
 @use "./blocks/profile.scss";
-@use "./blocks/button.scss";
+
 

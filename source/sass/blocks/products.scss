@@ -3,6 +3,7 @@
 .products {
   &__list {
     list-style: none;
+    padding: 0;
   }
 
   &__title {
@@ -10,5 +11,10 @@
     font-weight: 400;
     font-size: 36px;
     color: #000000;
+  }
+
+  &__item {
+    margin-top: 20px;
+    margin-bottom: 25px;
   }
 }

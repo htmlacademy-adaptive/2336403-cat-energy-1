@@ -6,9 +6,16 @@
     font-weight: 400;
     font-size: 24px;
     color: #000000;
+    margin-top: 25px;
   }
 
   &__list {
     list-style: none;
+    padding: 0;
+    margin-top: 36px;
+  }
+
+  &__item {
+    margin-top: 20px;
   }
 }

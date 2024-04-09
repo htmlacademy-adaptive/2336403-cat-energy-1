@@ -7,6 +7,7 @@
     font-size: 16px;
     text-transform: uppercase;
     color: variables.$gray-darkest;
+    margin-top: 13px;
   }
 
   &__text {
@@ -24,5 +25,6 @@
     color: #ffffff;
     background-color: variables.$basic-light;
     text-transform: uppercase;
+    display: block;
   }
 }
