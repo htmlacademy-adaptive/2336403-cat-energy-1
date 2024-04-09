@@ -26,6 +26,10 @@
     width: 140px;
   }
 
+  &__map {
+    overflow: hidden;
+  }
+
   &--dark {
     background-color: variables.$gray-lighten;
   }
