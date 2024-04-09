@@ -1,8 +1,13 @@
 @use "./base/variables.scss";
 
 .contacts {
-
   background-color: #ffffff;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 26px 20px;
+  }
 
   &__invitation {
     font-family: "Oswald", "Arial", sans-serif;
@@ -10,6 +15,7 @@
     font-size: 16px;
     color: variables.$gray-darkest;
     text-transform: uppercase;
+    width: 140px;
   }
 
   &__address {
@@ -17,6 +23,7 @@
     font-weight: 400;
     font-size: 14px;
     color: variables.$gray-darken;
+    width: 140px;
   }
 
   &--dark {

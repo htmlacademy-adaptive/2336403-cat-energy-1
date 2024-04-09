@@ -31,7 +31,26 @@
 
   &__nav {
     padding: 10px 20px 17px;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: #ffffff;
+    transform: translateY(-180%);
+    z-index: 5;
+
+    &--opened {
+      transform: translateY(0);
+    }
   }
+
+
 
   &__logo {
     display: block;

@@ -1,7 +1,6 @@
 @use "./base/variables.scss";
 
 .example {
-
   background-color: variables.$gray-light;
 
   &__title {
@@ -9,6 +8,8 @@
     font-weight: 400;
     font-size: 36px;
     color: #000000;
+    margin: 0;
+    margin-top: 20px;
   }
 
   &__text {
@@ -16,6 +17,7 @@
     font-weight: 400;
     font-size: 14px;
     color: variables.$gray-darken;
+    margin-top: 40px;
   }
 
   &__number {
@@ -38,6 +40,16 @@
     font-size: 14px;
     color: #000000;
     text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__compare-img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  &__compare-slider {
+    margin-bottom: 40px;
   }
 
   &__compare-button {

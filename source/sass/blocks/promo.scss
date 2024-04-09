@@ -1,15 +1,27 @@
 @use "./base/variables.scss";
 
 .promo {
-  //background-color: variables.$basic-dark;
-  outline: red 2px solid;
+  position: relative;
+  background-image: url("../../img/promo-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
 
-  &__title {
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: variables.$basic-dark;
+    top: 0px;
+    width: 100%;
+    height: 302px;
+    z-index: -1;
+  }
+
+    &__title {
     font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
     font-size: 36px;
     color: #ffffff;
-    margin: 0;
+    margin: 27px 0;
   }
 
   &__text {
@@ -18,6 +30,7 @@
     font-size: 14px;
     color: #ffffff;
     text-transform: uppercase;
+    margin: 25px 0;
   }
 
   &__button {
@@ -28,8 +41,11 @@
     color: #ffffff;
     text-transform: uppercase;
   }
+
   &__inner {
-    //background-color: aqua;
-    background-image: url("../blocks/promo-mobile.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }

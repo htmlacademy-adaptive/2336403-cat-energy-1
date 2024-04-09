@@ -11,6 +11,8 @@
 
   &__item {
     background-color: variables.$gray-lighten;
+    padding: 21px 33px 22px 20px;
+    margin-top: 20px;
   }
 
   &__title {
@@ -19,6 +21,7 @@
     font-size: 24px;
     color: #000000;
     text-transform: uppercase;
+    text-align: center;
   }
 
   &__subtitle {
@@ -26,13 +29,16 @@
     font-weight: 400;
     font-size: 14px;
     color: #000000;
+    margin-top: 25px;
   }
 
   &__link {
+    display: block;
     font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: #000000;
     text-transform: uppercase;
+    margin-top: 45px;
   }
 }

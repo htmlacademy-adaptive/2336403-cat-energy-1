@@ -3,15 +3,31 @@
 .page-footer {
   background-color: variables.$gray-lighten;
 
+  &__logo-link {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+  }
+
   &__social-list {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
     list-style: none;
+    padding: 0;
+    margin-top: 60px;
   }
 
   &__copyright-link {
-    display: block;
+    display: flex;
+    justify-content: space-between;
     font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: variables.$gray-darken;
+    margin-top: 50px;
+    margin-bottom: 40px;
   }
 }
