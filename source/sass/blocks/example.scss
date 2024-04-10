@@ -3,13 +3,17 @@
 .example {
   background-color: variables.$gray-light;
 
+  &__inner {
+    padding: 20px 0;
+  }
+
   &__title {
+    display: block;
     font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
     font-size: 36px;
     color: #000000;
     margin: 0;
-    margin-top: 20px;
   }
 
   &__text {
@@ -17,7 +21,6 @@
     font-weight: 400;
     font-size: 14px;
     color: variables.$gray-darken;
-    margin-top: 40px;
   }
 
   &__number {

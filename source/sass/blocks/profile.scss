@@ -3,28 +3,32 @@
 .profile {
   &__info-input-block {
     border: none;
-    padding: 0;
+    padding: 0 0 20px;
   }
 
   &__target-radio-block {
     border: none;
-    padding: 0;
-    margin-top: 25px;
+    padding: 0 0 20px;
   }
 
   &__сontaсt-input-block {
     border: none;
-    padding: 0;
+    padding: 0 0 20px;
   }
 
   &__comment-area-block {
     border: none;
-    padding: 0;
+    padding: 0 0 20px;
   }
 
   &__extra-checkbox-block {
     border: none;
-    padding: 0;
+    padding: 0 0 20px;
+  }
+
+  &__submit-block {
+    border: none;
+    padding: 0 0 20px;
   }
 
   &__button {
@@ -43,7 +47,7 @@
     font-size: 16px;
     text-transform: uppercase;
     color: variables.$gray-darken;
-    margin: 34px 0 0;
+    margin: 0 0 20px;
   }
 
   &__line-label {
@@ -52,7 +56,7 @@
     font-weight: 400;
     font-size: 24px;
     color: #000000;
-    margin: 24px 0 0;
+    margin: 0 0 25px;
   }
 
   &__message {
@@ -63,7 +67,6 @@
     color: variables.$gray-darken;
     border: 1px solid #e7e7e7;
     height: 150px;
-    margin-top: 38px;
   }
 
   &__input {
@@ -76,7 +79,8 @@
 
   &__list {
     list-style: none;
-    padding: 0;
+    padding: 0 0 25px;
+    margin: 0;
   }
 
   &__title {
@@ -84,11 +88,11 @@
     font-weight: 400;
     font-size: 24px;
     color: #000000;
-    margin: 20px 0 20px;
+    margin: 0 0 25px;
   }
 
   &__item {
-    margin: 13px 0 0;
+    margin: 0 0 10px;
   }
 
   &__note {
@@ -96,5 +100,7 @@
     font-weight: 400;
     font-size: 14px;
     color: #000000;
+    margin: 25px 0 0;
+    text-align: center;
   }
 }

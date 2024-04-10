@@ -1,6 +1,10 @@
 @use "./base/variables.scss";
 
 .catalog-select {
+  &__inner {
+    padding: 20px 0;
+  }
+
   &__list {
     list-style: none;
     margin: 0;
@@ -9,8 +13,6 @@
 
   &__item {
     background-color: variables.$gray-lighten;
-    padding: 21px 33px 22px 20px;
-    margin-top: 20px;
   }
 
   &__title {
@@ -27,7 +29,6 @@
     font-weight: 400;
     font-size: 14px;
     color: #000000;
-    margin-top: 25px;
   }
 
   &__link {
@@ -37,6 +38,5 @@
     font-size: 16px;
     color: #000000;
     text-transform: uppercase;
-    margin-top: 45px;
   }
 }

@@ -1,6 +1,10 @@
 @use "./base/variables.scss";
 
 .products {
+  &__inner {
+    padding: 20px 0;
+  }
+
   &__list {
     list-style: none;
     padding: 0;
@@ -11,10 +15,10 @@
     font-weight: 400;
     font-size: 36px;
     color: #000000;
+    margin: 0;
   }
 
   &__item {
-    margin-top: 20px;
     margin-bottom: 25px;
   }
 }
