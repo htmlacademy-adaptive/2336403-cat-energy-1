@@ -1,0 +1,106 @@
+@use "./base/variables.scss";
+
+.profile {
+  &__info-input-block {
+    border: none;
+    padding: 0 0 20px;
+  }
+
+  &__target-radio-block {
+    border: none;
+    padding: 0 0 20px;
+  }
+
+  &__сontaсt-input-block {
+    border: none;
+    padding: 0 0 20px;
+  }
+
+  &__comment-area-block {
+    border: none;
+    padding: 0 0 20px;
+  }
+
+  &__extra-checkbox-block {
+    border: none;
+    padding: 0 0 20px;
+  }
+
+  &__submit-block {
+    border: none;
+    padding: 0 0 20px;
+  }
+
+  &__button {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: variables.$basic-light;
+    text-transform: uppercase;
+    border: none;
+  }
+
+  &__label {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: variables.$gray-darken;
+    margin: 0 0 20px;
+  }
+
+  &__line-label {
+    display: block;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #000000;
+    margin: 0 0 25px;
+  }
+
+  &__message {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: variables.$gray-darken;
+    border: 1px solid #e7e7e7;
+    height: 150px;
+  }
+
+  &__input {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: variables.$gray-darken;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0 0 25px;
+    margin: 0;
+  }
+
+  &__title {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #000000;
+    margin: 0 0 25px;
+  }
+
+  &__item {
+    margin: 0 0 10px;
+  }
+
+  &__note {
+    font-family: "Lato", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+    margin: 25px 0 0;
+    text-align: center;
+  }
+}

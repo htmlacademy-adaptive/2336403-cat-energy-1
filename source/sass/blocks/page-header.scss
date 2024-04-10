@@ -1,0 +1,61 @@
+@use "./base/variables.scss";
+
+.page-header {
+  position: relative;
+  padding: 20px;
+
+  &__list {
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  &__link {
+    display: block;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+    text-transform: uppercase;
+    padding: 25px 0;
+    margin: 0;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: visible;
+  }
+
+  &__logo {
+    display: block;
+    max-width: 190px;
+  }
+
+  &__toggle {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    background-color: transparent;
+  }
+
+  &__nav {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    top: 62px;
+    left: -20px;
+    width: 100vw;
+    z-index: 5;
+  }
+
+  &__nav--opened {
+    display: block;
+  }
+
+}

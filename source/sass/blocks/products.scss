@@ -1,0 +1,24 @@
+@use "./base/variables.scss";
+
+.products {
+  &__inner {
+    padding: 20px 0;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+  }
+
+  &__title {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    color: #000000;
+    margin: 0;
+  }
+
+  &__item {
+    margin-bottom: 25px;
+  }
+}

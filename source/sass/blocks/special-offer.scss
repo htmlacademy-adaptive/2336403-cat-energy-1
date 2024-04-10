@@ -1,0 +1,20 @@
+@use "./base/variables.scss";
+
+.special-offer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 65px 61px 43px 58px;
+  background-color: variables.$basic-light;
+  background-image: url("../../img/Gift.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+
+  &__text {
+    font-family: "Lato", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+  }
+}
