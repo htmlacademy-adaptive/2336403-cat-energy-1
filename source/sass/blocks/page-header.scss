@@ -48,8 +48,9 @@
     display: none;
     position: absolute;
     background-color: #ffffff;
-    top: 62px;
+    top: 45px;
     left: -20px;
+    //width: 100%;
     width: 100vw;
     z-index: 5;
   }
@@ -58,4 +59,49 @@
     display: block;
   }
 
+  // Tablet Viewport
+  @media (min-width: 768px) {
+    &__toggle {
+      display: none;
+    }
+
+    &__nav {
+      position: relative;
+      display: flex;
+      justify-content: end;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      gap: 33px;
+    }
+
+    &__link {
+      position: relative;
+      display: block;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      color: #000000;
+      text-transform: uppercase;
+      padding: 25px 0;
+      margin: 0;
+    }
+
+    &__link--active::after {
+      content: "";
+      position: absolute;
+      //bottom: 9px;
+      bottom: 20px;
+      left: 0;
+      //right: 0;
+      height: 2px;
+      background: #68b738;
+      width: calc(100%);
+  }
+  }
 }

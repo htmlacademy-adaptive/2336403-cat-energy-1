@@ -10,10 +10,13 @@
     <header class="page__header page-header">
       <div class="container">
         <div class="page-header__inner">
-          <a class="page-header__logo" href="index.html">
-            <img src="./img/head-logopic-mobile.svg" width="33" height="38" alt="Картинка логотипа Cat Energy">
+          <a class="page-header__logo" href="#">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+              <img src="./img/logo-mobile.svg" alt="Картинка логотипа Cat Energy">
+            </picture>
           </a>
-          <img src="./img/head-logotext-mobile.svg" width="101" height="18" alt="Текст логотипа Cat Energy">
           <button class="page-header__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -26,7 +29,7 @@
                 <a class="page-header__link" href="catalog.html">Каталог продукции</a>
               </li>
               <li class="page-header__item">
-                <a class="page-header__link" href="#">Подбор программы</a>
+                <a class="page-header__link page-header__link--active" href="#">Подбор программы</a>
               </li>
             </ul>
           </nav>
@@ -145,7 +148,7 @@
             </p>
           </div>
         </div>
-        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d706.5775358248248!2d30.323862133087545!3d59.940387633911946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310e16dab5b1%3A0xc1a76ba3f99995eb!2sHermes%20Puiforcat%20Saint-Louis!5e0!3m2!1sru!2sru!4v1625770628880!5m2!1sru!2sru" width="1440" height="400" style ="border: none" allowfullscreen title="Как нас найти"></iframe>
+        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d706.5775358248248!2d30.323862133087545!3d59.940387633911946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310e16dab5b1%3A0xc1a76ba3f99995eb!2sHermes%20Puiforcat%20Saint-Louis!5e0!3m2!1sru!2sru!4v1625770628880!5m2!1sru!2sru" width="100%" height="400" style ="border: none" allowfullscreen title="Как нас найти"></iframe>
       </section>
     </main>
     <footer class="page-footer">

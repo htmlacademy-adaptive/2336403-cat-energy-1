@@ -1,14 +1,15 @@
+//colors
 $gray-lighten: #f2f2f2; //basic_grey
 $gray-light: #ebebeb; //special_gray-2
 $gray: #cdcdcd; //special-gray
 $gray-dark: #666666; //special_gray-2
 $gray-darken: #444444; //special_dark-grey
 $gray-darkest:  #222222; //special_dark_gray-2
-
 $basic-light: #68b738; //basic_green
 $basic-dark: #5eaa2f; //basic_green-2
-
 $status-error: #ff8222; //status_error
 
-$page-width-mobile: 640px;
-$container-width: 280px;
+//viewports
+$mobile-width: 320px;
+$tablet-width: 768px;
+$desktop-width: 1440px;
