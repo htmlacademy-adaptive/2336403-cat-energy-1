@@ -9,7 +9,7 @@
   &::after {
     position: absolute;
     content: "";
-    background-color: variables.$basic-dark;
+    background-color: #62a63b;//variables.$basic-dark;
     top: 0;
     width: 100%;
     height: 302px;
@@ -34,10 +34,9 @@
   }
 
   &__button {
-    display: block;
     font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     color: #ffffff;
     text-transform: uppercase;
   }
@@ -47,5 +46,67 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+
+// Tablet Viewport
+@media (min-width: 768px) {
+  .promo {
+    position: relative;
+    background: none;
+    //outline: blue 2px solid;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+
+    &__inner {
+      display: block;
+      padding: 65px 90px 0;
+      //outline: green 2px solid;
+    }
+
+    &__title {
+      max-width: 520px;
+      font-size: 60px;
+      line-height: 60px;
+      color: #000000;
+      margin: 0 0 45px;
+    }
+
+    &__text {
+      font-family: "Oswald", "Arial", sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      color: #000000;
+      text-transform: uppercase;
+      margin: 0;
+    }
+
+    &__button {
+      position: relative;
+      z-index: 1;
+      top: 50px;
+      width: auto;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-weight: 400;
+      font-size: 26px;
+      color: #ffffff;
+      text-transform: uppercase;
+    }
+
+    &__background-img {
+      margin: 0 auto;
+      padding: 0;
+    }
+
+    &__test {
+      position: relative;
+      bottom: 30px;
+    }
   }
 }
