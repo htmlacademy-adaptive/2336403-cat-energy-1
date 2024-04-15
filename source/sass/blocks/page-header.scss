@@ -95,13 +95,11 @@
     &__link--active::after {
       content: "";
       position: absolute;
-      //bottom: 9px;
       bottom: 20px;
       left: 0;
-      //right: 0;
       height: 2px;
       background: #68b738;
       width: calc(100%);
-  }
+    }
   }
 }
