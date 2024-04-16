@@ -21,7 +21,9 @@
     font-weight: 400;
     font-size: 36px;
     color: #ffffff;
-    margin: 27px 0;
+    text-align: center;
+    margin: 0 0 25px;
+    line-height: 40px;
   }
 
   &__text {
@@ -30,7 +32,7 @@
     font-size: 14px;
     color: #ffffff;
     text-transform: uppercase;
-    margin: 25px 0;
+    margin: 0 0 25px;
   }
 
   &__button {
@@ -39,6 +41,8 @@
     font-size: 14px;
     color: #ffffff;
     text-transform: uppercase;
+    min-height: 40px;
+    order: 3;
   }
 
   &__inner {
@@ -46,6 +50,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 27px 0;
   }
 }
 
@@ -54,11 +59,6 @@
   .promo {
     position: relative;
     background: none;
-    //outline: blue 2px solid;
-
-    &::before {
-      display: none;
-    }
 
     &::after {
       display: none;
@@ -67,7 +67,6 @@
     &__inner {
       display: block;
       padding: 65px 90px 0;
-      //outline: green 2px solid;
     }
 
     &__title {
@@ -76,6 +75,7 @@
       line-height: 60px;
       color: #000000;
       margin: 0 0 45px;
+      text-align: left;
     }
 
     &__text {
@@ -84,13 +84,13 @@
       font-size: 20px;
       color: #000000;
       text-transform: uppercase;
-      margin: 0;
+      margin-bottom: -30px;
     }
 
     &__button {
       position: relative;
       z-index: 1;
-      top: 50px;
+      top: 70px;
       width: auto;
       font-family: "Oswald", "Arial", sans-serif;
       font-weight: 400;
@@ -100,13 +100,11 @@
     }
 
     &__background-img {
+      display: block;
+      position: relative;
       margin: 0 auto;
       padding: 0;
-    }
-
-    &__test {
-      position: relative;
-      bottom: 30px;
+      align-self: center;
     }
   }
 }

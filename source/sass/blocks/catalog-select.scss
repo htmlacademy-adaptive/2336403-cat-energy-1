@@ -2,7 +2,10 @@
 
 .catalog-select {
   &__inner {
-    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    //padding: 20px 0;
+    //outline: 2px blue solid;
   }
 
   &__list {
@@ -22,6 +25,7 @@
     color: #000000;
     text-transform: uppercase;
     text-align: center;
+    margin: 0;
   }
 
   &__subtitle {
@@ -29,6 +33,7 @@
     font-weight: 400;
     font-size: 14px;
     color: #000000;
+    margin: 0;
   }
 
   &__link {

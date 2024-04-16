@@ -2,7 +2,7 @@
 
 .page-header {
   position: relative;
-  padding: 20px;
+  //padding: 20px;
 
   &__list {
     display: block;
@@ -28,6 +28,8 @@
     justify-content: space-between;
     align-items: center;
     overflow: visible;
+    //outline: blue 2px solid;
+    padding: 13px 0;
   }
 
   &__logo {
@@ -48,9 +50,9 @@
     display: none;
     position: absolute;
     background-color: #ffffff;
-    top: 45px;
+    top: 68px;
     left: -20px;
-    width: 100vw;
+    width: calc(100% + 20px);
     z-index: 5;
   }
 
@@ -66,6 +68,10 @@
 
     &__toggle {
       display: none;
+    }
+
+    &__inner {
+      padding: 0;
     }
 
     &__nav {

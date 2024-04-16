@@ -3,10 +3,9 @@
 .container {
   position: relative;
   margin: 0 auto;
-  //padding-left: 20px;
-  //padding-right: 20px;
+  padding: 0 20px;
   max-width: 100%;
-  //outline: red 3px solid;
+  //outline: red 1px solid;
 }
 
 // Tablet Viewport
@@ -14,8 +13,7 @@
   .container {
     position: relative;
     margin: 0 auto;
-    padding-left: 30px;
-    padding-right: 30px;
-    width: 100%;
+    padding: 0 30px;
+    max-width: 100%;
   }
 }
