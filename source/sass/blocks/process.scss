@@ -19,8 +19,32 @@
   }
 
   &__item {
+    display: flex;
+    position: relative;
     min-height: 60px;
     margin-bottom: 20px;
+    //outline: blue 1px solid;
+    align-items: center;
+
+    &--leaf::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      mask-image: url("../../img/icon-process-leaf.svg");
+      mask-repeat: no-repeat;
+      background-color: variables.$status-error;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      right: calc(100% + 20px);
+      top: 0;
+      width: 60px;
+      height: 60px;
+      background-color: variables.$basic-light;
+    }
   }
 
   &__description {
@@ -28,5 +52,7 @@
     font-weight: 400;
     font-size: 14px;
     color: variables.$gray-darken;
+    padding: 0;
+    margin: 0;
   }
 }
