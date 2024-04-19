@@ -43,8 +43,8 @@
       top: 12px;
       left: 27px;
       position: absolute;
-      width: 100%;
-      height: 100%;
+      width: 36px;
+      height: 50px;
       background-color: #000000;
       mask-image: url("../../img/icon-cat-slim.svg");
       mask-size: 36px 50px;
@@ -55,6 +55,8 @@
       mask-image: url("../../img/icon-cat-fat.svg");
       top: 30px;
       left: 10px;
+      width: 67px;
+      height: 28px;
       mask-size: 67px 28px;
     }
   }
