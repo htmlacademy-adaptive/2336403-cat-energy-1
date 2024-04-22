@@ -98,21 +98,51 @@
               Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
             </p>
             <div class="example__statics">
-              <p class="example__number">5 кг
-                <span class="example__description">снижение веса</span>
-              </p>
-              <p class="example__number">60 дней
-                <span class="example__description">затрачено времени</span>
-              </p>
-              <p class="example__costs">Затраты на питание:
-                <span>15 000 руб.</span>
-              </p>
-            </div>
-            <div class="example__compare-slider">
-              <img class="example__compare-img" src="./img/slides-cat-compare.png" width="280" height="256" alt="До и после кот">
-              <button class="example__compare-button">
-                <span class="visually-hidden">кнопка-бегунок</span>
-              </button>
+              <div class="example__wrap">
+                <div class="example__item">
+                  <p class="example__total">5 кг</p>
+                  <p class="example__description">снижение веса</p>
+                </div>
+                <div class="example__item">
+                  <p class="example__total">60 дней</p>
+                  <p class="example__description">затрачено времени</p>
+                </div>
+              </div>
+              <div class="example__costs-wrap">
+                  <p class="example__costs">Затраты на питание:</p>
+                  <p class="example__costs">15 000 руб.</p>
+              </div>
+              <div class="example__compare-slider">
+
+                <!-- Контейнер для слайдера -->
+                <div class="example__compare-img">
+
+                  <!-- Картинка слева -->
+                  <div class="example__demo example__demo--before">
+                    <img src="./img/compare-mobile-before@1x.png" alt="Котик до программы">
+                  </div>
+
+                  <!-- Картинка справа -->
+                  <div class="example__demo example__demo--after">
+                    <img src="./img/compare-mobile-after@1x.png" alt="Котик после программы">
+                  </div>
+
+                  <!-- слайдер посредине -->
+                  <div class="drag_me">
+                    <!-- Кругляшь на слайдере -->
+                    <div class="drag_me-circle">
+
+                    </div>
+                  </div>
+
+
+                </div>
+                <div class="example__compare-control">
+                  <button class="button example__compare-button">
+                    <span class="visually-hidden">кнопка-бегунок</span>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>

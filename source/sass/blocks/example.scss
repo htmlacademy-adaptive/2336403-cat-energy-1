@@ -23,18 +23,70 @@
     color: variables.$gray-darken;
   }
 
-  &__number {
+  &__statics {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    grid-column: 1/-1;
+  }
+
+  &__numbers {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    justify-content: center;
     font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
     font-size: 24px;
     color: #000000;
+    border: 1px solid variables.$gray;
+    border-radius: 5px;
+    padding: 15px 10px 20px;
+    width: 124px;
+    min-height: 56px;
+  }
+
+  &__total {
+    font-family: "Oswald", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: variables.$gray-darken;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
   }
 
   &__description {
+    position: absolute;
+    display: block;
+    padding: 0 14px;
     font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
     font-size: 12px;
     color: variables.$gray-darken;
+    margin: 0;
+    text-align: center;
+    background-color: variables.$gray-light;
+    width: 77px;
+    transform: translateY(120%);
+  }
+
+  &__costs-wrap {
+    display: flex;
+    grid-column: 1/-1;
+    margin: 20px 0;
+    justify-content: center;
+    gap: 5px;
   }
 
   &__costs {
@@ -43,16 +95,33 @@
     font-size: 14px;
     color: #000000;
     text-transform: uppercase;
-    text-align: center;
   }
 
   &__compare-img {
+    position: relative;
+    //border: 3px solid tomato;
     display: block;
     margin: 0 auto;
+    overflow: hidden;
+    //width: 100%;
+    height: auto;
+  }
+
+  &__demo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    //height: 100%;
+    //width: 100%;
+    overflow: hidden;
+    z-index: 100;
   }
 
   &__compare-slider {
-    margin-bottom: 40px;
+    //margin-bottom: 20px;
+    height: auto;
+    width: auto;
+    grid-column: 1/-1;
   }
 
   &__compare-button {
