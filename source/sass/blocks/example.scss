@@ -78,7 +78,7 @@
     text-align: center;
     background-color: variables.$gray-light;
     width: 77px;
-    transform: translateY(120%);
+    transform: translateY(110%);
   }
 
   &__costs-wrap {
@@ -102,26 +102,43 @@
     //border: 3px solid tomato;
     display: block;
     margin: 0 auto;
-    overflow: hidden;
-    //width: 100%;
-    height: auto;
+    width: 280px;
+    height: 256px;
+    //outline: red 1px solid;
   }
 
   &__demo {
-    position: absolute;
     top: 0;
     left: 0;
-    //height: 100%;
-    //width: 100%;
-    overflow: hidden;
-    z-index: 100;
+    position: absolute;
+
+    &--before {
+      position: absolute;
+      z-index: 1;
+      background-color: variables.$gray-light;
+      //background-image: linear-gradient(#6e4aff, #49A16C);
+    }
+  }
+
+  &__slider-img {
+    &--before {
+      object-fit: none;
+      object-position: 0%;
+    }
   }
 
   &__compare-slider {
-    //margin-bottom: 20px;
-    height: auto;
-    width: auto;
     grid-column: 1/-1;
+  }
+
+  &__divider {
+    color: #000000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
   }
 
   &__compare-button {

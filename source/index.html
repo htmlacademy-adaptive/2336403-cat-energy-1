@@ -112,36 +112,39 @@
                   <p class="example__costs">Затраты на питание:</p>
                   <p class="example__costs">15 000 руб.</p>
               </div>
+
+
               <div class="example__compare-slider">
 
                 <!-- Контейнер для слайдера -->
                 <div class="example__compare-img">
 
                   <!-- Картинка слева -->
-                  <div class="example__demo example__demo--before">
-                    <img src="./img/compare-mobile-before@1x.png" alt="Котик до программы">
+                  <div class="example__demo example__demo--before" style="width: 57%;">
+                    <img class="example__slider-img--before" src="img/compare-mobile-before@1x.png" widht="280" height="256" alt="Котик до программы">
                   </div>
 
                   <!-- Картинка справа -->
-                  <div class="example__demo example__demo--after">
-                    <img src="./img/compare-mobile-after@1x.png" alt="Котик после программы">
+                  <div class="example__demo">
+                    <img class="example__slider-img--after" src="img/compare-mobile-after@1x.png" widht="280" height="256" alt="Котик после программы">
                   </div>
 
                   <!-- слайдер посредине -->
-                  <div class="drag_me">
+                  <div class="example__divider">
                     <!-- Кругляшь на слайдере -->
-                    <div class="drag_me-circle">
-
+                    <div class="example__divider-wrapper" style="left: 57%">
+                      <button class="example__divider-button">
+                        <span class="visually-hidden">кнопка-бегунок</span>
+                      </button>
                     </div>
                   </div>
-
-
                 </div>
-                <div class="example__compare-control">
-                  <button class="button example__compare-button">
-                    <span class="visually-hidden">кнопка-бегунок</span>
-                  </button>
-                </div>
+
+                <!-- <div class="example__compare-control"> -->
+                  <!-- <button class="button example__compare-button"> -->
+                    <!-- <span class="visually-hidden">кнопка-бегунок</span> -->
+                  <!-- </button> -->
+                <!-- </div> -->
               </div>
             </div>
           </div>
