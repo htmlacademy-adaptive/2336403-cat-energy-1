@@ -132,16 +132,43 @@
   }
 
   &__divider {
-    color: #000000;
+    background-color: variables.$gray-dark;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 40px;
-    height: 40px;
+    width: 3px;
+    height: 100%;
+    top: 0;
+    z-index: 3;
+
+    &:hover {
+      background-color: variables.$basic-dark;
+    }
+
+    &:active {
+      background-color: variables.$basic-light;
+    }
   }
 
   &__compare-button {
-    border: none;
+    position: absolute;
+    top: 35%;
+    left: -18px;
+    cursor: pointer;
+    z-index: 5;
+
+    &:hover path {
+      fill: variables.$basic-dark;
+    }
+
+    &:hover rect {
+      stroke: variables.$basic-dark;
+    }
+
+    &:active path {
+      fill: variables.$basic-light;
+    }
+
+    &:active rect {
+      stroke: variables.$basic-light;
+    }
   }
 }
