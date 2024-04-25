@@ -100,7 +100,6 @@
 
   &__compare-img {
     position: relative;
-    //border: 3px solid tomato;
     display: block;
     margin: 0 auto;
     width: 280px;
@@ -169,6 +168,50 @@
 
     &:active rect {
       stroke: variables.$basic-light;
+    }
+  }
+}
+
+// Tablet Viewport
+@media (min-width: 768px) {
+  .example {
+    background-color: #ffffff;
+    background-image: linear-gradient(#ffffff 60%, variables.$gray-light 60%);
+
+    &__title {
+      font-size: 60px;
+      margin-bottom: 60px;
+    }
+
+    &__text {
+      font-size: 16px;
+      margin-bottom: 55px;
+    }
+
+    &__wrap {
+      grid-column: 1/3;
+    }
+
+    &__description {
+      background-color: #ffffff;
+    }
+
+    &__costs {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    &__costs-wrap {
+      grid-column: 3/-1;
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      margin: 0;
+      gap: 0;
+    }
+
+    &__compare-slider {
+      padding-top: 100px;
     }
   }
 }
