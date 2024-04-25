@@ -16,6 +16,7 @@
   &__list {
     list-style: none;
     padding-left: 80px;
+    counter-reset: process-item 0;
   }
 
   &__item {
@@ -23,7 +24,6 @@
     position: relative;
     min-height: 60px;
     margin-bottom: 20px;
-    //outline: blue 1px solid;
     align-items: center;
 
     &--leaf::after {
@@ -99,8 +99,71 @@
   .process {
     &__title {
       font-size: 36px;
-      //color: red;
       margin-bottom: 60px;
+    }
+
+    &__description {
+      font-size: 16px;
+
+      &::after {
+        counter-increment: process-item;
+        content: counter(process-item) "";
+        position: absolute;
+        left: auto;
+        right: 20px;
+        top: -38px;
+        font-size: 280px;
+        line-height: 1;
+        font-family: "Oswald", "Arial", sans-serif;
+        color: #f2f2f2;
+        z-index: -1;
+      }
+    }
+
+    &__inner {
+      padding-right: 15%;
+    }
+
+    &__list {
+      display: grid;
+      padding: 0;
+      margin: 0;
+      grid-template-columns: 50% 50%;
+      justify-items: start;
+      column-gap: 10%;
+      row-gap: 20px;
+    }
+
+    &__item {
+      min-width: fit-content;
+      min-height: 280px;
+      margin: 0;
+
+      &::before {
+        left: 0;
+        width: 60px;
+        height: 60px;
+      }
+
+      &--leaf::after {
+        top: 16px;
+        left: 16px;
+      }
+
+      &--powder::after {
+        top: 16px;
+        left: 17px;
+      }
+
+      &--eat::after {
+        top: 16px;
+        left: 16px;
+      }
+
+      &--timer::after {
+        top: 16px;
+        left: 17px;
+      }
     }
   }
 }
