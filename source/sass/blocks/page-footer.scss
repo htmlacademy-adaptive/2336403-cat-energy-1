@@ -59,7 +59,7 @@
     color: variables.$gray-darken;
     padding: 20px 0;
     transition: opasity 0.2s;
-    width: 280px;
+    max-width: 280px;
     justify-self: center;
 
     &:hover {
