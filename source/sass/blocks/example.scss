@@ -1,7 +1,7 @@
 @use "./base/variables.scss";
 
 .example {
-  --divider-position: 35%;
+  --divider-position: 50%;
   background-color: variables.$gray-light;
 
   &__inner {
@@ -176,7 +176,7 @@
 @media (min-width: 768px) {
   .example {
     background-color: #ffffff;
-    background-image: linear-gradient(#ffffff 60%, variables.$gray-light 60%);
+    background-image: linear-gradient(#ffffff 59%, variables.$gray-light 59%);
 
     &__title {
       font-size: 60px;
@@ -212,6 +212,29 @@
 
     &__compare-slider {
       padding-top: 100px;
+    }
+
+    &__compare-img {
+      width: 560px;
+      height: 512px;
+      margin-bottom: 20px;
+    }
+
+    &__compare-button {
+      top: 43%;
+    }
+
+    &__demo {
+      top: 0;
+      left: 0;
+      position: absolute;
+
+      &--before {
+        position: absolute;
+        z-index: 1;
+        //background-color: variables.$gray-light;
+        background-image: linear-gradient(#ffffff 143px, variables.$gray-light 143px);
+      }
     }
   }
 }

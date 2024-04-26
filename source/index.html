@@ -117,11 +117,17 @@
                 <div class="example__compare-img">
                   <!-- Картинка слева -->
                   <div class="example__demo example__demo--before" style="width: var(--divider-position, 50%);">
-                    <img class="example__slider-img--before" src="img/compare-mobile-before@1x.png" widht="280" height="256" alt="Котик до программы">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="img/compare-tablet-before@1x.png" width="560" height="512">
+                      <img class="example__slider-img--before" src="img/compare-mobile-before@1x.png" widht="280" height="256" alt="Котик до программы">
+                    </picture>
                   </div>
                   <!-- Картинка справа -->
                   <div class="example__demo">
-                    <img class="example__slider-img--after" src="img/compare-mobile-after@1x.png" widht="280" height="256" alt="Котик после программы">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="img/compare-tablet-after@1x.png" width="560" height="512">
+                      <img class="example__slider-img--after" src="img/compare-mobile-after@1x.png" widht="280" height="256" alt="Котик после программы">
+                    </picture>
                   </div>
                   <div class="example__divider" style="left: var(--divider-position, 50%)">
                     <span class="example__compare-button">
