@@ -29,7 +29,7 @@
     align-items: center;
     overflow: visible;
     //outline: blue 2px solid;
-    padding: 13px 0;
+    padding: 20px 0;
   }
 
   &__logo {
@@ -82,7 +82,7 @@
     }
 
     &__inner {
-      padding: 0;
+      padding: 20px 0;
     }
 
     &__nav {
@@ -125,7 +125,7 @@
 }
 
 // Desctop Viewport
-@media (min-width: variables.$desktop-width) {
+@media (min-width: 1280px) {
   .page-header {
     padding: 0;
 
@@ -155,7 +155,7 @@
       font-family: "Oswald", "Arial", sans-serif;
       font-size: 18px;
       font-weight: 400;
-      color: #ffffff;
+      //color: #ffffff;
       text-transform: uppercase;
       padding: 25px 0;
       margin: 0;
@@ -165,14 +165,37 @@
       }
     }
 
-    &__link--active::after {
-      content: "";
-      position: absolute;
-      bottom: 20px;
-      left: 0;
-      height: 2px;
-      background: variables.$basic-light;
-      width: calc(100%);
+    &__link--special-active {
+      color: #ffffff;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+        height: 2px;
+        background: #ffffff;
+        width: calc(100%);
+      }
+    }
+
+    &__link--special {
+      color: #ffffff;
+    }
+
+    &--special {
+      &::before {
+        position: absolute;
+        content: "";
+        left: 50%;
+        right: 0;
+        width: 50%;
+        height: 696px;
+        background-image: url("../../img/Promo-desktop-bg.jpg");
+        background-repeat: no-repeat;
+        background-position: left;
+        z-index: -2;
+      }
     }
   }
 }

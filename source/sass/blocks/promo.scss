@@ -59,6 +59,7 @@
   .promo {
     position: relative;
     background: none;
+    min-height: 694px;
 
     &::after {
       display: none;
@@ -105,6 +106,21 @@
       margin: 0 auto;
       padding: 0;
       align-self: center;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .promo {
+    &__picture {
+      position: absolute;
+      top: 0;
+      z-index: -1;
+      transform: translateX(15%);
+    }
+
+    &__button {
+      top: 125px;
     }
   }
 }

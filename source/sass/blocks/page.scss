@@ -10,3 +10,24 @@
     margin: 0;
   }
 }
+
+/* @media (min-width: 1280px) {
+  .page {
+    &__header {
+      &--special {
+        &::before{
+          position: absolute;
+          content: "";
+          left: 50%;
+          right: 0;
+          width: 50%;
+          height: 696px;
+          background-image: url("../../img/Promo-desktop-bg.jpg");
+          background-repeat: no-repeat;
+          background-position: left;
+          //background-color: #62a63a;
+        }
+      }
+    }
+  }
+} */
