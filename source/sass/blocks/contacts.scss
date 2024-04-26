@@ -18,6 +18,11 @@
     width: 140px;
   }
 
+  &__address-sity {
+    display: block;
+    margin-top: 5px;
+  }
+
   &__address {
     font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
@@ -33,5 +38,43 @@
 
   &--dark {
     background-color: variables.$gray-lighten;
+  }
+}
+
+@media (min-width: 768px) {
+  .contacts {
+    &__address-sity {
+      display: block;
+      margin-top: 10px;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .contacts {
+    &__map {
+      position: relative;
+    }
+
+    &__header {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      width: 565px;
+      height: 200px;
+      background-color: #ffffff;
+      z-index: 20;
+      align-items: center;
+      padding: 60px 80px;
+    }
+
+    &__invitation {
+      font-size: 20px;
+    }
+
+    &__address-sity {
+      display: block;
+      margin-top: 20px;
+    }
   }
 }

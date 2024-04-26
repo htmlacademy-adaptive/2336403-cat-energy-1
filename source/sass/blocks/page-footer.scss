@@ -16,7 +16,7 @@
     padding: 20px 0;
 
     &:hover path {
-      fill: variables.$basic-light;
+      fill: variables.$gray-dark;
     }
 
     &:active path {
@@ -84,6 +84,7 @@
     margin: 0;
   }
 }
+
 // Tablet Viewport
 @media (min-width: 768px) {
   .page-footer {
