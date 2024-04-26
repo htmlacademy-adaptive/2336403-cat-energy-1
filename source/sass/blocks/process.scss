@@ -111,9 +111,9 @@
         position: absolute;
         left: auto;
         right: 20px;
-        top: -38px;
+        bottom: 0;
         font-size: 280px;
-        line-height: 1;
+        //line-height: 1;
         font-family: "Oswald", "Arial", sans-serif;
         color: #f2f2f2;
         z-index: -1;
@@ -163,6 +163,29 @@
       &--timer::after {
         top: 16px;
         left: 17px;
+      }
+    }
+  }
+}
+
+// Desktop Viewport
+@media (min-width: 1280px) {
+  .process {
+    &__inner {
+      padding: 0;
+    }
+
+    &__list {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 50px;
+    }
+
+    &__description {
+      margin: 0;
+      padding: 0;
+
+      &::after {
+        right: 0;
       }
     }
   }
