@@ -22,3 +22,10 @@
     margin-bottom: 25px;
   }
 }
+
+// Desctop Viewport
+@media (min-width: 1280px) {
+  .products__inner {
+    padding-top: 188px;
+  }
+}
