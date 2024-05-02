@@ -22,8 +22,10 @@
     font-size: 36px;
     color: #ffffff;
     text-align: center;
-    margin: 0 0 25px;
+    margin: 0 auto 25px;
     line-height: 40px;
+    padding-top: 25px;
+    max-width: 250px;
   }
 
   &__text {
@@ -33,6 +35,7 @@
     color: #ffffff;
     text-transform: uppercase;
     margin: 0 0 25px;
+    text-align: center;
   }
 
   &__button {
@@ -41,16 +44,15 @@
     font-size: 14px;
     color: #ffffff;
     text-transform: uppercase;
+    display: block;
+    width: 100%;
     min-height: 40px;
-    order: 3;
+    margin-bottom: 20px;
   }
 
-  &__inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 27px 0;
+  .promo__background-img {
+    display: block;
+    margin: 0 auto;
   }
 }
 
@@ -65,17 +67,13 @@
       display: none;
     }
 
-    &__inner {
-      display: block;
-      padding: 65px 90px 0;
-    }
 
     &__title {
       max-width: 520px;
       font-size: 60px;
       line-height: 60px;
       color: #000000;
-      margin: 0 0 45px;
+      margin: 0 0 45px 90px;
       text-align: left;
     }
 
@@ -85,42 +83,72 @@
       font-size: 20px;
       color: #000000;
       text-transform: uppercase;
-      margin-bottom: -30px;
+      margin-left: 90px;
+      text-align: left;
     }
 
     &__button {
-      position: relative;
+      position: absolute;
       z-index: 1;
-      top: 70px;
+      top: 270px;
+      left: 120px;
       width: auto;
       font-family: "Oswald", "Arial", sans-serif;
       font-weight: 400;
       font-size: 26px;
       color: #ffffff;
       text-transform: uppercase;
-    }
-
-    &__background-img {
-      display: block;
-      position: relative;
-      margin: 0 auto;
-      padding: 0;
-      align-self: center;
+      padding: 14px 26px;
     }
   }
 }
 
 @media (min-width: 1280px) {
   .promo {
-    &__picture {
+    &::after {
       position: absolute;
+      content: "";
+      left: 50%;
+      display: block;
+      background-color: #64a73c;//variables.$basic-dark;
       top: 0;
+      width: 100%;
+      height: 100%;
       z-index: -1;
-      transform: translateX(15%);
     }
 
-    &__button {
-      top: 125px;
+    &--special {
+      position: relative;
+      background-image: url("../../img/Promo-desktop-bg.jpg");
+      background-repeat: no-repeat;
+      background-position: right;
     }
+  }
+
+  .promo__background-img {
+    position: absolute;
+    display: block;
+    margin: 0 auto;
+    transform: translateX(80%);
+    top: 30%;
+  }
+
+  .promo__title {
+    padding-top: 224px;
+    margin-bottom: 40px;
+  }
+
+  .promo__text {
+    margin-bottom: 66px;
+  }
+
+  .promo__button {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    width: fit-content;
+    font-size: 20px;
+    margin-left: 90px;
   }
 }

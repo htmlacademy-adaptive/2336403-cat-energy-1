@@ -127,7 +127,10 @@
 // Desctop Viewport
 @media (min-width: 1280px) {
   .page-header {
-    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
 
     &__toggle {
       display: none;
@@ -147,6 +150,7 @@
       display: grid;
       grid-template-columns: repeat(3, auto);
       gap: 33px;
+      max-width: 700px;
     }
 
     &__link {
@@ -155,7 +159,6 @@
       font-family: "Oswald", "Arial", sans-serif;
       font-size: 18px;
       font-weight: 400;
-      //color: #ffffff;
       text-transform: uppercase;
       padding: 25px 0;
       margin: 0;
@@ -181,21 +184,6 @@
 
     &__link--special {
       color: #ffffff;
-    }
-
-    &--special {
-      &::before {
-        position: absolute;
-        content: "";
-        left: 50%;
-        right: 0;
-        width: 50%;
-        height: 696px;
-        background-image: url("../../img/Promo-desktop-bg.jpg");
-        background-repeat: no-repeat;
-        background-position: left;
-        z-index: -2;
-      }
     }
   }
 }
