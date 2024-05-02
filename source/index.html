@@ -111,9 +111,9 @@
             </div>
             <div class="example__compare-slider">
                 <!-- Контейнер для слайдера -->
-                <div class="example__compare-img">
+                <div class="example__compare-img" style="--divider-position: 36%">
                   <!-- Картинка слева -->
-                  <div class="example__demo example__demo--before" style="width: var(--divider-position, 50%);">
+                  <div class="example__demo example__demo--before">
                     <picture>
                       <source media="(min-width: 768px)" srcset="img/compare-tablet-before@1x.png" width="560" height="512">
                       <img class="example__slider-img--before" src="img/compare-mobile-before@1x.png" widht="280" height="256" alt="Котик до программы">
@@ -126,19 +126,15 @@
                       <img class="example__slider-img--after" src="img/compare-mobile-after@1x.png" widht="280" height="256" alt="Котик после программы">
                     </picture>
                   </div>
-                  <div class="example__divider" style="left: var(--divider-position, 50%)">
+                  <div class="example__divider" style="left: var(--divider-position)">
                     <span class="example__compare-button">
-                      <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="1" y="1" width="38" height="38" rx="19" fill="white"/>
-                        <rect x="1" y="1" width="38" height="38" rx="19" stroke="#666666" stroke-width="2"/>
-                        <path d="M16 11L8 20L16 29V11Z" fill="#666666"/>
-                        <path d="M32 20L24 11V29L32 20Z" fill="#666666"/>
-                      </svg>
+                      <div class="example__svg-test">
+
+                      </div>
                     </span>
                   </div>
                 </div>
             </div>
-            <!-- </div> -->
           </div>
         </div>
       </section>
