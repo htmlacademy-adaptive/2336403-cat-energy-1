@@ -1,28 +1,40 @@
 @use "./base/variables.scss";
 
-.additional {
-  &__inner {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 20px 0;
-  }
+.additional__inner {
+  position: relative;
 
-  &__title {
-    font-family: "Oswald", "Arial", sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    color: #000000;
-    margin: 0;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 2px;
+    background-color: variables.$basic-dark;
+    top: 20px;
+    z-index: -1;
   }
+}
 
-  &__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
+.additional__title {
+  display: inline-block;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #000000;
+  background-color: #ffffff;
+  margin: 0;
+  padding-right: 25px;
+}
 
-  &__item {
-    margin: 0;
-  }
+.additional__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.additional__item {
+  margin: 0;
+  padding: 15px 0 25px;
+  border-bottom: 1px solid #cdcdcd;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }

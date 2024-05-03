@@ -1,25 +1,49 @@
 @use "./base/variables.scss";
 
-.products {
-  &__inner {
-    padding: 20px 0;
-  }
+.products__inner {
+  padding: 20px 0 0;
+}
 
-  &__list {
-    list-style: none;
-    padding: 0;
-  }
+.products__list {
+  list-style: none;
+  padding: 0;
+}
 
-  &__title {
-    font-family: "Oswald", "Arial", sans-serif;
-    font-weight: 400;
-    font-size: 36px;
-    color: #000000;
-    margin: 0;
-  }
+.products__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: #000000;
+  margin: 0;
+  padding-bottom: 25px;
+}
 
-  &__item {
-    margin-bottom: 25px;
+.products__item {
+  //border-bottom: 1px solid #ebebeb;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    width: 100vw;
+    height: 1px;
+    background-color: #ebebeb;
+    top: 0;
+  }
+}
+
+.products__button {
+  grid-column: 1/-1;
+}
+
+
+// Tablet Viewport
+@media (min-width: 768px) {
+  .products__item {
+    &::after {
+      left: -30px;
+    }
   }
 }
 
