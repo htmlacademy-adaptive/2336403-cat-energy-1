@@ -18,7 +18,7 @@
 }
 
 .example__text {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   color: variables.$gray-darken;
@@ -71,7 +71,7 @@
   position: absolute;
   display: block;
   padding: 0 14px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-weight: 400;
   font-size: 12px;
   color: variables.$gray-darken;
@@ -79,7 +79,7 @@
   text-align: center;
   background-color: variables.$gray-light;
   width: 77px;
-  transform: translateY(110%);
+  transform: translateY(140%);
 }
 
 .example__costs-wrap {
@@ -146,7 +146,7 @@
   background-color: #000000;
   width: 50px;
   height: 50px;
-  mask-image: url(../../img/compare-thumb.svg);
+  mask-image: url("../../img/compare-thumb.svg");
 }
 
 .example__compare-button-icon {
