@@ -40,10 +40,26 @@
 
 // Tablet Viewport
 @media (min-width: 768px) {
+  .products__title {
+    font-size: 60px;
+    margin-bottom: 40px;
+  }
+
+  .products__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    //padding: 0 30px;
+  }
+
   .products__item {
     &::after {
-      left: -30px;
+      display: none;
     }
+  }
+
+  .products__button {
+    margin-top: 15px;
   }
 }
 

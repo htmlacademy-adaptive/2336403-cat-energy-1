@@ -36,9 +36,31 @@
 
 // Taablet Viewport
 @media (min-width: 768px) {
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    padding: 0 36px 39px;
+    background-image: linear-gradient(transparent 81px, #f2f2f2 81px);
+  }
+
+  .product-card__title {
+    text-align: center;
+    grid-column: 1 / -1;
+    font-size: 20px;
+    width: 136px;
+    margin: 0 auto;
+    line-height: 24px;
+  }
+
   .product-card__image {
-    width: 200px;
-    height: 210px;
+    width: 168px;
+    height: 200px;
+  }
+
+  .product-card__inner {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    row-gap: 18px;
   }
 }
 

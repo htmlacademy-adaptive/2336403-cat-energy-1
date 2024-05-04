@@ -54,3 +54,34 @@
   text-transform: uppercase;
   cursor: pointer;
 }
+
+// Taablet Viewport
+@media (min-width: 768px) {
+  .products-more {
+    padding: 52px 37px 37px;
+    outline: 2px solid #f2f2f2;
+    margin-top: 81px;
+    justify-content: space-between;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .products-more__button-plus {
+    background-image: url("../../img/Catalog/icon-button-plus-tablet.svg");
+    width: 60px;
+    height: 60px;
+  }
+
+  .products-more__title {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .products-more__subtitle {
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+  }
+}
