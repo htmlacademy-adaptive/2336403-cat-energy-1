@@ -19,7 +19,6 @@
 }
 
 .products__item {
-  //border-bottom: 1px solid #ebebeb;
   position: relative;
 
   &::after {
@@ -49,7 +48,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
-    //padding: 0 30px;
   }
 
   .products__item {
