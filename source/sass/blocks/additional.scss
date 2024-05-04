@@ -1,17 +1,19 @@
 @use "./base/variables.scss";
 
+.additional {
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: variables.$basic-dark;
+    height: 2px;
+    width: 100vw;
+    left: 25px;
+    transform: translateY(20px);
+  }
+}
+
 .additional__inner {
   position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100vw;
-    height: 2px;
-    background-color: variables.$basic-dark;
-    top: 20px;
-    z-index: -1;
-  }
 }
 
 .additional__title {
@@ -34,15 +36,14 @@
 .additional__item {
   margin: 0;
   padding: 15px 0 25px;
-  //border-bottom: 1px solid #cdcdcd;
 }
 
 // Tablet Viewport
 @media (min-width: 768px) {
-  .additional__inner {
+  .additional {
     &::before {
-      top: 50px;
-      left: -30px;
+      left: 0;
+      transform: translateY(52px);
     }
   }
 
@@ -62,5 +63,35 @@
     border-top: 1px solid #cdcdcd;
     border-left: 1px solid #cdcdcd;
     border-right: 1px solid #cdcdcd;
+  }
+}
+
+// Desctop Viewport
+@media (min-width: 1280px) {
+  .additional {
+    &::before {
+      transform: translateY(81px);
+    }
+  }
+
+  .additional__inner {
+    &::before {
+      display: none;
+    }
+  }
+
+  .additional__list {
+    list-style: none;
+    margin: 0;
+    border: none;
+    border-top: 1px solid #cdcdcd;
+  }
+
+  .additional__wrap {
+    display: grid;
+    grid-template-columns: auto 245px;
+    gap: 81px;
+    margin: 0;
+    align-items: center;
   }
 }

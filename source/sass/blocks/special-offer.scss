@@ -51,3 +51,24 @@
     transform: none;
   }
 }
+
+// Desctop Viewport
+@media (min-width: 1280px) {
+  .special-offer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    margin: 0;
+    position: relative;
+    background-image: url("../../img/Catalog/cat-gift-desktop.png");
+    width: 245px;
+    height: 288px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .special-offer__text {
+    text-align: center;
+  }
+}

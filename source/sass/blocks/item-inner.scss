@@ -51,7 +51,6 @@
   .item-inner {
     grid-template-columns: (30% 30% 25% 15%);
     padding: 25px 25px;
-    //outline: 1px solid #cdcdcd;
     border-bottom: 1px solid #cdcdcd;
   }
 
@@ -69,5 +68,36 @@
   .item-inner__price {
     grid-column: 4 / 5;
     margin: 0;
+  }
+}
+
+// Desktop Viewport
+@media (min-width: 1280px) {
+  .item-inner {
+    grid-template-columns: (30% 25% 15% auto);
+    border-bottom: 1px solid #cdcdcd;
+    padding: 14px 0;
+    align-items: center;
+  }
+
+  .item-inner__title {
+    grid-column: 1 / 2;
+    margin: 0;
+  }
+
+  .item-inner__quantity {
+    grid-column: 2 / 3;
+    text-align: center;
+    margin: 0;
+  }
+
+  .item-inner__price {
+    grid-column: 3 / 4;
+    text-align: center;
+    margin: 0;
+  }
+
+  .item-inner__button {
+    grid-column: 4 / 5;
   }
 }

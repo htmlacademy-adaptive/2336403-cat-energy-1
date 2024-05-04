@@ -66,4 +66,10 @@
   .products__inner {
     padding-top: 188px;
   }
+
+  .products__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+  }
 }
