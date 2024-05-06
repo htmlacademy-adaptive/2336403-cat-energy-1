@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body class="page__body">
-    <header class="page__header page-header">
+    <header class="page-header">
       <div class="container">
         <div class="page-header__inner">
           <a class="page-header__logo" href="#">
@@ -36,79 +36,84 @@
       </div>
     </header>
     <main class="page-main">
-      <div class="container">
-        <div class="page-main__header">
-          <h1 class="page-main__title">Подбор программы</h1>
-          <p class="page-main__subtitle">
+      <section class="form-header">
+        <div class="container">
+          <h1 class="form-header__title">Подбор программы</h1>
+          <p class="form-header__subtitle">
             Заполните анкету, и мы подберем программу питания для вашего кота
           </p>
         </div>
-      </div>
+      </section>
       <form class="profile" action="https://echo.htmlacademy.ru" method="post" name="questionnaire">
-        <fieldset class="profile__info-input-block">
-          <div class="container">
-            <legend class="visually-hidden">Укажите данные питомца</legend>
-            <p class="profile__item">
-              <label class="profile__label">Имя:<sup aria-hidden="true">*</sup>
-                <input class="profile__input" id="input-name" type="text" name="pet-name" placeholder="Барсик">
-              </label>
-            </p>
-            <p class="profile__item">
-              <label class="profile__label">Вес (кг):<sup aria-hidden="true">*</sup>
-                <input class="profile__input" id="input-weidth" type="text" name="pet-weidth" placeholder="7">
-              </label>
-            </p>
-            <p class="profile__item">
-              <label class="profile__label">Возраст (лет):
-                <input class="profile__input" id="input-age" type="text" name="pet-age" placeholder="7">
-              </label>
-            </p>
-          </div>
-        </fieldset>
-        <fieldset class="profile__target-radio-block">
-          <div class="container">
-            <legend class="visually-hidden">Укажите цель программы</legend>
-            <ul class="profile__list">
-              <li class="profile__item">
-                <input class="profile__radio-input" id="slimming" value="slimming" type="radio" name="program" checked="checked">
-                <label class="profile__label" for="slimming">Похудение</label>
-              </li>
-              <li class="profile__item">
-                <input class="profile__radio-input" id="fattening"  value="fattening" type="radio" name="program">
-                <label class="profile__label" for="fattening">Набор массы</label>
-              </li>
-              <li class="profile__item">
-                <input class="profile__radio-input" id="undefined" value="undefined" type="radio" name="program">
-                <label class="profile__label" for="undefined">Не знаю (нужен ваш совет)</label>
-              </li>
-            </ul>
-          </div>
-        </fieldset>
-        <fieldset class="profile__сontaсt-input-block">
-          <div class="container">
-            <legend class="visually-hidden">Укажите контактные данные владельца кота</legend>
-            <p class="profile__title">Контактные данные (владельца кота)</p>
-            <p class="profile__item">
-              <label class="profile__label">E-mail:<sup aria-hidden="true">*</sup>
-                <input class="profile__input" id="e-mail" name="e-mail" type="text" placeholder="kuklachev@gmail.com">
-              </label>
-            </p>
-            <p class="profile__item">
-              <label class="profile__label">Телефон:<sup aria-hidden="true">*</sup>
-                <input class="profile__input" id="phone" name="phone" type="text" placeholder="8 (960) 900-60-90">
-              </label>
-            </p>
-          </div>
-        </fieldset>
-        <fieldset class="profile__comment-area-block">
-          <div class="container">
+        <!-- <div class="container"> -->
+          <fieldset class="profile__info">
+            <div class="container">
+              <legend class="visually-hidden">Укажите данные питомца</legend>
+              <div class="profile__info-block">
+                <label class="profile__label">
+                  <span class="profile__lead">Имя:<sup aria-hidden="true">*</sup></span>
+                  <input class="profile__input" id="input-name" type="text" name="pet-name" placeholder="Барсик">
+                </label>
+                <label class="profile__label">
+                  <span class="profile__lead">Вес (кг):<sup aria-hidden="true">*</sup></span>
+                  <input class="profile__input" id="input-weidth" type="text" name="pet-weidth" placeholder="7">
+                </label>
+                <label class="profile__label">
+                  <span class="profile__lead">Возраст (лет):</span>
+                  <input class="profile__input" id="input-age" type="text" name="pet-age" placeholder="7">
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="profile__target">
+            <div class="container">
+              <legend class="visually-hidden">Укажите цель программы</legend>
+              <ul class="profile__list">
+                <li class="profile__item">
+                  <label class="profile__label" for="slimming">
+                    <input class="profile__radio-input visually-hidden" id="slimming" value="slimming" type="radio" name="program" checked="checked">
+                    <span class="profile__control-mark"></span>
+                    <span class="profile__lead">Похудение</span>
+                  </label>
+                </li>
+                <li class="profile__item">
+                  <label class="profile__label" for="fattening">
+                    <input class="profile__radio-input visually-hidden" id="fattening" value="fattening" type="radio" name="program">
+                    <span class="profile__control-mark"></span>
+                    <span class="profile__lead">Набор массы</span>
+                  </label>
+                </li>
+                <li class="profile__item">
+                  <label class="profile__label" for="undefined">
+                    <input class="profile__radio-input visually-hidden" id="undefined" value="undefined" type="radio" name="program">
+                    <span class="profile__control-mark"></span>
+                    <span class="profile__lead">Не знаю (нужен ваш совет)</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </fieldset>
+          <fieldset class="profile__сontaсt">
+            <div class="container"
+              <legend class="visually-hidden">Укажите контактные данные владельца кота</legend>
+              <p class="profile__title">Контактные данные (владельца кота)</p>
+              <p class="profile__item">
+                <label class="profile__label">E-mail:<sup aria-hidden="true">*</sup>
+                  <input class="profile__input" id="e-mail" name="e-mail" type="text" placeholder="kuklachev@gmail.com">
+                </label>
+              </p>
+              <p class="profile__item">
+                <label class="profile__label">Телефон:<sup aria-hidden="true">*</sup>
+                  <input class="profile__input" id="phone" name="phone" type="text" placeholder="8 (960) 900-60-90">
+                </label>
+              </p>
+          </fieldset>
+          <fieldset class="profile__comment-area-block">
             <legend class="visually-hidden">Комментарий</legend>
             <label class="profile__line-label" for="client-message">Комментарий</label>
             <textarea class="profile__message" id="client-message" name="client-message" placeholder="Расскажите обо всех повадках кота"></textarea>
-          </div>
-        </fieldset>
-        <fieldset class="profile__extra-checkbox-block">
-          <div class="container">
+          </fieldset>
+          <fieldset class="profile__extra-checkbox-block">
             <legend class="visually-hidden">Дополнительно</legend>
             <p class="profile__title">Дополнительно</p>
             <ul class="profile__list">
@@ -129,14 +134,12 @@
                 <label class="profile__label" for="vitamins">Витамины</label>
               </li>
             </ul>
-          </div>
-        </fieldset>
-        <fieldset class="profile__submit-block">
-          <div class="container">
+          </fieldset>
+          <fieldset class="profile__submit-block">
             <button class="button profile__button" type="submit">Отправить заявку</button>
             <p class="profile__note" aria-hidden="true"><sup>*</sup> - обязательные поля</p>
-          </div>
-        </fieldset>
+          </fieldset>
+        <!-- </div> -->
       </form>
       <section class="contacts contacts--dark">
         <div class="container">

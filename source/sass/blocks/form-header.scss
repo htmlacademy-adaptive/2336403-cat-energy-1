@@ -1,0 +1,21 @@
+@use "./base/variables.scss";
+
+.form-header__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: #000000;
+  margin: 35px 0 35px;
+  //outline: blue 1px solid;
+}
+
+.form-header__subtitle {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0 0 35px;
+  //padding: 0 0 35px;
+}
