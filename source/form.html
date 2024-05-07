@@ -94,46 +94,65 @@
             </div>
           </fieldset>
           <fieldset class="profile__сontaсt">
-            <div class="container"
+            <div class="container">
               <legend class="visually-hidden">Укажите контактные данные владельца кота</legend>
-              <p class="profile__title">Контактные данные (владельца кота)</p>
-              <p class="profile__item">
-                <label class="profile__label">E-mail:<sup aria-hidden="true">*</sup>
-                  <input class="profile__input" id="e-mail" name="e-mail" type="text" placeholder="kuklachev@gmail.com">
-                </label>
-              </p>
-              <p class="profile__item">
-                <label class="profile__label">Телефон:<sup aria-hidden="true">*</sup>
-                  <input class="profile__input" id="phone" name="phone" type="text" placeholder="8 (960) 900-60-90">
-                </label>
-              </p>
+              <p class="profile__title">Контактные&nbsp;данные (владельца&nbsp;кота)</p>
+              <ul class="profile__list">
+                <li class="profile__item">
+                  <label class="profile__label">
+                    <span class="profile__lead">E-mail:<sup aria-hidden="true">*</sup></span>
+                    <input class="profile__input" id="e-mail" name="e-mail" type="text" placeholder="kuklachev@gmail.com">
+                    <span class="profile__icon-email"></span>
+                  </label>
+                </li>
+                <li class="profile__item">
+                  <label class="profile__label">
+                    <span class="profile__lead">Телефон:<sup aria-hidden="true">*</sup></span>
+                    <input class="profile__input profile__input--phone" id="phone" name="phone" type="text" placeholder="8 (960) 900-60-90">
+                    <span class="profile__icon-phone"></span>
+                  </label>
+                </li>
+              </ul>
+            </div>
           </fieldset>
-          <fieldset class="profile__comment-area-block">
-            <legend class="visually-hidden">Комментарий</legend>
-            <label class="profile__line-label" for="client-message">Комментарий</label>
-            <textarea class="profile__message" id="client-message" name="client-message" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <fieldset class="profile__comment">
+            <div class="container">
+              <legend class="visually-hidden">Комментарий</legend>
+              <p class="profile__title">Комментарий</p>
+                <textarea class="profile__message" id="client-message" name="client-message" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
           </fieldset>
-          <fieldset class="profile__extra-checkbox-block">
-            <legend class="visually-hidden">Дополнительно</legend>
-            <p class="profile__title">Дополнительно</p>
-            <ul class="profile__list">
-              <li class="profile__item">
-                <input class="profile__checkbox-input" id="sweetener" value="sweetener" type="checkbox" name="extra" checked="checked">
-                <label class="profile__label" for="sweetener">Сахарозаменитель</label>
-              </li>
-              <li class="profile__item">
-                <input class="profile__checkbox-input" id="water" value="water" type="checkbox" name="extra">
-                <label class="profile__label" for="water">Питьевая вода</label>
-              </li>
-              <li class="profile__item">
-                <input class="profile__checkbox-input" id="milk" value="milk" type="checkbox" name="extra">
-                <label class="profile__label" for="milk">Молоко</label>
-              </li>
-              <li class="profile__item">
-                <input class="profile__checkbox-input" id="vitamins" value="vitamins" type="checkbox" name="extra">
-                <label class="profile__label" for="vitamins">Витамины</label>
-              </li>
-            </ul>
+          <fieldset class="profile__extra">
+            <div class="container">
+              <legend class="visually-hidden">Дополнительно</legend>
+              <p class="profile__title">Дополнительно</p>
+              <ul class="profile__list">
+                <li class="profile__item">
+                  <label class="profile__label" for="sweetener">
+                    <input class="profile__checkbox-input" id="sweetener" value="sweetener" type="checkbox" name="extra" checked="checked">
+                    <span class="profile__lead">сахарозаменитель</span>
+                  </label>
+                </li>
+                <li class="profile__item">
+                  <label class="profile__label" for="water">
+                    <input class="profile__checkbox-input" id="water" value="water" type="checkbox" name="extra">
+                    <span class="profile__lead">Питьевая вода</span>
+                  </label>
+                </li>
+                <li class="profile__item">
+                  <label class="profile__label" for="milk">
+                    <input class="profile__checkbox-input" id="milk" value="milk" type="checkbox" name="extra">
+                    <span class="profile__lead">Молоко</span>
+                  </label>
+                </li>
+                <li class="profile__item">
+                  <label class="profile__label" for="vitamins">
+                    <input class="profile__checkbox-input" id="vitamins" value="vitamins" type="checkbox" name="extra">
+                    <span class="profile__lead">Витамины</span>
+                  </label>
+                </li>
+              </ul>
+            </div>
           </fieldset>
           <fieldset class="profile__submit-block">
             <button class="button profile__button" type="submit">Отправить заявку</button>
