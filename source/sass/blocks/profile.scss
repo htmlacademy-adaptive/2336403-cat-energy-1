@@ -48,8 +48,8 @@
 
 .profile__comment {
   border: none;
-  padding: 0 0 25px;
-  border-bottom: #e7e7e7 1px solid;
+  padding: 0;
+  //border-bottom: #e7e7e7 1px solid;
 
   &::before {
     position: absolute;
@@ -73,6 +73,11 @@
   font-size: 16px;
   text-transform: uppercase;
   color: variables.$gray-darken;
+}
+
+.profile__submit {
+  border: none;
+  padding: 0;
 }
 
 .profile__info-block {
@@ -117,7 +122,7 @@
   left: calc(100% - 35px);
   width: 20px;
   height: 20px;
-  //background-color: red;
+  background-color: #000000;
   mask-image: url("../../img/form/email-icon.svg");
 }
 
@@ -127,7 +132,7 @@
   left: calc(100% - 35px);
   width: 20px;
   height: 20px;
-  //background-color: red;
+  background-color: #000000;
   mask-image: url("../../img/form/phone-icon.svg");
 }
 
@@ -169,4 +174,31 @@
   padding: 25px 25px 35px 0;
   background-color: #ffffff;
   margin: 0;
+}
+
+.profile__note {
+  font-family: "Lato", "Arial", sans-serif;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.profile__checkbox-modified {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+}
+
+.profile__checkbox-input:checked + .profile__checkbox-modified::after {
+  content: "";
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 26px;
+  height: 26px;
+  background-color: variables.$basic-dark;
+  mask-image: url("../../img/form/checkbox-tick.svg");
 }

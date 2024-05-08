@@ -129,34 +129,40 @@
               <ul class="profile__list">
                 <li class="profile__item">
                   <label class="profile__label" for="sweetener">
-                    <input class="profile__checkbox-input" id="sweetener" value="sweetener" type="checkbox" name="extra" checked="checked">
+                    <input class="profile__checkbox-input visually-hidden" id="sweetener" value="sweetener" type="checkbox" name="extra" checked="checked">
+                    <span class="profile__checkbox-modified"></span>
                     <span class="profile__lead">сахарозаменитель</span>
                   </label>
                 </li>
                 <li class="profile__item">
-                  <label class="profile__label" for="water">
-                    <input class="profile__checkbox-input" id="water" value="water" type="checkbox" name="extra">
+                  <label class="profile__label " for="water">
+                    <input class="profile__checkbox-input visually-hidden" id="water" value="water" type="checkbox" name="extra">
+                    <span class="profile__checkbox-modified"></span>
                     <span class="profile__lead">Питьевая вода</span>
                   </label>
                 </li>
                 <li class="profile__item">
                   <label class="profile__label" for="milk">
-                    <input class="profile__checkbox-input" id="milk" value="milk" type="checkbox" name="extra">
+                    <input class="profile__checkbox-input visually-hidden" id="milk" value="milk" type="checkbox" name="extra">
+                    <span class="profile__checkbox-modified"></span>
                     <span class="profile__lead">Молоко</span>
                   </label>
                 </li>
                 <li class="profile__item">
                   <label class="profile__label" for="vitamins">
-                    <input class="profile__checkbox-input" id="vitamins" value="vitamins" type="checkbox" name="extra">
+                    <input class="profile__checkbox-input visually-hidden" id="vitamins" value="vitamins" type="checkbox" name="extra">
+                    <span class="profile__checkbox-modified"></span>
                     <span class="profile__lead">Витамины</span>
                   </label>
                 </li>
               </ul>
             </div>
           </fieldset>
-          <fieldset class="profile__submit-block">
-            <button class="button profile__button" type="submit">Отправить заявку</button>
-            <p class="profile__note" aria-hidden="true"><sup>*</sup> - обязательные поля</p>
+          <fieldset class="profile__submit">
+            <div class="container">
+              <button class="button profile__button" type="submit">Отправить заявку</button>
+              <p class="profile__note" aria-hidden="true"><sup>*</sup> - Обязательные поля</p>
+            </div>
           </fieldset>
         <!-- </div> -->
       </form>
