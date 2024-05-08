@@ -10,10 +10,10 @@
     <header class="page-header">
       <div class="container">
         <div class="page-header__inner">
-          <a class="page-header__logo" href="#">
+          <a class="page-header__logo" href="index.html">
             <picture>
+              <source media="(min-width: 1280px)" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
               <img src="./img/logo-mobile.svg" alt="Картинка логотипа Cat Energy">
             </picture>
           </a>
@@ -47,63 +47,63 @@
         </div>
       </section>
       <form class="profile" action="https://echo.htmlacademy.ru" method="post" name="questionnaire">
-        <fieldset class="profile__info">
-          <div class="container">
-            <div class="profile__inner">
-              <legend class="visually-hidden">Укажите данные питомца</legend>
-              <div class="profile__info-block">
-                <label class="profile__label">
-                  <span class="profile__lead">Имя:<sup aria-hidden="true">*</sup></span>
-                  <input class="profile__input" id="input-name" type="text" name="pet-name" placeholder="Барсик">
-                </label>
-                <label class="profile__label">
-                  <span class="profile__lead">Вес (кг):<sup aria-hidden="true">*</sup></span>
-                  <input class="profile__input" id="input-weidth" type="text" name="pet-weidth" placeholder="7">
-                </label>
-                <label class="profile__label">
-                  <span class="profile__lead">Возраст (лет):</span>
-                  <input class="profile__input" id="input-age" type="text" name="pet-age" placeholder="7">
-                </label>
+        <div class="container">
+          <div class="profile__info-wrapper">
+            <fieldset class="profile__info">
+              <div class="profile__inner">
+                <legend class="visually-hidden">Укажите данные питомца</legend>
+                <div class="profile__info-block">
+                  <label class="profile__label">
+                    <span class="profile__lead">Имя:<sup aria-hidden="true">*</sup></span>
+                    <input class="profile__input" id="input-name" type="text" name="pet-name" placeholder="Барсик">
+                  </label>
+                  <label class="profile__label">
+                    <span class="profile__lead">Вес (кг):<sup aria-hidden="true">*</sup></span>
+                    <input class="profile__input" id="input-weidth" type="text" name="pet-weidth" placeholder="7">
+                  </label>
+                  <label class="profile__label">
+                    <span class="profile__lead">Возраст (лет):</span>
+                    <input class="profile__input" id="input-age" type="text" name="pet-age" placeholder="7">
+                  </label>
+                </div>
               </div>
-            </div>
+            </fieldset>
+            <fieldset class="profile__target">
+              <div class = "profile__inner">
+                <legend class="visually-hidden">Укажите цель программы</legend>
+                <ul class="profile__list profile__list--border">
+                  <li class="profile__item">
+                    <label class="profile__label" for="slimming">
+                      <input class="profile__radio-input visually-hidden" id="slimming" value="slimming" type="radio" name="program" checked="checked">
+                      <span class="profile__control-mark"></span>
+                      <span class="profile__lead">Похудение</span>
+                    </label>
+                  </li>
+                  <li class="profile__item">
+                    <label class="profile__label" for="fattening">
+                      <input class="profile__radio-input visually-hidden" id="fattening" value="fattening" type="radio" name="program">
+                      <span class="profile__control-mark"></span>
+                      <span class="profile__lead">Набор массы</span>
+                    </label>
+                  </li>
+                  <li class="profile__item">
+                    <label class="profile__label" for="undefined">
+                      <input class="profile__radio-input visually-hidden" id="undefined" value="undefined" type="radio" name="program">
+                      <span class="profile__control-mark"></span>
+                      <span class="profile__lead">Не знаю (нужен ваш совет)</span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
           </div>
-        </fieldset>
-        <fieldset class="profile__target">
-          <div class="container">
-            <div class = "profile__inner">
-              <legend class="visually-hidden">Укажите цель программы</legend>
-              <ul class="profile__list profile__list--border">
-                <li class="profile__item">
-                  <label class="profile__label" for="slimming">
-                    <input class="profile__radio-input visually-hidden" id="slimming" value="slimming" type="radio" name="program" checked="checked">
-                    <span class="profile__control-mark"></span>
-                    <span class="profile__lead">Похудение</span>
-                  </label>
-                </li>
-                <li class="profile__item">
-                  <label class="profile__label" for="fattening">
-                    <input class="profile__radio-input visually-hidden" id="fattening" value="fattening" type="radio" name="program">
-                    <span class="profile__control-mark"></span>
-                    <span class="profile__lead">Набор массы</span>
-                  </label>
-                </li>
-                <li class="profile__item">
-                  <label class="profile__label" for="undefined">
-                    <input class="profile__radio-input visually-hidden" id="undefined" value="undefined" type="radio" name="program">
-                    <span class="profile__control-mark"></span>
-                    <span class="profile__lead">Не знаю (нужен ваш совет)</span>
-                  </label>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </fieldset>
+        </div>
         <fieldset class="profile__сontaсt">
           <div class="container">
             <div class="profile__inner">
               <legend class="visually-hidden">Укажите контактные данные владельца кота</legend>
               <p class="profile__title">Контактные&nbsp;данные (владельца&nbsp;кота)</p>
-              <ul class="profile__list">
+              <ul class="profile__list-contact">
                 <li class="profile__item">
                   <label class="profile__label">
                     <span class="profile__lead">E-mail:<sup aria-hidden="true">*</sup></span>

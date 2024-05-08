@@ -6,7 +6,6 @@
   font-size: 36px;
   color: #000000;
   margin: 35px 0 35px;
-  //outline: blue 1px solid;
 }
 
 .form-header__subtitle {
@@ -23,6 +22,22 @@
 // Tablet Viewport
 @media (min-width: 768px) {
   .form-header__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .form-header__subtitle {
+    font-size: 20px;
+    line-height: 30px;
+    width: 323px;
+    margin: 0 0 55px;
+  }
+}
+
+// Tablet Viewport
+@media (min-width: 1280px) {
+  .form-header__title {
+    padding-top: 120px;
     font-size: 60px;
     line-height: 60px;
   }
