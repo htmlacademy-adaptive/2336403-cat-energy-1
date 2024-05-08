@@ -38,16 +38,18 @@
     <main class="page-main">
       <section class="form-header">
         <div class="container">
-          <h1 class="form-header__title">Подбор программы</h1>
-          <p class="form-header__subtitle">
-            Заполните анкету, и мы подберем программу питания для вашего кота
-          </p>
+          <div class="profile__inner">
+            <h1 class="form-header__title">Подбор программы</h1>
+            <p class="form-header__subtitle">
+              Заполните анкету, и мы подберем программу питания для вашего кота
+            </p>
+          </div>
         </div>
       </section>
       <form class="profile" action="https://echo.htmlacademy.ru" method="post" name="questionnaire">
-        <!-- <div class="container"> -->
-          <fieldset class="profile__info">
-            <div class="container">
+        <fieldset class="profile__info">
+          <div class="container">
+            <div class="profile__inner">
               <legend class="visually-hidden">Укажите данные питомца</legend>
               <div class="profile__info-block">
                 <label class="profile__label">
@@ -64,11 +66,13 @@
                 </label>
               </div>
             </div>
-          </fieldset>
-          <fieldset class="profile__target">
-            <div class="container">
+          </div>
+        </fieldset>
+        <fieldset class="profile__target">
+          <div class="container">
+            <div class = "profile__inner">
               <legend class="visually-hidden">Укажите цель программы</legend>
-              <ul class="profile__list">
+              <ul class="profile__list profile__list--border">
                 <li class="profile__item">
                   <label class="profile__label" for="slimming">
                     <input class="profile__radio-input visually-hidden" id="slimming" value="slimming" type="radio" name="program" checked="checked">
@@ -92,9 +96,11 @@
                 </li>
               </ul>
             </div>
-          </fieldset>
-          <fieldset class="profile__сontaсt">
-            <div class="container">
+          </div>
+        </fieldset>
+        <fieldset class="profile__сontaсt">
+          <div class="container">
+            <div class="profile__inner">
               <legend class="visually-hidden">Укажите контактные данные владельца кота</legend>
               <p class="profile__title">Контактные&nbsp;данные (владельца&nbsp;кота)</p>
               <ul class="profile__list">
@@ -114,19 +120,23 @@
                 </li>
               </ul>
             </div>
-          </fieldset>
-          <fieldset class="profile__comment">
-            <div class="container">
+          </div>
+        </fieldset>
+        <fieldset class="profile__comment">
+          <div class="container">
+            <div class="profile__inner">
               <legend class="visually-hidden">Комментарий</legend>
               <p class="profile__title">Комментарий</p>
-                <textarea class="profile__message" id="client-message" name="client-message" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <textarea class="profile__message" id="client-message" name="client-message" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
-          </fieldset>
-          <fieldset class="profile__extra">
-            <div class="container">
+          </div>
+        </fieldset>
+        <fieldset class="profile__extra">
+          <div class="container">
+            <div class="profile__inner">
               <legend class="visually-hidden">Дополнительно</legend>
               <p class="profile__title">Дополнительно</p>
-              <ul class="profile__list">
+              <ul class="profile__list-extra">
                 <li class="profile__item">
                   <label class="profile__label" for="sweetener">
                     <input class="profile__checkbox-input visually-hidden" id="sweetener" value="sweetener" type="checkbox" name="extra" checked="checked">
@@ -157,14 +167,17 @@
                 </li>
               </ul>
             </div>
-          </fieldset>
-          <fieldset class="profile__submit">
-            <div class="container">
+          </div>
+        </fieldset>
+        <fieldset class="profile__submit">
+          <div class="container">
+            <div class="profile__submit-inner">
               <button class="button profile__button" type="submit">Отправить заявку</button>
               <p class="profile__note" aria-hidden="true"><sup>*</sup> - Обязательные поля</p>
             </div>
-          </fieldset>
-        <!-- </div> -->
+          </div>
+        </fieldset>
+
       </form>
       <section class="contacts contacts--dark">
         <div class="container">
@@ -172,7 +185,8 @@
             <h2 class="visually-hidden">Как нас найти</h2>
             <p class="contacts__invitation">Приглашаем к сотрудничеству дилеров!</p>
             <p class="contacts__address">
-              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+              ул. Большая Конюшенная, д. 19/8
+              <span class="contacts__address-sity">Санкт-Петербург</span>
             </p>
           </div>
         </div>

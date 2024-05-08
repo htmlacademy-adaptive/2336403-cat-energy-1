@@ -27,29 +27,13 @@
     height: 2px;
     width: 100vw;
     left: 25px;
-    transform: translateY(40px);
-  }
-}
-
-.profile__extra {
-  border: none;
-  padding: 0;
-
-  &::before {
-    position: absolute;
-    content: "";
-    background-color: variables.$basic-dark;
-    height: 2px;
-    width: 100vw;
-    left: 25px;
-    transform: translateY(40px);
+    transform: translateY(45px);
   }
 }
 
 .profile__comment {
   border: none;
   padding: 0;
-  //border-bottom: #e7e7e7 1px solid;
 
   &::before {
     position: absolute;
@@ -73,6 +57,21 @@
   font-size: 16px;
   text-transform: uppercase;
   color: variables.$gray-darken;
+}
+
+.profile__extra {
+  border: none;
+  padding: 0;
+
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: variables.$basic-dark;
+    height: 2px;
+    width: 100vw;
+    left: 25px;
+    transform: translateY(40px);
+  }
 }
 
 .profile__submit {
@@ -144,6 +143,14 @@
   margin: 0;
 }
 
+.profile__list-extra {
+  display: grid;
+  gap: 13px;
+  list-style: none;
+  padding: 0 0 25px;
+  margin: 0;
+}
+
 .profile__control-mark {
   position: relative;
   width: 30px;
@@ -201,4 +208,70 @@
   height: 26px;
   background-color: variables.$basic-dark;
   mask-image: url("../../img/form/checkbox-tick.svg");
+}
+
+// Tablet Viewport
+@media (min-width: 768px) {
+  .profile__inner {
+    padding: 0 40px;
+  }
+
+  .profile__info {
+    border: none;
+  }
+
+  .profile__target {
+    border: none;
+  }
+
+  .profile__list--border {
+    border: #e7e7e7 1px solid;
+    padding: 23px 27px;
+  }
+
+  .profile__сontaсt {
+    border: none;
+    padding: 0;
+
+    &::before {
+      left: 0;
+      transform: translateY(40px);
+    }
+  }
+
+  .profile__title {
+    padding-left: 40px;
+    margin-left: -40px;
+    width: max-content;
+  }
+
+  .profile__comment {
+    border: none;
+    padding: 0;
+
+    &::before {
+      left: 0;
+      transform: translateY(40px);
+    }
+  }
+
+  .profile__extra {
+    border: none;
+    padding: 0;
+
+    &::before {
+      left: 0;
+      transform: translateY(40px);
+    }
+  }
+
+  .profile__list-extra {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .profile__submit-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 15px 40px 35px 40px;
+  }
 }

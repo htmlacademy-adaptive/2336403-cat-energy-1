@@ -42,39 +42,39 @@
 }
 
 @media (min-width: 768px) {
-  .contacts {
-    &__address-sity {
-      display: block;
-      margin-top: 10px;
-    }
+  .contacts__header {
+    padding: 25px 40px;
+  }
+
+  .contacts__address-sity {
+    display: block;
+    margin-top: 20px;
   }
 }
 
 @media (min-width: 1280px) {
-  .contacts {
-    &__map {
-      position: relative;
-    }
+  .contacts__map {
+    position: relative;
+  }
 
-    &__header {
-      position: absolute;
-      top: 50px;
-      left: 50px;
-      width: 565px;
-      height: 200px;
-      background-color: #ffffff;
-      z-index: 20;
-      align-items: center;
-      padding: 60px 80px;
-    }
+  .contacts__header {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 565px;
+    height: 200px;
+    background-color: #ffffff;
+    z-index: 20;
+    align-items: center;
+    padding: 60px 80px;
+  }
 
-    &__invitation {
-      font-size: 20px;
-    }
+  .contacts__invitation {
+    font-size: 20px;
+  }
 
-    &__address-sity {
-      display: block;
-      margin-top: 20px;
-    }
+  .contacts__address-sity {
+    display: block;
+    margin-top: 25px;
   }
 }
