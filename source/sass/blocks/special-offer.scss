@@ -6,6 +6,7 @@
   position: relative;
   background-color: #7fc256;
   background-image: url("../../img/Gift.jpg");
+  background-size: cover;
   width: 100%;
   height: 290px;
   background-repeat: no-repeat;
@@ -39,7 +40,6 @@
     justify-content: center;
     align-items: center;
     background-image: url("../../img/catalog/cat-gift-tablet.jpg");
-    background-size: 100% 100%;
   }
 
   .special-offer__img {

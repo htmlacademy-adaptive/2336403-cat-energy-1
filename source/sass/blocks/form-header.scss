@@ -34,15 +34,17 @@
   }
 }
 
-// Tablet Viewport
+// Desktop Viewport
 @media (min-width: 1280px) {
   .form-header__title {
-    padding-top: 120px;
+    margin: 0;
+    padding-top: 160px;
     font-size: 60px;
     line-height: 60px;
   }
 
   .form-header__subtitle {
+    padding-top: 60px;
     font-size: 20px;
     line-height: 30px;
     width: 323px;

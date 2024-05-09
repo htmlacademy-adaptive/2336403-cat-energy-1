@@ -4,6 +4,10 @@
   position: relative;
 }
 
+.profile__inner {
+  position: relative;
+}
+
 .profile__info {
   position: relative;
   border: none;
@@ -21,6 +25,7 @@
 }
 
 .profile__target {
+  position: relative;
   border: none;
   padding: 25px 0 0;
 
@@ -132,6 +137,22 @@
   text-transform: uppercase;
   color: variables.$gray-darken;
   padding-right: 40px;
+
+  &:hover {
+    outline: 1px solid #cdcdcd;
+  }
+
+  &:focus {
+    outline: 2px solid #000000;
+  }
+
+  &:focus + .profile__icon-email {
+    background-color: variables.$basic-light;
+  }
+
+  &:focus + .profile__icon-phone {
+    background-color: variables.$basic-light;
+  }
 }
 
 .profile__icon-email {
@@ -185,6 +206,10 @@
   background-color: #ffffff;
   border-radius: 50%;
   border: 1px solid #cdcdcd;
+
+  &:hover {
+    border: 1px solid #bababa;
+  }
 }
 
 .profile__radio-input:checked + .profile__control-mark::after {
@@ -223,6 +248,10 @@
   height: 40px;
   background-color: #ffffff;
   border: 1px solid #cdcdcd;
+
+  &:hover {
+    border: 1px solid #bababa;
+  }
 }
 
 .profile__checkbox-input:checked + .profile__checkbox-modified::after {
