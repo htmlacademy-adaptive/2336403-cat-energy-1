@@ -105,24 +105,10 @@
 
 @media (min-width: 1280px) {
   .promo {
-    &::after {
-      position: absolute;
-      content: "";
-      left: 50%;
-      display: block;
-      background-color: #64a73c;//variables.$basic-dark;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
-    }
-
-    &--special {
-      position: relative;
-      background-image: url("../../img/Promo-desktop-bg.jpg");
-      background-repeat: no-repeat;
-      background-position: right;
-    }
+    position: relative;
+    background-image: url("../../img/Promo-desktop-bg.jpg"), linear-gradient(270deg, #67a73c 50%, transparent 50%);
+    background-repeat: no-repeat;
+    background-position: left calc(50% + 34vw) bottom, center;
   }
 
   .promo__background-img {
