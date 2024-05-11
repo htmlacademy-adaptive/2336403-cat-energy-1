@@ -1,28 +1,99 @@
 @use "./base/variables.scss";
 
 .additional {
-  &__inner {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    padding: 20px 0;
+  &::before {
+    position: absolute;
+    content: "";
+    background-color: variables.$basic-dark;
+    height: 2px;
+    width: 100vw;
+    left: 25px;
+    transform: translateY(20px);
+  }
+}
+
+.additional__inner {
+  position: relative;
+}
+
+.additional__title {
+  display: inline-block;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #000000;
+  background-color: #ffffff;
+  margin: 0;
+  padding-right: 25px;
+}
+
+.additional__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.additional__item {
+  margin: 0;
+  padding: 15px 0 25px;
+}
+
+// Tablet Viewport
+@media (min-width: 768px) {
+  .additional {
+    &::before {
+      left: 0;
+      transform: translateY(52px);
+    }
   }
 
-  &__title {
-    font-family: "Oswald", "Arial", sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    color: #000000;
-    margin: 0;
+  .additional__item {
+    border-bottom: none;
   }
 
-  &__list {
+  .additional__title {
+    margin-top: 30px;
+    padding: 0 25px;
+    margin-bottom: 30px;
+  }
+
+  .additional__list {
     list-style: none;
-    padding: 0;
     margin: 0;
+    border-top: 1px solid #cdcdcd;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+  }
+}
+
+// Desctop Viewport
+@media (min-width: 1280px) {
+  .additional {
+    &::before {
+      transform: translateY(81px);
+    }
   }
 
-  &__item {
+  .additional__inner {
+    padding: 30px 0 45px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .additional__list {
+    list-style: none;
     margin: 0;
+    border: none;
+    border-top: 1px solid #cdcdcd;
+  }
+
+  .additional__wrap {
+    display: grid;
+    grid-template-columns: auto 245px;
+    gap: 81px;
+    margin: 0;
+    align-items: center;
   }
 }

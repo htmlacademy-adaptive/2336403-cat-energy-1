@@ -3,11 +3,10 @@
 .page {
   &__body {
     position: relative;
-    font-weight: 400;
-    font-size: 16px;
     color: #000000;
     background-color: #ffffff;
     min-height: 100vh;
+    min-width: 320px;
     margin: 0;
   }
 }

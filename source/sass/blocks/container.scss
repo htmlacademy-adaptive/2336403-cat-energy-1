@@ -3,7 +3,29 @@
 .container {
   position: relative;
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 100%;
+  padding: 0 20px;
+  max-width: 100%;
+  //outline: red 1px solid;
+}
+
+// Tablet Viewport
+@media (min-width: 768px) {
+  .container {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 30px;
+    max-width: 100%;
+    //outline: green 1px solid;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 45px;
+    width: 100%;
+    max-width: 1220px;
+    //outline: blue 1px solid;
+  }
 }

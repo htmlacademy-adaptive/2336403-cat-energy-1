@@ -1,18 +1,60 @@
 @use "./base/variables.scss";
 
 .catalog-select {
-  &__inner {
-    padding: 20px 0;
-  }
-
   &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     list-style: none;
     margin: 0;
     padding: 0;
   }
 
+  &__test {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+
   &__item {
+    display: block;
+    position: relative;
+    padding: 24px 20px;
     background-color: variables.$gray-lighten;
+
+    &::before {
+      content: "";
+      top: 15px;
+      left: 20px;
+      position: absolute;
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: variables.$basic-light;
+    }
+
+    &::after {
+      content: "";
+      top: 12px;
+      left: 27px;
+      position: absolute;
+      width: 36px;
+      height: 50px;
+      background-color: #000000;
+      mask-image: url("../../img/icon-cat-slim.svg");
+      mask-size: 36px 50px;
+      mask-repeat: no-repeat;
+    }
+
+    &--fat::after {
+      mask-image: url("../../img/icon-cat-fat.svg");
+      top: 30px;
+      left: 10px;
+      width: 67px;
+      height: 28px;
+      mask-size: 67px 28px;
+    }
   }
 
   &__title {
@@ -21,22 +63,158 @@
     font-size: 24px;
     color: #000000;
     text-transform: uppercase;
-    text-align: center;
+    text-align: left;
+    margin: 0;
+    margin-left: 68px;
   }
 
   &__subtitle {
-    font-family: "Oswald", "Arial", sans-serif;
+    font-family: "Lato", "Arial", sans-serif;
     font-weight: 400;
     font-size: 14px;
     color: #000000;
+    margin: 0;
+    padding: 22px 0;
+    border-bottom: 2px solid #d9d9d9;
   }
 
   &__link {
-    display: block;
+    position: relative;
+    display: inline-block;
     font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: #000000;
     text-transform: uppercase;
+    margin: 20px 0 0;
+    max-width: 150px;
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &:hover::after {
+      background: url("../img/icon-catalog-select-arrow-long.svg") no-repeat;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: calc(100% + 20px);
+      top: calc(100% - 20px);
+      width: 100%;
+      height: 100%;
+      background: url("../img/icon-catalog-select-arrow.svg") no-repeat;
+      transition: 0.3s;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .catalog-select {
+    &__title {
+      font-size: 36px;
+      margin-left: 0;
+      max-width: 340px;
+    }
+
+    &__subtitle {
+      font-size: 20px;
+      margin-left: 0;
+      max-width: calc(100% - 300px);
+      border-bottom: none;
+    }
+
+    &__item {
+      min-height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &::before {
+        top: 50px;
+        left: auto;
+        right: 63px;
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+      }
+
+      &::after {
+        top: 50px;
+        left: auto;
+        right: 83px;
+        width: 140px;
+        height: 194px;
+        background-color: #000000;
+        mask-size: 140px 194px;
+      }
+
+      &--fat::after {
+        top: 100px;
+        left: auto;
+        right: 30px;
+        width: 268px;
+        height: 112px;
+        mask-size: 268px 112px;
+      }
+    }
+
+    &__link {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .catalog-select {
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding-top: 82px;
+    }
+
+    &__item {
+      padding: 50px;
+
+      &::before {
+        top: 25px;
+        left: 55px;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+      }
+
+      &::after {
+        top: 20px;
+        left: 70px;
+        width: 70px;
+        height: 97px;
+        mask-size: 70px 97px;
+      }
+
+      &--fat::after {
+        top: 47px;
+        left: 35px;
+        width: 134px;
+        height: 56px;
+        mask-size: 134px 56px;
+      }
+    }
+
+    &__title {
+      max-width: none;
+      text-align: center;
+      font-size: 36px;
+    }
+
+    &__subtitle {
+      max-width: none;
+      text-align: left;
+      font-size: 16px;
+      padding-top: 50px;
+      line-height: 24px;
+    }
   }
 }

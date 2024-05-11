@@ -1,0 +1,53 @@
+@use "./base/variables.scss";
+
+.form-header__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: #000000;
+  margin: 35px 0 35px;
+}
+
+.form-header__subtitle {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0 0 35px;
+  width: 226px;
+}
+
+// Tablet Viewport
+@media (min-width: 768px) {
+  .form-header__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .form-header__subtitle {
+    font-size: 20px;
+    line-height: 30px;
+    width: 323px;
+    margin: 0 0 55px;
+  }
+}
+
+// Desktop Viewport
+@media (min-width: 1280px) {
+  .form-header__title {
+    margin: 0;
+    padding-top: 160px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .form-header__subtitle {
+    padding-top: 60px;
+    font-size: 20px;
+    line-height: 30px;
+    width: 323px;
+    margin: 0 0 55px;
+  }
+}

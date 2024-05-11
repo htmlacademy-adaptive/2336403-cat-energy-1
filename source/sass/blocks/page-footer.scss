@@ -5,12 +5,23 @@
 
   &__inner {
     padding: 20px 0;
+    display: grid;
   }
 
   &__logo-link {
     display: block;
     text-align: center;
-    margin-bottom: 40px;
+    font-size: 0;
+    border-bottom: 2px solid variables.$gray;
+    padding: 20px 0;
+
+    &:hover path {
+      fill: variables.$gray-dark;
+    }
+
+    &:active path {
+      opacity: 0.3;
+    }
   }
 
   &__social-list {
@@ -20,15 +31,80 @@
     justify-content: center;
     align-items: center;
     list-style: none;
-    padding: 0;
+    padding: 20px 0;
+    border-bottom: 2px solid variables.$gray;
+    margin: 0;
+    font-size: 0;
   }
+
+  &__social-item {
+    &:hover path {
+      fill: variables.$basic-light;
+    }
+
+    :active path {
+      fill: variables.$basic-light;
+      opacity: 0.3;
+    }
+  }
+
 
   &__copyright-link {
     display: flex;
     justify-content: space-between;
-    font-family: "Oswald", "Arial", sans-serif;
+    align-items: center;
+    font-family: "Lato", "Arial", sans-serif;
     font-weight: 400;
     font-size: 16px;
     color: variables.$gray-darken;
+    padding: 20px 0;
+    transition: opasity 0.2s;
+    width: 168px;
+    justify-self: center;
+
+    &:hover {
+      color: #3e3e3e;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &:hover path {
+      fill: variables.$basic-light;
+    }
+
+    &:active path {
+      fill: variables.$basic-light;
+      opacity: 0.3;
+    }
+  }
+
+  &__copyright-text {
+    margin: 0;
+  }
+}
+
+// Tablet Viewport
+@media (min-width: 768px) {
+  .page-footer {
+    &__inner {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    &__social-list {
+      border: none;
+      justify-self: center;
+    }
+
+    &__logo-link {
+      border: none;
+      justify-self: start;
+      align-self: center;
+    }
+
+    &__copyright-link {
+      justify-self: end;
+    }
   }
 }

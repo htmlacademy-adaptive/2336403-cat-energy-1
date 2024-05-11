@@ -1,0 +1,88 @@
+@use "./base/variables.scss";
+
+.products-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 0 25px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    width: 100vw;
+    height: 1px;
+    background-color: #ebebeb;
+    top: 100%;
+  }
+}
+
+.products-more__button-plus {
+  display: block;
+  font-size: 0;
+  border: none;
+  background-color: transparent;
+  background-image: url("../../img/catalog/icon-button-plus-mobile.svg");
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  margin-bottom: 23px;
+}
+
+.products-more__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #111111;
+  margin: 0 0 8px;
+  text-align: center;
+}
+
+.products-more__subtitle {
+  font-size: 12px;
+  font-family: "Lato", "Arial", sans-serif;
+  color: #111111;
+  margin: 0 0 21px;
+}
+
+.products-more__button {
+  background-color: #f2f2f2;
+  color: #444444;
+  min-height: 40px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+// Taablet Viewport
+@media (min-width: 768px) {
+  .products-more {
+    padding: 52px 37px 37px;
+    outline: 2px solid #f2f2f2;
+    margin-top: 81px;
+    justify-content: space-between;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .products-more__button-plus {
+    background-image: url("../../img/catalog/icon-button-plus-tablet.svg");
+    width: 60px;
+    height: 60px;
+  }
+
+  .products-more__title {
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .products-more__subtitle {
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+  }
+}

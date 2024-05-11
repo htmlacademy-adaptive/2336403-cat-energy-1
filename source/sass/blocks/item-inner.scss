@@ -1,30 +1,103 @@
 @use "./base/variables.scss";
 
 .item-inner {
-  &__title {
-    font-family: "Oswald", "Arial", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    text-transform: uppercase;
-    color: variables.$gray-darkest;
-    margin-top: 13px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.item-inner__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: variables.$gray-darkest;
+  margin: 0;
+  grid-column: 1 / -1;
+}
+
+
+.item-inner__quantity {
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 20px 0;
+  color: variables.$gray-darkest;
+  grid-column: 1 / 3;
+}
+
+.item-inner__price {
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 20px 0;
+  color: variables.$gray-darkest;
+  grid-column: 3 / -1;
+  text-align: end;
+}
+
+.item-inner__button {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: variables.$basic-light;
+  text-transform: uppercase;
+  display: block;
+  grid-column: 1 / -1;
+}
+
+// Tablet Viewport
+@media (min-width: 768px) {
+  .item-inner {
+    grid-template-columns: (30% 30% 25% 15%);
+    padding: 25px 25px;
+    border-bottom: 1px solid #cdcdcd;
   }
 
-  &__text {
-    font-family: "Lato", "Arial", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: variables.$gray-darkest;
+  .item-inner__title {
+    grid-column: 1 / 3;
+    margin: 0 0 25px;
   }
 
-  &__button {
-    font-family: "Oswald", "Arial", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: #ffffff;
-    background-color: variables.$basic-light;
-    text-transform: uppercase;
-    display: block;
+  .item-inner__quantity {
+    grid-column: 3 / 4;
+    text-align: end;
+    margin: 0;
+  }
+
+  .item-inner__price {
+    grid-column: 4 / 5;
+    margin: 0;
+  }
+}
+
+// Desktop Viewport
+@media (min-width: 1280px) {
+  .item-inner {
+    grid-template-columns: (30% 25% 15% auto);
+    border-bottom: 1px solid #cdcdcd;
+    padding: 14px 0;
+    align-items: center;
+  }
+
+  .item-inner__title {
+    grid-column: 1 / 2;
+    margin: 0;
+  }
+
+  .item-inner__quantity {
+    grid-column: 2 / 3;
+    text-align: center;
+    margin: 0;
+  }
+
+  .item-inner__price {
+    grid-column: 3 / 4;
+    text-align: center;
+    margin: 0;
+  }
+
+  .item-inner__button {
+    grid-column: 4 / 5;
   }
 }

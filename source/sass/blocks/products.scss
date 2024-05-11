@@ -1,24 +1,75 @@
 @use "./base/variables.scss";
 
-.products {
-  &__inner {
-    padding: 20px 0;
+.products__inner {
+  padding: 20px 0 0;
+}
+
+.products__list {
+  list-style: none;
+  padding: 0;
+}
+
+.products__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  color: #000000;
+  margin: 0;
+  padding-bottom: 25px;
+}
+
+.products__item {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    width: 100vw;
+    height: 1px;
+    background-color: #ebebeb;
+    top: 0;
+  }
+}
+
+.products__button {
+  grid-column: 1/-1;
+}
+
+
+// Tablet Viewport
+@media (min-width: 768px) {
+  .products__title {
+    font-size: 60px;
+    margin-bottom: 40px;
   }
 
-  &__list {
-    list-style: none;
-    padding: 0;
+  .products__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
+    gap: 60px;
   }
 
-  &__title {
-    font-family: "Oswald", "Arial", sans-serif;
-    font-weight: 400;
-    font-size: 36px;
-    color: #000000;
-    margin: 0;
+  .products__item {
+    &::after {
+      display: none;
+    }
   }
 
-  &__item {
-    margin-bottom: 25px;
+  .products__button {
+    margin-top: 15px;
+  }
+}
+
+// Desctop Viewport
+@media (min-width: 1280px) {
+  .products__inner {
+    padding-top: 188px;
+  }
+
+  .products__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
   }
 }
