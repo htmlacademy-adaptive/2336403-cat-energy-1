@@ -18,7 +18,7 @@
     content: "";
     background-color: #e7e7e7;
     height: 1px;
-    width: 100vw;
+    right: 0;
     left: -20px;
     transform: translateY(25px);
   }
@@ -34,7 +34,7 @@
     content: "";
     background-color: #e7e7e7;
     height: 1px;
-    width: 100vw;
+    right: 0;
     left: -20px;
     transform: translateY(5px);
   }
@@ -49,7 +49,7 @@
     content: "";
     background-color: variables.$basic-dark;
     height: 2px;
-    width: 100vw;
+    right: 0;
     left: 25px;
     transform: translateY(50px);
   }
@@ -64,7 +64,7 @@
     content: "";
     background-color: variables.$basic-dark;
     height: 2px;
-    width: 100vw;
+    right: 0;
     left: 25px;
     transform: translateY(50px);
   }
@@ -92,7 +92,7 @@
     content: "";
     background-color: variables.$basic-dark;
     height: 2px;
-    width: 100vw;
+    right: 0;
     left: 25px;
     transform: translateY(50px);
   }

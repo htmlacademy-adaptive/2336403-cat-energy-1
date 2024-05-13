@@ -106,11 +106,9 @@
 @media (min-width: 1280px) {
   .promo {
     position: relative;
-    background-image: url("../../img/Promo-desktop-bg.jpg"), linear-gradient(270deg, #62a53a 50%, transparent 50%);
+    background-image: url("../../img/Promo-desktop-bg.jpg"), linear-gradient(270deg, #63a73c 50%, transparent 50%);
     background-repeat: no-repeat;
-    background-position: left 50vw bottom, center;
-
-    //calc(50% + 520px)
+    background-position: left calc(50% + 760px) bottom, center;
   }
 
   .promo__background-img {
