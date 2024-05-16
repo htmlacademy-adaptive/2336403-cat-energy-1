@@ -84,10 +84,20 @@
   }
 
   .additional__list {
+    position: relative;
     list-style: none;
     margin: 0;
     border: none;
-    //border-top: 1px solid #cdcdcd;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 1px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #cdcdcd;
+    }
   }
 
   .additional__wrap {
