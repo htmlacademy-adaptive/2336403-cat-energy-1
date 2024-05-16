@@ -37,3 +37,39 @@
   text-transform: uppercase;
   border-bottom: 1px solid #e6e6e6;
 }
+
+// Tablet Viewport
+@media (min-width: 768px) {
+  .navigation {
+    display: block;
+    position: inherit;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .navigation__list {
+    display: flex;
+  }
+
+  .navigation__link {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Oswald", "Arial", sans-serif;
+    border: none;
+    margin: 0;
+    padding: 10px 19px;
+
+    &--active::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 20px;
+      right: 0;
+      height: 2px;
+      background: #68b738;
+      width: calc(100% - 40px);
+    }
+  }
+}
