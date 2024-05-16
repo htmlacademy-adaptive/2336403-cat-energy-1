@@ -111,6 +111,10 @@
 
 // Tablet Viewport
 @media (min-width: 768px) {
+  .page-header__wrapper--closed .navigation {
+    display: block;
+  }
+
   .page-header {
     border-bottom: none;
   }
