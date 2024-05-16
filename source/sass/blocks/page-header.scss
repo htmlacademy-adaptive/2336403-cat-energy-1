@@ -90,6 +90,22 @@
   &:active {
     opacity: 0.6;
   }
+
+  &--special {
+    cursor: default;
+
+    &:active {
+      opacity: inherit;
+    }
+
+    &:hover {
+      opacity: inherit;
+    }
+  }
+}
+
+.page-header__wrapper--nojs .page-header__toggle {
+  display: none;
 }
 
 
@@ -99,7 +115,35 @@
     border-bottom: none;
   }
 
+  .page-header__wrapper {
+    padding: 25px 0 0;
+  }
+
   .page-header__toggle {
     display: none;
+  }
+}
+
+@media (min-width: 1280px) {
+  .page-header__wrapper {
+    padding: 55px 0 0;
+  }
+
+  .page-header--special {
+    &::before {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 50%;
+      min-height: 694px;
+      top: 0;
+      right: 0;
+      left: inherit;
+      background-image: url("../../img/Promo-desktop-bg.jpg");
+      background-color: #63a73a;
+      background-position: 0%;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 }

@@ -2,7 +2,6 @@
 
 .navigation {
   position: absolute;
-  //width: 100vw;
   left: 0;
   right: 0;
   top: 70px;
@@ -36,6 +35,34 @@
   padding: 25px 0;
   text-transform: uppercase;
   border-bottom: 1px solid #e6e6e6;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--active {
+    cursor: default;
+
+    &:hover {
+      opacity: inherit;
+    }
+
+    &:active {
+      opacity: inherit;
+    }
+  }
+}
+
+.page-header__wrapper--nojs .navigation {
+  position: inherit;
+  width: 100vh;
+  display: block;
+  margin-left: -20px;
+  margin-right: -20px;
 }
 
 // Tablet Viewport
@@ -47,6 +74,13 @@
     &::before {
       display: none;
     }
+  }
+
+  .page-header__wrapper--nojs .navigation {
+    position: inherit;
+    width: inherit;
+    display: inherit;
+    margin: inherit;
   }
 
   .navigation__list {
@@ -68,8 +102,25 @@
       left: 20px;
       right: 0;
       height: 2px;
-      background: #68b738;
+      background-color: #68b738;
       width: calc(100% - 40px);
+    }
+  }
+}
+
+
+@media (min-width: 1280px) {
+  .navigation {
+    background-color: transparent;
+  }
+
+  .page-header--special .navigation__link {
+    color: #ffffff;
+  }
+
+  .page-header--special .navigation__link--active {
+    &::before {
+      background-color: #ffffff;
     }
   }
 }
