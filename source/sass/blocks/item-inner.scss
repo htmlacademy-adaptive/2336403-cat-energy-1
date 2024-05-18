@@ -3,6 +3,7 @@
 .item-inner {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid #cdcdcd;
 }
 
 .item-inner__title {
@@ -51,7 +52,7 @@
   .item-inner {
     grid-template-columns: (30% 30% 25% 15%);
     padding: 25px 25px;
-    border-bottom: 1px solid #cdcdcd;
+    //border-bottom: 1px solid #cdcdcd;
   }
 
   .item-inner__title {
@@ -75,7 +76,7 @@
 @media (min-width: 1280px) {
   .item-inner {
     grid-template-columns: (30% 25% 15% auto);
-    border-bottom: 1px solid #cdcdcd;
+    //border-bottom: 1px solid #cdcdcd;
     padding: 14px 0;
     align-items: center;
   }

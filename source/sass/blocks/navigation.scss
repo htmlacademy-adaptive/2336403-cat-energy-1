@@ -1,0 +1,126 @@
+@use "./base/variables.scss";
+
+.navigation {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 70px;
+  z-index: 5;
+  background-color: #ffffff;
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    background-color: #e6e6e6;
+    left: 0;
+    right: 0;
+  }
+}
+
+.navigation__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navigation__link {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #111111;
+  position: relative;
+  display: block;
+  padding: 25px 0;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e6e6e6;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--active {
+    cursor: default;
+
+    &:hover {
+      opacity: inherit;
+    }
+
+    &:active {
+      opacity: inherit;
+    }
+  }
+}
+
+.page-header__wrapper--nojs .navigation {
+  position: inherit;
+  width: 100vh;
+  display: block;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+// Tablet Viewport
+@media (min-width: 768px) {
+  .navigation {
+    display: block;
+    position: inherit;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .page-header__wrapper--nojs .navigation {
+    position: inherit;
+    width: inherit;
+    display: inherit;
+    margin: inherit;
+  }
+
+  .navigation__list {
+    display: flex;
+  }
+
+  .navigation__link {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Oswald", "Arial", sans-serif;
+    border: none;
+    margin: 0;
+    padding: 10px 19px;
+
+    &--active::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 20px;
+      right: 0;
+      height: 2px;
+      background-color: #68b738;
+      width: calc(100% - 40px);
+    }
+  }
+}
+
+
+@media (min-width: 1280px) {
+  .navigation {
+    background-color: transparent;
+  }
+
+  .page-header--special .navigation__link {
+    color: #ffffff;
+  }
+
+  .page-header--special .navigation__link--active {
+    &::before {
+      background-color: #ffffff;
+    }
+  }
+}

@@ -5,6 +5,7 @@
   background-image: url("../../img/promo-mobile.jpg");
   background-repeat: no-repeat;
   background-position: top;
+  //border-top: 1px solid #e6e6e6;
 
   &::after {
     position: absolute;
@@ -61,12 +62,11 @@
   .promo {
     position: relative;
     background: none;
-    min-height: 694px;
+    min-height: 600px;
 
     &::after {
       display: none;
     }
-
 
     &__title {
       max-width: 520px;
@@ -106,21 +106,18 @@
 @media (min-width: 1280px) {
   .promo {
     position: relative;
-    background-image: url("../../img/Promo-desktop-bg.jpg"), linear-gradient(270deg, #67a73c 50%, transparent 50%);
-    background-repeat: no-repeat;
-    background-position: left calc(50% + 34vw) bottom, center;
   }
 
   .promo__background-img {
     position: absolute;
     display: block;
     margin: 0 auto;
-    transform: translateX(80%);
-    top: 30%;
+    transform: translateX(75%);
+    top: 10%;
   }
 
   .promo__title {
-    padding-top: 224px;
+    padding-top: 100px;
     margin-bottom: 40px;
   }
 
