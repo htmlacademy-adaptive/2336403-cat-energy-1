@@ -34,7 +34,7 @@
   grid-column: 1 / -1;
 }
 
-// Taablet Viewport
+// Tablet Viewport
 @media (min-width: 768px) {
   .product-card {
     display: flex;
@@ -53,8 +53,8 @@
   }
 
   .product-card__image {
-    width: 200px;
-    height: 210px;
+    width: 168px;
+    height: 200px;
   }
 
   .product-card__inner {
@@ -67,7 +67,7 @@
 // Desctop Viewport
 @media (min-width: 1220px) {
   .product-card__image {
-    width: 169px;
-    height: 210px;
+    width: 172px;
+    height: 196px;
   }
 }

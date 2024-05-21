@@ -87,6 +87,13 @@
     text-align: left;
   }
 
+  .promo__background-img {
+    //display: block;
+    //margin: 0 auto;
+    width: 709px;
+    height: 609px;
+  }
+
   .promo__button {
     position: absolute;
     z-index: 1;
@@ -114,6 +121,8 @@
     margin: 0 auto;
     transform: translateX(75%);
     top: 10%;
+    width: 552px;
+    height: 499px;
   }
 
   .promo__title {
