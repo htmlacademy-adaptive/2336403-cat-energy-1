@@ -5,29 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="./css/style.css">
-
-    <link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="./img/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="./apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="./img/favicons//apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="./apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="./apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="./apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="./apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="./img/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="./img/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicons/favicon-16x16.png">
-    <link rel="manifest" href="./img/favicons/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="./img/favicons/ms-icon-144x144.png">
+    <!-- favicons links -->
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicons/site.webmanifest">
+    <!-- <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#5bbad5"> -->
+    <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
   </head>
   <body class="page__body">
     <header class="page-header">
       <div class="container">
-        <div class="page-header__wrapper page-header__wrapper--opened page-header__wrapper--nojs">
+        <div class="page-header__wrapper page-header__wrapper--closed page-header__wrapper--nojs">
           <a class="page-header__logo" href="index.html">
             <picture>
               <source media="(min-width: 1280px)" srcset="img/logo-desktop.svg">
@@ -63,9 +53,31 @@
               <li class="products__item product-card">
                 <a class="product-card__link-image" href="index.html">
                   <picture>
-                    <source media="(min-width:1280px)" srcset="img/catalog/chicken_small-desktop.png">
-                    <source media="(min-width:768px)" srcset="img/catalog/chicken_small-tablet.png">
-                    <img class="product-card__image" src="img/catalog/chicken_small-mobile.png" width="140" height="112" alt="Cat Energy PRO 500 грамм со вкусом курицы">
+                    <source
+                      type="image/webp"
+                      media="(min-width: 1220px)"
+                      srcset="img/catalog/chicken_small-desktop.webp, img/catalog/chicken_small-desktop@2x.webp 2x"
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="img/catalog/chicken_small-tablet.webp, img/catalog/chicken_small-tablet@2x.webp 2x"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="img/catalog/chicken_small-mobile.webp, img/catalog/chicken_small-mobile@2x.webp 2x"
+                    />
+                    <source
+                      media="(min-width:1220px)"
+                      srcset="img/catalog/chicken_small-desktop.png, img/catalog/chicken_small-desktop@2x.png 2x"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="img/catalog/chicken_small-tablet.png, img/catalog/chicken_small-tablet@2x.png 2x"
+                    />
+                    <img
+                      class="product-card__image" src="img/catalog/chicken_small-mobile.png" srcset="img/catalog/chicken_small-mobile@2x.png 2x" width="140" height="112" alt="Маленькая упаковка корма со вкусом курицы"
+                    />
                   </picture>
                 </a>
                 <div class="product-card__inner">
@@ -84,9 +96,31 @@
               <li class="products__item product-card">
                 <a class="product-card__link-image" href="#">
                   <picture>
-                    <source media="(min-width:1220px)" srcset="img/catalog/chicken_big-desktop.png">
-                    <source media="(min-width:768px)" srcset="img/catalog/chicken_big-tablet.png">
-                    <img class="product-card__image" src="img/catalog/chicken_big-mobile.png" width="140" height="107" alt="Cat Energy PRO 500 грамм со вкусом курицы">
+                    <source
+                      type="image/webp"
+                      media="(min-width: 1220px)"
+                      srcset="img/catalog/chicken_big-desktop.webp, img/catalog/chicken_big-desktop@2x.webp 2x"
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="img/catalog/chicken_big-tablet.webp, img/catalog/chicken_big-tablet@2x.webp 2x"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="img/catalog/chicken_big-mobile.webp, img/catalog/chicken_big-mobile@2x.webp 2x"
+                    />
+                    <source
+                      media="(min-width:1220px)"
+                      srcset="img/catalog/chicken_big-desktop.png, img/catalog/chicken_big-desktop@2x.png 2x"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="img/catalog/chicken_big-tablet.png, img/catalog/chicken_big-tablet@2x.png 2x"
+                    />
+                    <img
+                      class="product-card__image" src="img/catalog/chicken_big-mobile.png" srcset="img/catalog/chicken_big-mobile@2x.png 2x" width="140" height="112" alt="Большая упаковка корма со вкусом курицы"
+                    />
                   </picture>
                 </a>
                 <div class="product-card__inner">
@@ -105,9 +139,31 @@
               <li class="products__item product-card">
                 <a class="product-card__link-image" href="#">
                   <picture>
-                    <source media="(min-width:1220px)" srcset="img/catalog/fish_small-desktop.png">
-                    <source media="(min-width:768px)" srcset="img/catalog/fish_small-tablet.png">
-                    <img class="product-card__image" src="img/catalog/fish_small-mobile.png" width="140" height="112" alt="Cat Energy PRO 500 грамм со вкусом курицы">
+                    <source
+                      type="image/webp"
+                      media="(min-width: 1220px)"
+                      srcset="img/catalog/fish_small-desktop.webp, img/catalog/fish_small-desktop@2x.webp 2x"
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="img/catalog/fish_small-tablet.webp, img/catalog/fish_small-tablet@2x.webp 2x"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="img/catalog/fish_small-mobile.webp, img/catalog/fish_small-mobile@2x.webp 2x"
+                    />
+                    <source
+                      media="(min-width:1220px)"
+                      srcset="img/catalog/fish_small-desktop.png, img/catalog/fish_small-desktop@2x.png 2x"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="img/catalog/fish_small-tablet.png, img/catalog/fish_small-tablet@2x.png 2x"
+                    />
+                    <img
+                      class="product-card__image" src="img/catalog/fish_small-mobile.png" srcset="img/catalog/fish_small-mobile@2x.png 2x" width="140" height="112" alt="Маленькая упаковка корма со вкусом рыбы"
+                    />
                   </picture>
                 </a>
                 <div class="product-card__inner">
@@ -126,9 +182,31 @@
               <li class="products__item product-card">
                 <a class="product-card__link-image" href="#">
                   <picture>
-                    <source media="(min-width:1220px)" srcset="img/catalog/fish_big-desktop.png">
-                    <source media="(min-width:768px)" srcset="img/catalog/fish_big-tablet.png">
-                    <img class="product-card__image" src="img/catalog/fish_big-mobile.png" width="140" height="112" alt="Cat Energy PRO 500 грамм со вкусом курицы">
+                    <source
+                      type="image/webp"
+                      media="(min-width: 1220px)"
+                      srcset="img/catalog/fish_big-desktop.webp, img/catalog/fish_big-desktop@2x.webp 2x"
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="img/catalog/fish_big-tablet.webp, img/catalog/fish_big-tablet@2x.webp 2x"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="img/catalog/fish_big-mobile.webp, img/catalog/fish_big-mobile@2x.webp 2x"
+                    />
+                    <source
+                      media="(min-width:1220px)"
+                      srcset="img/catalog/fish_big-desktop.png, img/catalog/fish_big-desktop@2x.png 2x"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="img/catalog/fish_big-tablet.png, img/catalog/fish_big-tablet@2x.png 2x"
+                    />
+                    <img
+                      class="product-card__image" src="img/catalog/fish_big-mobile.png" srcset="img/catalog/fish_big-mobile@2x.png 2x" width="140" height="112" alt="Большая упаковка корма со вкусом рыбы"
+                    />
                   </picture>
                 </a>
                 <div class="product-card__inner">
@@ -147,9 +225,31 @@
               <li class="products__item product-card">
                 <a class="product-card__link-image" href="#">
                   <picture>
-                    <source media="(min-width:1220px)" srcset="img/catalog/buckwheat_small-desktop.png">
-                    <source media="(min-width:768px)" srcset="img/catalog/buckwheat_small-tablet.png">
-                    <img class="product-card__image" src="img/catalog/buckwheat_small-mobile.png" width="140" height="112" alt="Cat Energy PRO 500 грамм со вкусом курицы">
+                    <source
+                      type="image/webp"
+                      media="(min-width: 1220px)"
+                      srcset="img/catalog/buckwheat_small-desktop.webp, img/catalog/buckwheat_small-desktop@2x.webp 2x"
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="img/catalog/buckwheat_small-tablet.webp, img/catalog/buckwheat_small-tablet@2x.webp 2x"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="img/catalog/buckwheat_small-mobile.webp, img/catalog/buckwheat_small-mobile@2x.webp 2x"
+                    />
+                    <source
+                      media="(min-width:1220px)"
+                      srcset="img/catalog/buckwheat_small-desktop.png, img/catalog/buckwheat_small-desktop@2x.png 2x"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="img/catalog/buckwheat_small-tablet.png, img/catalog/buckwheat_small-tablet@2x.png 2x"
+                    />
+                    <img
+                      class="product-card__image" src="img/catalog/buckwheat_small-mobile.png" srcset="img/catalog/buckwheat_small-mobile@2x.png 2x" width="140" height="112" alt="Маленькая упаковка корма со вкусом гречки"
+                    />
                   </picture>
                 </a>
                 <div class="product-card__inner">
@@ -168,9 +268,31 @@
               <li class="products__item product-card">
                 <a class="product-card__link-image" href="#">
                   <picture>
-                    <source media="(min-width:1220px)" srcset="img/catalog/buckwheat_big-desktop.png">
-                    <source media="(min-width:768px)" srcset="img/catalog/buckwheat_big-tablet.png">
-                    <img class="product-card__image" src="img/catalog/buckwheat_big-mobile.png" width="140" height="112" alt="Cat Energy PRO 500 грамм со вкусом курицы">
+                    <source
+                      type="image/webp"
+                      media="(min-width: 1220px)"
+                      srcset="img/catalog/buckwheat_big-desktop.webp, img/catalog/buckwheat_big-desktop@2x.webp 2x"
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="img/catalog/buckwheat_big-tablet.webp, img/catalog/buckwheat_big-tablet@2x.webp 2x"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="img/catalog/buckwheat_big-mobile.webp, img/catalog/buckwheat_big-mobile@2x.webp 2x"
+                    />
+                    <source
+                      media="(min-width:1220px)"
+                      srcset="img/catalog/buckwheat_big-desktop.png, img/catalog/buckwheat_big-desktop@2x.png 2x"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="img/catalog/buckwheat_big-tablet.png, img/catalog/buckwheat_big-tablet@2x.png 2x"
+                    />
+                    <img
+                      class="product-card__image" src="img/catalog/buckwheat_big-mobile.png" srcset="img/catalog/buckwheat_big-mobile@2x.png 2x" width="140" height="112" alt="Большая упаковка корма со вкусом гречки"
+                    />
                   </picture>
                 </a>
                 <div class="product-card__inner">
@@ -189,9 +311,31 @@
               <li class="products__item product-card">
                 <a class="product-card__link-image" href="#">
                   <picture>
-                    <source media="(min-width:1220px)" srcset="img/catalog/rice_small-desktop.png">
-                    <source media="(min-width:768px)" srcset="img/catalog/rice_small-tablet.png">
-                    <img class="product-card__image" src="img/catalog/rice_small-mobile.png" width="140" height="112" alt="Cat Energy PRO 500 грамм со вкусом курицы">
+                    <source
+                      type="image/webp"
+                      media="(min-width: 1220px)"
+                      srcset="img/catalog/rice_small-desktop.webp, img/catalog/rice_small-desktop@2x.webp 2x"
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="img/catalog/rice_small-tablet.webp, img/catalog/rice_small-tablet@2x.webp 2x"
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="img/catalog/rice_small-mobile.webp, img/catalog/rice_small-mobile@2x.webp 2x"
+                    />
+                    <source
+                      media="(min-width:1220px)"
+                      srcset="img/catalog/rice_small-desktop.png, img/catalog/rice_small-desktop@2x.png 2x"
+                    />
+                    <source
+                      media="(min-width:768px)"
+                      srcset="img/catalog/rice_small-tablet.png, img/catalog/rice_small-tablet@2x.png 2x"
+                    />
+                    <img
+                      class="product-card__image" src="img/catalog/rice_small-mobile.png" srcset="img/catalog/rice_small-mobile@2x.png 2x" width="140" height="112" alt="Маленькая упаковка корма со вкусом риса"
+                    />
                   </picture>
                 </a>
                 <div class="product-card__inner">
