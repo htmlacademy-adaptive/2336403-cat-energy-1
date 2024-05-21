@@ -5,12 +5,16 @@
   margin: 40px auto;
   position: relative;
   background-color: #7fc256;
-  background-image: url("../../img/Gift.jpg");
+  background-image: url("../../img/catalog/gift-mobile-bg@1x.png");
   background-size: cover;
   width: 100%;
   height: 290px;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../../img/catalog/gift-mobile-bg@2x.png");
+  }
 }
 
 .special-offer__text {
@@ -32,6 +36,7 @@
   transform: translateY(50px);
 }
 
+
 // Tablet Viewport
 @media (min-width: 768px) {
   .special-offer {
@@ -39,7 +44,11 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-image: url("../../img/catalog/cat-gift-tablet.jpg");
+    background-image: url("../../img/catalog/gift-tablet-bg@1x.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/catalog/gift-tablet-bg@2x.png");
+    }
   }
 
   .special-offer__img {
@@ -61,11 +70,15 @@
     justify-content: center;
     margin: 0;
     position: relative;
-    background-image: url("../../img/catalog/cat-gift-desktop.png");
+    background-image: url("../../img/catalog/gift-desktop-bg@1x.png");
     width: 245px;
     height: 288px;
     background-repeat: no-repeat;
     background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../img/catalog/gift-desktop-bg@2x.png");
+    }
   }
 
   .special-offer__text {
