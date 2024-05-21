@@ -10,7 +10,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
     <link rel="manifest" href="/img/favicons/site.webmanifest">
-    <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <!-- <link rel="mask-icon" href="/img/favicons/safari-pinned-tab.svg" color="#5bbad5"> -->
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
   </head>
@@ -50,13 +50,34 @@
           <h1 class="promo__title">Функциональное питание&nbsp;для&nbsp;котов</h1>
           <p class="promo__text">Занялся собой? Займись котом!</p>
           <picture>
-            <source type="image/webp" media="(min-width: 1280px)" srcset="./img/promo/index-can-desktop@1x.webp, img/promo/index-can-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="./img/promo/index-can-tablet@1x.webp, img/promo/index-can-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="./img/promo/index-can-mobile@1x.webp, img/promo/index-can-mobile@2x.webp 2x">
-            <!-- <source media="(min-width: 1280px)" srcset="img/promo/index-can-desktop@1x.png, img/promo/index-can-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/promo/index-can-tablet@1x.jpg, img/promo/index-can-tablet@2x.jpg 2x"> -->
-            <img class="promo__background-img" src="./img/promo/index-can-mobile@1x.png" srcset="img/promo/index-can-mobile@2x.png 2x" alt="Корм со вкусом курицы в упаковке" width="280" height="270">
-            <!-- <img class="promo__background-img" src="./img/promo-section-mobile.png" alt="Корм со вкусом курицы в упаковке"> -->
+            <source
+              type="image/webp"
+              media="(min-width: 1280px)"
+              srcset="img/promo/index-can-desktop@1x.webp, img/promo/index-can-desktop@2x.webp 2x"
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="img/promo/index-can-tablet@1x.webp, img/promo/index-can-tablet@2x.webp 2x"
+            />
+            <source
+              type="image/webp"
+              srcset="img/promo/index-can-mobile@1x.webp, img/promo/index-can-mobile@2x.webp 2x"
+            />
+            <source
+              media="(min-width: 1280px)"
+              srcset="img/promo/index-can-desktop@1x.png, img/promo/index-can-desktop@2x.png 2x"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="img/promo/index-can-tablet@1x.png, img/promo/index-can-tablet@2x.png 2x"
+            />
+            <img
+              class="promo__background-img"
+              src="/img/promo/index-can-mobile@1x.png"
+              srcset="/img/promo/index-can-mobile@2x.png 2x"
+              alt="Корм со вкусом курицы в упаковке"
+            />
           </picture>
           <a class="button promo__button" href="form.html">Подобрать программу</a>
         </div>
@@ -127,15 +148,69 @@
                   <!-- Картинка слева -->
                   <div class="example__demo example__demo--before">
                     <picture>
-                      <source media="(min-width: 768px)" srcset="img/compare-tablet-before@1x.png" width="560" height="512">
-                      <img class="example__slider-img--before" src="img/compare-mobile-before@1x.png" widht="280" height="256" alt="Котик до программы">
+                      <source
+                        type="image/webp"
+                        media="(min-width: 768px)"
+                        srcset="img/example/compare-tablet-before@1x.webp,
+                                img/example/compare-tablet-before@2x.webp 2x"
+                        width="560"
+                        height="512"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="img/example/compare-mobile-before@1x.webp,
+                                img/example/compare-mobile-before@2x.webp 2x"
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="img/example/compare-tablet-before@1x.png,
+                                img/example/compare-tablet-before@2x.png 2x"
+                        width="560"
+                        height="512"
+                      />
+                      <img
+                        class="example__slider-img--before"
+                        src="img/example/compare-mobile-before@1x.png"
+                        srcset="img/example/compare-mobile-before@2x.png 2x"
+                        alt="Кот с лишним весом"
+                        width="280"
+                        height="256"
+                        loading="lazy"
+                      />
                     </picture>
                   </div>
                   <!-- Картинка справа -->
                   <div class="example__demo">
                     <picture>
-                      <source media="(min-width: 768px)" srcset="img/compare-tablet-after@1x.png" width="560" height="512">
-                      <img class="example__slider-img--after" src="img/compare-mobile-after@1x.png" widht="280" height="256" alt="Котик после программы">
+                      <source
+                        type="image/webp"
+                        media="(min-width: 768px)"
+                        srcset="img/example/compare-tablet-after@1x.webp,
+                                img/example/compare-tablet-after@2x.webp 2x"
+                        width="560"
+                        height="512"
+                      />
+                      <source
+                        type="image/webp"
+                        srcset="img/example/compare-mobile-after@1x.webp,
+                                img/example/compare-mobile-after@2x.webp 2x"
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="img/example/compare-tablet-after@1x.png,
+                                img/example/compare-tablet-after@2x.png 2x"
+                        width="560"
+                        height="512"
+                      />
+                      <img
+                        class="example__slider-img--before"
+                        src="img/example/compare-mobile-after@1x.png"
+                        srcset="img/example/compare-mobile-after@2x.png 2x"
+                        alt="Кот с лишним весом"
+                        width="280"
+                        height="256"
+                        loading="lazy"
+                      />
                     </picture>
                   </div>
                   <div class="example__divider" style="left: var(--divider-position)">
