@@ -135,6 +135,7 @@
 
 .example__divider {
   background-color: variables.$gray-dark;
+  color: variables.$gray-dark;
   position: absolute;
   width: 4px;
   height: 100%;
@@ -145,29 +146,14 @@
 
   &:hover {
     background-color: variables.$basic-dark;
-  }
-
-  &:hover path {
-    fill: variables.$basic-dark;
-  }
-
-  &:hover rect {
-    stroke: variables.$basic-dark;
+    color: variables.$basic-dark;
   }
 
   &:active {
     background-color: variables.$basic-light;
-  }
-
-  &:active path {
-    fill: variables.$basic-light;
-  }
-
-  &:active rect {
-    stroke: variables.$basic-light;
+    color: variables.$basic-light;
   }
 }
-
 
 .example__compare-button {
   display: block;
