@@ -162,7 +162,7 @@
   width: 20px;
   height: 20px;
   background-color: #000000;
-  mask-image: url("../../img/form/email-icon.svg");
+  mask-image: url("../img/sprites.svg#email");
 }
 
 .profile__icon-phone {
@@ -172,7 +172,7 @@
   width: 20px;
   height: 20px;
   background-color: #000000;
-  mask-image: url("../../img/form/phone-icon.svg");
+  mask-image: url("../img/sprites.svg#phone");
 }
 
 .profile__list {
@@ -224,6 +224,10 @@
   content: "";
 }
 
+.profile__radio-input:focus + .profile__control-mark {
+  border: 2px solid #111111;
+}
+
 .profile__title {
   width: min-content;
   font-size: 24px;
@@ -250,8 +254,12 @@
   border: 1px solid #cdcdcd;
 
   &:hover {
-    border: 1px solid #bababa;
+    border: 2px solid #bababa;
   }
+}
+
+.profile__checkbox-input:focus + .profile__checkbox-modified {
+  border: 2px solid #111111;
 }
 
 .profile__checkbox-input:checked + .profile__checkbox-modified::after {
@@ -263,7 +271,7 @@
   width: 26px;
   height: 26px;
   background-color: variables.$basic-dark;
-  mask-image: url("../../img/form/checkbox-tick.svg");
+  mask-image: url("../img/sprites.svg#tick");
 }
 
 // Tablet Viewport

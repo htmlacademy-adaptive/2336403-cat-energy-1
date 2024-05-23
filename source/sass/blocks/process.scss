@@ -35,7 +35,7 @@
       height: 60px;
       background-color: variables.$basic-light;
       background-size: 30px 32px;
-      background-image: url("../../img/icon-process-leaf.svg");
+      background-image: url("../img/sprites.svg#process-leaf");
       background-position: center;
       background-repeat: no-repeat;
     }
@@ -51,7 +51,7 @@
       height: 60px;
       background-color: variables.$basic-light;
       background-size: 30px 32px;
-      background-image: url("../../img/icon-process-powder.svg");
+      background-image: url("../img/sprites.svg#process-powder");
       background-position: center;
       background-repeat: no-repeat;
     }
@@ -67,7 +67,7 @@
       height: 60px;
       background-color: variables.$basic-light;
       background-size: 30px 32px;
-      background-image: url("../../img/icon-process-eat.svg");
+      background-image: url("../img/sprites.svg#process-eat");
       background-position: center;
       background-repeat: no-repeat;
     }
@@ -83,13 +83,12 @@
       height: 60px;
       background-color: variables.$basic-light;
       background-size: 30px 32px;
-      background-image: url("../../img/icon-process-timer.svg");
+      background-image: url("../img/sprites.svg#process-timer");
       background-position: center;
       background-repeat: no-repeat;
     }
   }
 }
-
 
 .process__description {
   font-family: "Oswald", "Arial", sans-serif;

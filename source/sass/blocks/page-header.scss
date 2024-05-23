@@ -13,7 +13,6 @@
   text-align: center;
 }
 
-
 .page-header__toggle {
   position: relative;
   display: block;
@@ -129,10 +128,6 @@
 }
 
 @media (min-width: 1280px) {
-  .page-header__wrapper {
-    padding: 55px 0 0;
-  }
-
   .page-header--special {
     &::before {
       position: absolute;
