@@ -14,7 +14,7 @@
   text-align: center;
   font-size: 0;
   border-bottom: 2px solid variables.$gray;
-  padding: 20px 0;
+  padding: 30px 0 17px;
 
   .page-footer:hover path {
     fill: variables.$gray-dark;
@@ -28,11 +28,11 @@
 .page-footer__social-list {
   display: flex;
   flex-direction: row;
-  gap: 24px;
+  gap: 28px;
   justify-content: center;
   align-items: center;
   list-style: none;
-  padding: 20px 0;
+  padding: 19px 0;
   border-bottom: 2px solid variables.$gray;
   margin: 0;
   font-size: 0;
@@ -71,9 +71,9 @@
   font-weight: 400;
   font-size: 16px;
   color: variables.$gray-darken;
-  padding: 20px 0;
+  padding: 18px 0;
   transition: opasity 0.2s;
-  width: 168px;
+  min-width: 280px;
   justify-self: center;
 
   &:hover {

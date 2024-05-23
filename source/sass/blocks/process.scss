@@ -1,15 +1,20 @@
 @use "./base/variables.scss";
 
 .process__inner {
-  padding: 20px 0;
+  padding: 19px 0;
 }
 
 .process__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 36px;
+  line-height: 40px;
   color: #000000;
-  margin-bottom: 32px;
+  //padding: 0 0 20px;
+  margin: 0 0 40px;
+  //margin-bottom: 10px;
+  //padding-top: 10px;
+  //margin: 19px 0 0;
 }
 
 .process__list {
@@ -34,7 +39,7 @@
       width: 60px;
       height: 60px;
       background-color: variables.$basic-light;
-      background-size: 30px 32px;
+      background-size: 30px 30px;
       background-image: url("../img/sprites.svg#process-leaf");
       background-position: center;
       background-repeat: no-repeat;
@@ -50,7 +55,7 @@
       width: 60px;
       height: 60px;
       background-color: variables.$basic-light;
-      background-size: 30px 32px;
+      background-size: 30px 30px;
       background-image: url("../img/sprites.svg#process-powder");
       background-position: center;
       background-repeat: no-repeat;
@@ -91,9 +96,10 @@
 }
 
 .process__description {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
+  line-height: 129%;
   color: variables.$gray-darken;
   padding: 0;
   margin: 0;

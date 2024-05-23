@@ -1,40 +1,48 @@
 @use "./base/variables.scss";
 
 .contacts {
+  padding: 10px 0 0;
   background-color: #ffffff;
+}
 
-  &__header {
-    display: flex;
-    justify-content: space-between;
-    padding: 26px 20px;
-  }
+.contacts__header {
+  display: flex;
+  justify-content: space-between;
+  //align-items: center;
+  //padding: 15px 0;
+  //gap: 20px
+  min-width: 280px;
+}
 
-  &__invitation {
-    font-family: "Oswald", "Arial", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    color: variables.$gray-darkest;
-    text-transform: uppercase;
-    width: 140px;
-  }
+.contacts__invitation {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  color: variables.$gray-darkest;
+  text-transform: uppercase;
+  width: 140px;
+}
 
-  &__address-sity {
-    display: block;
-    margin-top: 5px;
-  }
+.contacts__address-sity {
+  display: block;
+  //margin-top: 5px;
+}
 
-  &__address {
-    font-family: "Lato", "Arial", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    color: variables.$gray-darken;
-    width: 140px;
-  }
+.contacts__address {
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: variables.$gray-darken;
+  padding-left: 20px;
+  align-self: center;
+  text-align: left;
+}
 
-  &__map {
-    overflow: hidden;
-    display: block;
-  }
+.contacts__map {
+  overflow: hidden;
+  display: block;
 
   &--dark {
     background-color: variables.$gray-lighten;
