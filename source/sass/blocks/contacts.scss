@@ -8,10 +8,9 @@
 .contacts__header {
   display: flex;
   justify-content: space-between;
-  //align-items: center;
-  //padding: 15px 0;
-  //gap: 20px
+  gap: 10px;
   min-width: 280px;
+  margin-bottom: 10px;
 }
 
 .contacts__invitation {
@@ -26,16 +25,15 @@
 
 .contacts__address-sity {
   display: block;
-  //margin-top: 5px;
 }
 
 .contacts__address {
   font-family: "Lato", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 143%;
+  line-height: 1.43;
   color: variables.$gray-darken;
-  padding-left: 20px;
+  padding-left: 8px;
   align-self: center;
   text-align: left;
 }
@@ -49,14 +47,32 @@
   }
 }
 
+//Tablet Viewport
 @media (min-width: 768px) {
   .contacts__header {
-    padding: 25px 40px;
+    padding: 32px 40px;
+  }
+
+  .contacts__invitation {
+    font-size: 20px;
+    line-height: 1.3;
+    width: 20%;
+  }
+
+  .contacts__address {
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: right;
+    width: 30%;
   }
 
   .contacts__address-sity {
     display: block;
     margin-top: 20px;
+  }
+
+  .contacts__map {
+    height: 400px;
   }
 }
 

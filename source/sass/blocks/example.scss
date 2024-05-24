@@ -5,7 +5,7 @@
 }
 
 .example__inner {
-  padding: 28px 0 40px;
+  padding: 20px 0 40px;
 }
 
 .example__title {
@@ -14,7 +14,7 @@
   font-weight: 400;
   font-size: 36px;
   color: #000000;
-  margin: 0 0 35px;
+  margin: 0 0 32px;
 }
 
 .example__text {
@@ -49,15 +49,12 @@
   position: relative;
   display: flex;
   justify-content: center;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  color: #000000;
   border: 1px solid variables.$gray;
   border-radius: 5px;
   padding: 12px 10px 16px;
-  width: 124px;
-  height: min-content;
+  min-width: 124px;
+  min-height: 56px;
+  //height: min-content;
 }
 
 .example__total {
@@ -176,37 +173,62 @@
 @media (min-width: 768px) {
   .example {
     background-color: #ffffff;
-    background-image: linear-gradient(360deg, variables.$gray-light 450px, #ffffff 450px);
+    border-top: 1px solid #e6e6e6;
+    background-image: linear-gradient(360deg, variables.$gray-light 460px, #ffffff 460px);
   }
 
   .example__inner {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, auto);
+    padding: 30px 0 48px;
   }
 
   .example__title {
     font-size: 60px;
     grid-column: 1 / -1;
-    padding: 45px 0 65px;
+    margin: 0 0 31px;
+    padding: 0;
   }
 
   .example__text {
     font-size: 16px;
-    margin-bottom: 55px;
+    line-height: 1.5;
+    margin-bottom: 34px;
     grid-column: 1 / -1;
   }
 
   .example__wrap {
     grid-column: 1 / 2;
+    min-width: 367px;
+  }
+
+  .example__item {
+    display: flex;
+    min-width: 162px;
+    min-height: 72px;
+    padding: 15px 10px;
+    text-align: center;
+  }
+
+  .example__total {
+    font-size: 30px;
+    line-height: 1.23;
   }
 
   .example__description {
     background-color: #ffffff;
+    font-size: 14px;
+    line-height: 1;
+    bottom: 14px;
+    width: fit-content;
+    padding: 0 8px;
   }
 
   .example__costs {
     margin: 0;
+    font-size: 20px;
+    line-height: 1;
   }
 
   .example__costs-wrap {
@@ -214,12 +236,13 @@
     display: flex;
     flex-direction: column;
     text-align: right;
+    justify-content: center;
     margin: 0;
-    gap: 0;
+    gap: 10px;
   }
 
   .example__compare-slider {
-    padding-top: 100px;
+    padding-top: 86px;
   }
 
   .example__compare-img {
@@ -229,7 +252,7 @@
   }
 
   .example__compare-button {
-    top: 43%;
+    top: 50%;
   }
 
   .example__demo {
@@ -240,7 +263,7 @@
     &--before {
       position: absolute;
       z-index: 1;
-      background-image: linear-gradient(#ffffff 132px, variables.$gray-light 132px);
+      background-image: linear-gradient(#ffffff 150px, variables.$gray-light 150px);
     }
   }
 }
