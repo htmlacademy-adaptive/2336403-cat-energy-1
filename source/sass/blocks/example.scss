@@ -270,24 +270,41 @@
 
 //Desktop Viewport
 @media (min-width: 1280px) {
+  .example {
+    border: none;
+  }
+
   .example__inner {
-    grid-template-columns: 40% 10% 50%;
+    padding: 52px 0;
+    grid-template-columns: 570px 1fr;
+    grid-template-rows: 224px 164px 132px auto;
+    column-gap: 88px;
   }
 
   .example__title {
     grid-column: 1 / 2;
+    margin: 0;
+    padding: 0;
   }
 
   .example__text {
     grid-column: 1 / 2;
+    margin: 0;
+    width: 432px;
+    padding: 0;
   }
 
   .example__wrap {
     grid-column: 1 / 2;
+    margin: 0;
+    //margin: 64px 0 0;
+    padding: 0;
   }
 
   .example__item {
-    width: 124px;
+    width: 162px;
+    height: 72px;
+    padding: 15px 25px;
   }
 
   .example__description {
@@ -297,7 +314,11 @@
   .example__costs-wrap {
     grid-column: 1 / 2;
     flex-direction: row;
+    width: 327px;
     justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    //padding: 34px 0 0;
   }
 
   .example__costs {
@@ -305,7 +326,16 @@
   }
 
   .example__compare-slider {
-    grid-column: 3 / 4;
+    grid-column: 2 / 3;
     grid-row: 1 / -1;
+    padding: 18px 0;
+    margin: 0;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .example__compare-img {
+    padding: 0;
+    margin: 0;
   }
 }

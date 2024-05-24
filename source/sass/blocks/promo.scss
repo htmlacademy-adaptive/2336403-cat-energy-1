@@ -97,7 +97,7 @@
   .promo__button {
     position: absolute;
     z-index: 1;
-    top: 226px;
+    top: 22px;
     left: 120px;
     width: 244px;
     font-family: "Oswald", "Arial", sans-serif;
@@ -114,25 +114,30 @@
 @media (min-width: 1280px) {
   .promo {
     position: relative;
+    padding: 95px 0 246px;
   }
 
   .promo__background-img {
     position: absolute;
     display: block;
     margin: 0 auto;
-    transform: translateX(75%);
-    top: 10%;
+    transform: translateX(81%);
+    top: -80px;
     width: 552px;
     height: 499px;
   }
 
   .promo__title {
-    padding-top: 100px;
-    margin-bottom: 40px;
+    font-size: 60px;
+    line-height: 1;
+    margin: 0 auto 40px 79px;
   }
 
   .promo__text {
-    margin-bottom: 66px;
+    font-size: 20px;
+    line-height: 1;
+    margin: 0 auto 52px 79px;
+
   }
 
   .promo__button {
@@ -140,8 +145,9 @@
     top: 0;
     left: 0;
     display: block;
-    width: fit-content;
+    min-width: 244px;
     font-size: 20px;
-    margin-left: 90px;
+    line-height: 1.3;
+    margin-left: 80px;
   }
 }

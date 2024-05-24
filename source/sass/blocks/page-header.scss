@@ -79,7 +79,7 @@
   display: block;
   padding: 12px 0;
 
-  max-width: 190px;
+  //max-width: 190px;
   z-index: 10;
 
   &:hover {
@@ -120,7 +120,7 @@
 
   .page-header__wrapper {
     padding: 12px 0 0;
-    gap: 30px;
+    //gap: 30px;
   }
 
   .page-header__toggle {
@@ -129,6 +129,16 @@
 }
 
 @media (min-width: 1280px) {
+
+  .page-header__wrapper {
+    padding: 42px 0 0;
+    //gap: 30px;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+
   .page-header--special {
     &::before {
       position: absolute;

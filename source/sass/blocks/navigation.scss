@@ -118,6 +118,9 @@
     background-color: transparent;
   }
 
+  .navigation__link {
+    font-size: 20px;
+  }
   .page-header--special .navigation__link {
     color: #ffffff;
   }
@@ -126,5 +129,11 @@
     &::before {
       background-color: #ffffff;
     }
+  }
+
+
+  .navigation__list {
+    margin: -10px;
+    padding: 0;
   }
 }
