@@ -2,7 +2,7 @@
 
 .special-offer {
   display: block;
-  margin: 35px auto;
+  margin: 34px auto;
   position: relative;
   background-color: #7fc256;
   background-image: url("../../img/catalog/gift-mobile-bg@1x.png");
@@ -20,20 +20,21 @@
 .special-offer__text {
   position: relative;
   margin: 0 auto;
-  width: 160px;
+  width: 180px;
   font-family: "Lato", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  line-height: 1.25;
   color: #ffffff;
   text-align: center;
-  transform: translateY(100px);
+  transform: translateY(104px);
 }
 
 .special-offer__img {
   display: block;
   position: relative;
   margin: 0 auto;
-  transform: translateY(55px);
+  transform: translateY(57px);
 }
 
 

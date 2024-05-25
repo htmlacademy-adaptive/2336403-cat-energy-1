@@ -15,8 +15,8 @@
   font-weight: 400;
   font-size: 36px;
   color: #000000;
-  margin: 0;
-  padding-bottom: 30px;
+  margin: 0 0 30px;
+  //padding-bottom: 30px;
 }
 
 .products__item {
@@ -36,31 +36,41 @@
 .products__button {
   grid-column: 1/-1;
   position: relative;
-  top: -2px;
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.25;
+  //top: -2px;
 }
 
 
 // Tablet Viewport
 @media (min-width: 768px) {
+  .products__inner {
+    padding: 36px 0 0;
+  }
+
   .products__title {
     font-size: 60px;
-    margin-bottom: 40px;
+    margin-bottom: 90px;
   }
 
   .products__list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
-    gap: 60px;
+    column-gap: 60px;
+    row-gap: 80px;
   }
 
   .products__item {
+    align-items: center;
+
     &::after {
       display: none;
     }
   }
 
   .products__button {
-    margin-top: 15px;
+    margin-top: 60px;
   }
 }
 
