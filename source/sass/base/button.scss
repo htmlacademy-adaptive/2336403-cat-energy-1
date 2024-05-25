@@ -32,6 +32,7 @@
     border: 0;
     text-align: center;
     background-color: variables.$gray-lighten;
+    transform: translateY(6px);
 
     &:hover {
       background-color: variables.$gray-light;
