@@ -272,12 +272,13 @@
 @media (min-width: 1280px) {
   .example {
     border: none;
+    background-image: linear-gradient(360deg, variables.$gray-light 462px, #ffffff 462px);
   }
 
   .example__inner {
-    padding: 52px 0;
+    display: grid;
     grid-template-columns: 570px 1fr;
-    grid-template-rows: 224px 164px 132px auto;
+    padding: 52px 0 66px;
     column-gap: 88px;
   }
 
@@ -292,13 +293,14 @@
     margin: 0;
     width: 432px;
     padding: 0;
+    align-self: end;
   }
 
   .example__wrap {
     grid-column: 1 / 2;
     margin: 0;
-    //margin: 64px 0 0;
     padding: 0;
+    align-self: end;
   }
 
   .example__item {
@@ -312,13 +314,15 @@
   }
 
   .example__costs-wrap {
+    position: relative;
     grid-column: 1 / 2;
     flex-direction: row;
     width: 327px;
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    //padding: 34px 0 0;
+    align-self: end;
+    bottom: 10px;
   }
 
   .example__costs {
@@ -337,5 +341,11 @@
   .example__compare-img {
     padding: 0;
     margin: 0;
+  }
+
+  .example__demo {
+    &--before {
+      background-image: linear-gradient(#ffffff 134px, variables.$gray-light 134px);
+    }
   }
 }

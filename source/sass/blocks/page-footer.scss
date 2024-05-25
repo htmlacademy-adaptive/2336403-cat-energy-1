@@ -106,7 +106,7 @@
 // Tablet Viewport
 @media (min-width: 768px) {
   .page-footer__inner {
-    padding: 37px 0 0;
+    padding: 38px 0 0;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
   }
@@ -128,8 +128,16 @@
     margin-left: 5px;
   }
 
+
   .page-footer__copyright-link {
     justify-self: end;
     width: 168px;
+  }
+}
+
+// Desktop Viewport
+@media (min-width: 1440px) {
+  .page-footer__inner {
+    padding: 50px 0 50px;
   }
 }

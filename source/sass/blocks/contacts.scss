@@ -77,14 +77,18 @@
 }
 
 @media (min-width: 1280px) {
+  .contacts {
+    padding: 0;
+  }
+
   .contacts__map {
     position: relative;
   }
 
   .contacts__header {
     position: absolute;
-    top: 50px;
-    left: 50px;
+    top: 96px;
+    left: 0;
     width: 565px;
     height: 200px;
     background-color: #ffffff;
@@ -97,8 +101,13 @@
     font-size: 20px;
   }
 
+  .contacts__address {
+    text-align: left;
+    width: 41%;
+  }
+
   .contacts__address-sity {
     display: block;
-    margin-top: 25px;
+    margin-top: 20px;
   }
 }
