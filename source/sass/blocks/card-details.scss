@@ -43,3 +43,24 @@
     line-height: 1;
   }
 }
+
+// Tablet Viewport
+@media (min-width: 1440px) {
+  .card-details {
+    align-items: end;
+  }
+
+  .card-details__title {
+    border-bottom: 1px solid #cdcdcd;
+    padding: 8px 0 8px;
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  .card-details__definition {
+    border-bottom: 1px solid #cdcdcd;
+    padding: 8px 0 8px;
+    font-size: 16px;
+    line-height: 1;
+  }
+}

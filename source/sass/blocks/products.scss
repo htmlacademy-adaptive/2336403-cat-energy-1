@@ -16,7 +16,6 @@
   font-size: 36px;
   color: #000000;
   margin: 0 0 30px;
-  //padding-bottom: 30px;
 }
 
 .products__item {
@@ -73,15 +72,30 @@
   }
 }
 
-// Desctop Viewport
-@media (min-width: 1280px) {
-  /*.products__inner {
-    padding-top: 188px;
-  } */
+// Desktop Viewport
+@media (min-width: 1440px) {
+  .products__inner {
+    padding-top: 44px;
+  }
+
+  .products__title {
+    margin-bottom: 70px;
+  }
 
   .products__list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 60px;
+    grid-template-columns: repeat(4, 245px);
+    grid-template-rows: auto;
+    justify-content: space-between;
+    //align-content: end;
+    row-gap: 66px;
+  }
+
+  .products__item {
+    padding: 100px 10px;
+  }
+
+  .products__button {
+    margin-top: 24px;
   }
 }

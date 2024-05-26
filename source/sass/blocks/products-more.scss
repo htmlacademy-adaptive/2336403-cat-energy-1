@@ -57,7 +57,7 @@
   cursor: pointer;
 }
 
-// Taablet Viewport
+// Tablet Viewport
 @media (min-width: 768px) {
   .products-more {
     display: grid;
@@ -79,8 +79,6 @@
     align-self: center;
     margin-top: -10px;
     position: relative;
-    //top: 0;
-    //transform: translateY(1%);
     justify-self: center;
   }
 
@@ -97,8 +95,31 @@
     text-align: center;
     width: 70%;
     padding-bottom: 30px;
-    //align-self: center;
     justify-self: center;
     margin: 0;
+  }
+}
+
+// Tablet Viewport
+@media (min-width: 1440px) {
+  .products-more__button-plus {
+    margin: 0;
+    align-self: end;
+  }
+
+  .products-more {
+    margin-top: 80px;
+    align-items: start;
+    padding: 0 37px;
+  }
+
+  .products-more__title {
+    margin-top: 44px;
+  }
+
+  .products-more__subtitle {
+    padding: 0;
+    margin: 10px 0 0;
+    width: 100%;
   }
 }

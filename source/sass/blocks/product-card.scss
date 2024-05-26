@@ -54,7 +54,6 @@
     align-items: center;
     justify-items: center;
     row-gap: 4px;
-    //flex-direction: column;
     padding: 10px 36px 38px;
     background-image: linear-gradient(transparent 58px, #f2f2f2 58px);
   }
@@ -71,7 +70,6 @@
   .product-card__image {
     width: 200px;
     height: 210px;
-    //border: 1px red solid;
     object-fit: none;
   }
 
@@ -79,8 +77,6 @@
     position: relative;
     top: -22px;
     font-size: 0;
-    //width: 100%;
-    //align-self: center;
   }
 
   .product-card__inner {
@@ -92,9 +88,23 @@
 }
 
 // Desctop Viewport
-@media (min-width: 1220px) {
+@media (min-width: 1440px) {
+  .product-card {
+    row-gap: 10px;
+    background-image: linear-gradient(transparent 80px, #f2f2f2 80px);
+  }
+
   .product-card__image {
-    width: 172px;
-    height: 196px;
+    width: 169px;
+    height: 210px;
+  }
+
+  .product-card__inner {
+    width: 169px;
+    row-gap: 20px;
+  }
+
+  .product-card__link-image {
+    top: 0;
   }
 }
