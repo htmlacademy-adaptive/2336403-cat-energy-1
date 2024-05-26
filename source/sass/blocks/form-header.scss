@@ -5,7 +5,9 @@
   font-weight: 400;
   font-size: 36px;
   color: #000000;
-  margin: 35px 0 35px;
+  margin: 0;
+  padding-top: 18px;
+  margin-bottom: 30px;
 }
 
 .form-header__subtitle {
@@ -35,12 +37,12 @@
 }
 
 // Desktop Viewport
-@media (min-width: 1280px) {
+@media (min-width: 1440px) {
   .form-header__title {
     margin: 0;
-    padding-top: 60px;
+    padding-top: 20px;
     font-size: 60px;
-    line-height: 60px;
+    line-height: 1;
   }
 
   .form-header__subtitle {
