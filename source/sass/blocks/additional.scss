@@ -57,6 +57,9 @@
 
   .additional__item {
     border-bottom: none;
+    padding-top: 50px 0 0;
+    //align-self: center;
+    //width: 90%;
   }
 
   .additional__title {
@@ -65,11 +68,13 @@
     padding-right: 40px;
     font-size: 36px;
     line-height: 1;
+    padding-bottom: 80px;
   }
 
   .additional__list {
     list-style: none;
-    margin: 0;
+    margin: 0 auto;
+    //padding: 0 38px;
     border-left: 1px solid #cdcdcd;
     border-right: 1px solid #cdcdcd;
   }

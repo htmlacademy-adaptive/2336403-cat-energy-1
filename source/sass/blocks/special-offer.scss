@@ -45,6 +45,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin: 73px auto;
+    height: 200px;
     background-image: url("../../img/catalog/gift-tablet-bg@1x.png");
 
     @media (min-resolution: 2dppx) {
@@ -53,12 +55,12 @@
   }
 
   .special-offer__img {
-    transform: none;
+    transform: translateX(-35px);
   }
 
   .special-offer__text {
     text-align: left;
-    transform: none;
+    transform: translateX(6px);
   }
 }
 
