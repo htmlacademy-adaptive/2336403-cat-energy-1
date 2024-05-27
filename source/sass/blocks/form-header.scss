@@ -25,14 +25,16 @@
 @media (min-width: 768px) {
   .form-header__title {
     font-size: 60px;
-    line-height: 60px;
+    line-height: 1;
+    padding-top: 50px;
+    margin-bottom: 54px;
   }
 
   .form-header__subtitle {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 1.5;
     width: 323px;
-    margin: 0 0 55px;
+    margin: 0 0 66px;
   }
 }
 
