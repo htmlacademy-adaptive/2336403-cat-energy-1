@@ -3,6 +3,10 @@
 .contacts {
   padding: 10px 0 0;
   background-color: #ffffff;
+
+  &--dark {
+    background-color: variables.$gray-lighten;
+  }
 }
 
 .contacts__header {
@@ -41,10 +45,6 @@
 .contacts__map {
   overflow: hidden;
   display: block;
-
-  &--dark {
-    background-color: variables.$gray-lighten;
-  }
 }
 
 //Tablet Viewport
