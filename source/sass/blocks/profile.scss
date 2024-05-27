@@ -51,6 +51,7 @@
 
 .profile__сontaсt {
   border: none;
+  margin: 0;
   padding: 0;
 
   &::before {
@@ -454,7 +455,7 @@
     display: grid;
     gap: 80px;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 35px;
+    margin-bottom: 2px;
   }
 
   .profile__target {
@@ -470,11 +471,32 @@
 
   .profile__list-contact {
     grid-template-columns: 1fr 1fr;
-    gap: 80px;
+    gap: 78px;
+    padding: 0 0 73px;
+  }
+
+  .profile__icon-email {
+    content: "";
+    left: calc(100% - 35px);
+  }
+
+  .profile__icon-phone {
+    left: calc(100% - 35px);
+  }
+
+  .profile__comment {
+    padding: 0 0 72px;
+  }
+
+  .profile__message {
+    margin-top: 0;
   }
 
   .profile__list-extra {
     grid-template-columns: repeat(4, 1fr);
+    gap: 84px;
+    margin-top: -20px;
+    padding: 0 0 45px;
   }
 
   .profile__submit-inner {
@@ -488,5 +510,9 @@
     text-align: left;
     font-size: 16px;
     line-height: 16px;
+  }
+
+  .profile__submit {
+    padding: 0 0 45px;
   }
 }
