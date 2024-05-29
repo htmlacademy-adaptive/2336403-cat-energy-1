@@ -5,16 +5,19 @@
 }
 
 .page-footer__inner {
-  padding: 20px 0;
+  padding: 37px 0 0;
   display: grid;
 }
 
 .page-footer__logo-link {
   display: block;
+  width: 100%;
   text-align: center;
   font-size: 0;
   border-bottom: 2px solid variables.$gray;
-  padding: 20px 0;
+  padding: 0 0 18px;
+  align-self: end;
+  justify-self: center;
 
   .page-footer:hover path {
     fill: variables.$gray-dark;
@@ -28,11 +31,11 @@
 .page-footer__social-list {
   display: flex;
   flex-direction: row;
-  gap: 24px;
+  gap: 28px;
   justify-content: center;
   align-items: center;
   list-style: none;
-  padding: 20px 0;
+  padding: 19px 0;
   border-bottom: 2px solid variables.$gray;
   margin: 0;
   font-size: 0;
@@ -67,14 +70,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: "Lato", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  color: variables.$gray-darken;
-  padding: 20px 0;
-  transition: opasity 0.2s;
-  width: 168px;
   justify-self: center;
+  padding: 18px 0;
+  transition: opasity 0.2s;
+  width: 280px;
 
   &:hover {
     color: #3e3e3e;
@@ -94,15 +93,25 @@
   }
 }
 
+.page-footer__copyright-icon {
+  color: #666666;
+}
+
 .page-footer__copyright-text {
   margin: 0;
+  font-family: "Lato", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: variables.$gray-darken;
 }
 
 
 // Tablet Viewport
 @media (min-width: 768px) {
   .page-footer__inner {
+    padding: 36px 0 0;
     grid-template-columns: repeat(3, 1fr);
+    align-items: center;
   }
 
   .page-footer__social-list {
@@ -112,11 +121,26 @@
 
   .page-footer__logo-link {
     border: none;
-    justify-self: start;
+    text-align: left;
     align-self: center;
+    padding: 0;
   }
+
+  .page-footer__copyright-text {
+    margin: 0;
+    margin-left: 5px;
+  }
+
 
   .page-footer__copyright-link {
     justify-self: end;
+    width: 168px;
+  }
+}
+
+// Desktop Viewport
+@media (min-width: 1440px) {
+  .page-footer__inner {
+    padding: 50px 0 50px;
   }
 }

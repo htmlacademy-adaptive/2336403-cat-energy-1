@@ -1,15 +1,16 @@
 @use "./base/variables.scss";
 
 .process__inner {
-  padding: 20px 0;
+  padding: 19px 0 28px;
 }
 
 .process__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 36px;
+  line-height: 40px;
   color: #000000;
-  margin-bottom: 32px;
+  margin: 0 0 40px;
 }
 
 .process__list {
@@ -34,8 +35,8 @@
       width: 60px;
       height: 60px;
       background-color: variables.$basic-light;
-      background-size: 30px 32px;
-      background-image: url("../../img/icon-process-leaf.svg");
+      background-size: 30px 30px;
+      background-image: url("../img/sprites.svg#process-leaf");
       background-position: center;
       background-repeat: no-repeat;
     }
@@ -50,8 +51,8 @@
       width: 60px;
       height: 60px;
       background-color: variables.$basic-light;
-      background-size: 30px 32px;
-      background-image: url("../../img/icon-process-powder.svg");
+      background-size: 30px 30px;
+      background-image: url("../img/sprites.svg#process-powder");
       background-position: center;
       background-repeat: no-repeat;
     }
@@ -67,7 +68,7 @@
       height: 60px;
       background-color: variables.$basic-light;
       background-size: 30px 32px;
-      background-image: url("../../img/icon-process-eat.svg");
+      background-image: url("../img/sprites.svg#process-eat");
       background-position: center;
       background-repeat: no-repeat;
     }
@@ -83,18 +84,18 @@
       height: 60px;
       background-color: variables.$basic-light;
       background-size: 30px 32px;
-      background-image: url("../../img/icon-process-timer.svg");
+      background-image: url("../img/sprites.svg#process-timer");
       background-position: center;
       background-repeat: no-repeat;
     }
   }
 }
 
-
 .process__description {
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
+  line-height: 1.29;
   color: variables.$gray-darken;
   padding: 0;
   margin: 0;
@@ -102,42 +103,46 @@
 
 // Tablet Viewport
 @media (min-width: 768px) {
+  .process__inner {
+    margin: 0;
+    padding: 0 0 47px;
+  }
+
   .process__title {
     font-size: 60px;
-    margin-bottom: 32px;
+    line-height: 1;
+    margin: 44px auto 32px 0;
   }
 
   .process__description {
     font-size: 16px;
-    padding-bottom: 57px;
-  }
-
-  .process__inner {
-    padding-right: 15%;
+    line-height: 1.5;
+    padding-top: 150px;
+    width: 75%;
   }
 
   .process__list {
     display: grid;
     padding: 0;
     margin: 0;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     justify-items: start;
-    column-gap: 10%;
-    row-gap: 20px;
+    column-gap: 60px;
+    row-gap: 37px;
   }
 
   .process__item {
+    display: block;
     min-width: fit-content;
     min-height: 280px;
     margin: 0;
-    align-items: end;
 
     &::before {
       counter-increment: process-item;
-      content: counter(process-item) "";
+      content: counter(process-item);
       position: absolute;
-      line-height: 280px;
-      right: 20px;
+      line-height: 1;
+      left: 110px;
       bottom: 0;
       font-size: 280px;
       font-family: "Oswald", "Arial", sans-serif;
@@ -179,7 +184,7 @@
 // Desktop Viewport
 @media (min-width: 1280px) {
   .process__inner {
-    padding: 0;
+    padding: 30px 0 0;
   }
 
   .process__title {
@@ -189,11 +194,15 @@
 
   .process__list {
     grid-template-columns: repeat(4, 1fr);
-    gap: 50px;
+    gap: 80px;
   }
 
   .process__description {
+    font-size: 16px;
+    line-height: 1.5;
+    padding-top: 148px;
     margin: 0;
     padding-bottom: 57px;
+    width: 100%;
   }
 }

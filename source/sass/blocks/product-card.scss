@@ -3,20 +3,30 @@
 .product-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 20px 0 25px 0;
-  row-gap: 13px;
+  grid-template-rows: min-content;
+  padding: 20px 0 23px 0;
+  row-gap: 9px;
+}
+
+.product-card__image {
+  width: 140px;
+  height: 107px;
+  //border: 1px red solid;
+  object-fit: none;
+  font-size: 0;
 }
 
 .product-card__link-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  font-size: 0;
+  //top: 10px;
 }
 
 .product-card__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  line-height: 1.33;
   color: #000000;
   text-transform: uppercase;
   margin: 0;
@@ -26,7 +36,8 @@
 .product-card__inner {
   display: grid;
   grid-template-columns: 60% 40%;
-  row-gap: 18px;
+  align-items: center;
+  row-gap: 10px;
 }
 
 .product-card__details {
@@ -37,37 +48,63 @@
 // Tablet Viewport
 @media (min-width: 768px) {
   .product-card {
-    display: flex;
-    flex-direction: column;
-    padding: 0 36px 39px;
-    background-image: linear-gradient(transparent 81px, #f2f2f2 81px);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    align-items: center;
+    justify-items: center;
+    row-gap: 4px;
+    padding: 10px 36px 38px;
+    background-image: linear-gradient(transparent 58px, #f2f2f2 58px);
   }
 
   .product-card__title {
     text-align: center;
     grid-column: 1 / -1;
     font-size: 20px;
-    width: 136px;
+    line-height: 1.2;
+    width: 160px;
     margin: 0 auto;
-    line-height: 24px;
   }
 
   .product-card__image {
-    width: 168px;
-    height: 200px;
+    width: 200px;
+    height: 210px;
+    object-fit: none;
+  }
+
+  .product-card__link-image {
+    position: relative;
+    top: -22px;
+    font-size: 0;
   }
 
   .product-card__inner {
     display: grid;
+    width: 100%;
     grid-template-columns: 60% 40%;
-    row-gap: 18px;
+    row-gap: 12px;
   }
 }
 
 // Desctop Viewport
-@media (min-width: 1220px) {
+@media (min-width: 1440px) {
+  .product-card {
+    row-gap: 10px;
+    background-image: linear-gradient(transparent 80px, #f2f2f2 80px);
+  }
+
   .product-card__image {
-    width: 172px;
-    height: 196px;
+    width: 169px;
+    height: 210px;
+  }
+
+  .product-card__inner {
+    width: 169px;
+    row-gap: 20px;
+  }
+
+  .product-card__link-image {
+    top: 0;
   }
 }

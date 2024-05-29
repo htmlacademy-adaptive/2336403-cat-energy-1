@@ -13,13 +13,12 @@
   text-align: center;
 }
 
-
 .page-header__toggle {
   position: relative;
   display: block;
   justify-self: end;
-  width: 30px;
-  height: 20px;
+  width: 26px;
+  height: 24px;
   padding: 0;
   border: 0;
   cursor: pointer;
@@ -42,10 +41,10 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 30px;
+    width: 26px;
     height: 2px;
     background-color: #000000;
-    box-shadow: 0 10px 0 0 #000000, 0 20px 0 0 #000000;
+    box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
   }
 
   &--opened .navigation {
@@ -78,9 +77,9 @@
 
 .page-header__logo {
   display: block;
-  padding: 14px 0;
+  padding: 12px 0;
 
-  max-width: 190px;
+  //max-width: 190px;
   z-index: 10;
 
   &:hover {
@@ -120,7 +119,8 @@
   }
 
   .page-header__wrapper {
-    padding: 25px 0 0;
+    padding: 12px 0 0;
+    //gap: 30px;
   }
 
   .page-header__toggle {
@@ -130,7 +130,11 @@
 
 @media (min-width: 1280px) {
   .page-header__wrapper {
-    padding: 55px 0 0;
+    padding: 42px 0 0;
+  }
+
+  .page-header__toggle {
+    display: none;
   }
 
   .page-header--special {

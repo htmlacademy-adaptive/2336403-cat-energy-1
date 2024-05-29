@@ -4,35 +4,63 @@
   margin: 0;
   display: grid;
   grid-template-columns: 60% 40%;
+  align-items: center;
 }
 
 .card-details__title {
   font-family: "Lato", "Arial", sans-serif;
   font-size: 12px;
-  margin: 0;
+  line-height: 1.33;
+  //margin: 0 0 8px;
   text-align: left;
 }
 
 .card-details__definition {
   font-family: "Lato", "Arial", sans-serif;
   font-size: 12px;
+  line-height: 1.33;
   margin: 0;
   text-align: right;
 }
 
-// Taablet Viewport
+// Tablet Viewport
 @media (min-width: 768px) {
+  .card-details {
+    align-items: end;
+  }
+
   .card-details__title {
     border-bottom: 1px solid #cdcdcd;
-    padding: 7px 0 9px;
+    padding: 7px 0 7px;
     font-size: 16px;
-    line-height: 16px;
+    line-height: 1;
   }
 
   .card-details__definition {
     border-bottom: 1px solid #cdcdcd;
-    padding: 7px 0 9px;
+    padding: 7px 0 7px;
     font-size: 16px;
-    line-height: 16px;
+    line-height: 1;
+  }
+}
+
+// Tablet Viewport
+@media (min-width: 1440px) {
+  .card-details {
+    align-items: end;
+  }
+
+  .card-details__title {
+    border-bottom: 1px solid #cdcdcd;
+    padding: 8px 0 8px;
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  .card-details__definition {
+    border-bottom: 1px solid #cdcdcd;
+    padding: 8px 0 8px;
+    font-size: 16px;
+    line-height: 1;
   }
 }
