@@ -236,7 +236,7 @@
 }
 
 .profile__radio-input:focus + .profile__control-mark {
-  border: 2px solid #111111;
+  border: 2px solid #bababa;
 }
 
 .profile__title {
@@ -272,7 +272,7 @@
 }
 
 .profile__checkbox-input:focus + .profile__checkbox-modified {
-  border: 2px solid #111111;
+  border: 2px solid #bababa;
 }
 
 .profile__checkbox-input:checked + .profile__checkbox-modified::after {
