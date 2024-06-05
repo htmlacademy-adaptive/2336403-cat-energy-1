@@ -20,7 +20,7 @@
   justify-self: center;
 
   .page-footer:hover path {
-    fill: variables.$gray-dark;
+    color: variables.$gray-dark;
   }
 
   .page-footer:active path {
@@ -42,14 +42,14 @@
 }
 
 .page-footer__social-icon {
-  fill: #666666;
+  color: #666666;
 
   &:hover {
-    fill: #68b738;
+    color: #68b738;
   }
 
   &:active {
-    fill: #68b738;
+    color: #68b738;
     opacity: 0.3;
   }
 }

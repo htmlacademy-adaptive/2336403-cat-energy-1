@@ -149,6 +149,18 @@
   text-transform: uppercase;
   color: variables.$gray-darken;
 
+  &--error {
+    outline: 1px solid #ff8282;
+  }
+
+  &--error + .profile__icon-email {
+    background-color: #ff8282;
+  }
+
+  &--error + .profile__icon-phone {
+    background-color: #ff8282;
+  }
+
   &:hover {
     outline: 1px solid #cdcdcd;
   }
@@ -173,7 +185,7 @@
   width: 20px;
   height: 20px;
   background-color: #000000;
-  mask-image: url("../img/sprites.svg#email");
+  mask-image: url("../img/icons/stack.svg#profile_email-icon");
 }
 
 .profile__icon-phone {
@@ -183,7 +195,7 @@
   width: 20px;
   height: 20px;
   background-color: #000000;
-  mask-image: url("../img/sprites.svg#phone");
+  mask-image: url("../img/icons/stack.svg#profile_phone-icon");
 }
 
 .profile__list {
@@ -284,7 +296,7 @@
   width: 20px;
   height: 20px;
   background-color: variables.$basic-dark;
-  mask-image: url("../img/sprites.svg#tick");
+  mask-image: url("../img/icons/stack.svg#profile_checkbox-tick");
 }
 
 .profile__button {
