@@ -149,6 +149,18 @@
   text-transform: uppercase;
   color: variables.$gray-darken;
 
+  &--error {
+    outline: 1px solid #ff8282;
+  }
+
+  &--error + .profile__icon-email {
+    background-color: #ff8282;
+  }
+
+  &--error + .profile__icon-phone {
+    background-color: #ff8282;
+  }
+
   &:hover {
     outline: 1px solid #cdcdcd;
   }
@@ -173,7 +185,7 @@
   width: 20px;
   height: 20px;
   background-color: #000000;
-  mask-image: url("../img/sprites.svg#email");
+  mask-image: url("../img/icons/stack.svg#profile_email-icon");
 }
 
 .profile__icon-phone {
@@ -183,7 +195,7 @@
   width: 20px;
   height: 20px;
   background-color: #000000;
-  mask-image: url("../img/sprites.svg#phone");
+  mask-image: url("../img/icons/stack.svg#profile_phone-icon");
 }
 
 .profile__list {
@@ -236,8 +248,21 @@
 }
 
 .profile__radio-input:focus + .profile__control-mark {
-  border: 2px solid #111111;
+  border: 2px solid #bababa;
 }
+
+.profile__radio-input:disabled + .profile__control-mark {
+  opacity: 0.3;
+}
+
+.profile__radio-input:disabled + .profile__control-mark::after {
+  opacity: 0.3;
+}
+
+.profile__radio-input:disabled ~ .profile__lead {
+  opacity: 0.3;
+}
+
 
 .profile__title {
   width: min-content;
@@ -265,14 +290,19 @@
   background-color: #ffffff;
   border: 1px solid #cdcdcd;
   margin-right: 2px;
+}
 
-  &:hover {
-    border: 2px solid #bababa;
-  }
+
+.profile__checkbox-input:disabled + .profile__checkbox-modified {
+  pointer-events: none;
+}
+
+.profile__checkbox-input:hover:enabled + .profile__checkbox-modified {
+  border: 2px solid #bababa;
 }
 
 .profile__checkbox-input:focus + .profile__checkbox-modified {
-  border: 2px solid #111111;
+  border: 2px solid #bababa;
 }
 
 .profile__checkbox-input:checked + .profile__checkbox-modified::after {
@@ -284,7 +314,15 @@
   width: 20px;
   height: 20px;
   background-color: variables.$basic-dark;
-  mask-image: url("../img/sprites.svg#tick");
+  mask-image: url("../img/icons/stack.svg#profile_checkbox-tick");
+}
+
+.profile__checkbox-input:disabled + .profile__checkbox-modified::after {
+  opacity: 0.3;
+}
+
+.profile__checkbox-input:disabled ~ .profile__lead {
+  opacity: 0.3;
 }
 
 .profile__button {
@@ -489,15 +527,6 @@
     gap: 78px;
     padding: 0 0 73px;
   }
-
-  // .profile__icon-email {
-  //   content: "";
-  //   left: calc(100% - 35px);
-  // }
-
-  // .profile__icon-phone {
-  //   left: calc(100% - 35px);
-  // }
 
   .profile__comment {
     padding: 0 0 72px;
