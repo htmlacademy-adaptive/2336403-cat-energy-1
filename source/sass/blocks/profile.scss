@@ -290,14 +290,15 @@
   background-color: #ffffff;
   border: 1px solid #cdcdcd;
   margin-right: 2px;
-
-  &:hover {
-    border: 2px solid #bababa;
-  }
 }
+
 
 .profile__checkbox-input:disabled + .profile__checkbox-modified {
   pointer-events: none;
+}
+
+.profile__checkbox-input:hover:enabled + .profile__checkbox-modified {
+  border: 2px solid #bababa;
 }
 
 .profile__checkbox-input:focus + .profile__checkbox-modified {
@@ -314,10 +315,6 @@
   height: 20px;
   background-color: variables.$basic-dark;
   mask-image: url("../img/icons/stack.svg#profile_checkbox-tick");
-}
-
-.profile__checkbox-input:disabled {
-  pointer-events: none;
 }
 
 .profile__checkbox-input:disabled + .profile__checkbox-modified::after {
@@ -530,15 +527,6 @@
     gap: 78px;
     padding: 0 0 73px;
   }
-
-  // .profile__icon-email {
-  //   content: "";
-  //   left: calc(100% - 35px);
-  // }
-
-  // .profile__icon-phone {
-  //   left: calc(100% - 35px);
-  // }
 
   .profile__comment {
     padding: 0 0 72px;
