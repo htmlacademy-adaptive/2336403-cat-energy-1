@@ -251,6 +251,19 @@
   border: 2px solid #bababa;
 }
 
+.profile__radio-input:disabled + .profile__control-mark {
+  opacity: 0.3;
+}
+
+.profile__radio-input:disabled + .profile__control-mark::after {
+  opacity: 0.3;
+}
+
+.profile__radio-input:disabled ~ .profile__lead {
+  opacity: 0.3;
+}
+
+
 .profile__title {
   width: min-content;
   font-size: 24px;
@@ -283,6 +296,10 @@
   }
 }
 
+.profile__checkbox-input:disabled + .profile__checkbox-modified {
+  pointer-events: none;
+}
+
 .profile__checkbox-input:focus + .profile__checkbox-modified {
   border: 2px solid #bababa;
 }
@@ -297,6 +314,18 @@
   height: 20px;
   background-color: variables.$basic-dark;
   mask-image: url("../img/icons/stack.svg#profile_checkbox-tick");
+}
+
+.profile__checkbox-input:disabled {
+  pointer-events: none;
+}
+
+.profile__checkbox-input:disabled + .profile__checkbox-modified::after {
+  opacity: 0.3;
+}
+
+.profile__checkbox-input:disabled ~ .profile__lead {
+  opacity: 0.3;
 }
 
 .profile__button {
