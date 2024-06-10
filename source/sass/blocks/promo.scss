@@ -2,7 +2,12 @@
 
 .promo {
   position: relative;
-  background-image: url("../../img/promo/promo-mobile-bg.jpg");
+  background-image: image-set(
+    url(../img/promo/promo-mobile-bg.webp) 1x type("image/webp"),
+    url(../img/promo/promo-mobile-bg.jpg) 1x,
+    url(../img/promo/promo-mobile-bg@2x.webp) 2x type("image/webp"),
+    url(../img/promo/promo-mobile-bg@2x.jpg) 2x
+  );
   background-repeat: no-repeat;
   background-position: top;
 

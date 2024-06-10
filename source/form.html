@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
-    <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <link rel="stylesheet" href="./css/style.min.css">
     <!-- favicons links -->
     <link rel="apple-touch-icon" sizes="152x152" href="/img/favicons/apple-touch-icon.png">
@@ -29,19 +28,19 @@
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <nav class = "navigation">
-              <ul class="navigation__list">
-                <li class="navigation__item">
-                  <a class="navigation__link" href="index.html">Главная</a>
-                </li>
-                <li class="navigation__item">
-                  <a class="navigation__link" href="catalog.html">Каталог продукции</a>
-                </li>
-                <li class="navigation__item">
-                  <a class="navigation__link navigation__link--active">Подбор программы</a>
-                </li>
-              </ul>
-          </div>
-        </nav>
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a class="navigation__link" href="index.html">Главная</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="navigation__item">
+                <a class="navigation__link navigation__link--active">Подбор программы</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
     <main class="page-main">
@@ -59,8 +58,8 @@
         <div class="container">
           <div class="profile__info-wrapper">
             <fieldset class="profile__info">
+              <legend class="visually-hidden">Укажите данные питомца</legend>
               <div class="profile__inner">
-                <legend class="visually-hidden">Укажите данные питомца</legend>
                 <div class="profile__info-block">
                   <label class="profile__label">
                     <span class="profile__lead">Имя:*</span>
@@ -70,7 +69,7 @@
                     <span class="profile__lead">Вес (кг):*</span>
                     <input class="profile__input" id="input-weidth" type="text" name="pet-weidth" placeholder="7">
                   </label>
-                  <label class="profile__label" disabled>
+                  <label class="profile__label">
                     <span class="profile__lead">Возраст (лет):</span>
                     <input class="profile__input" id="input-age" type="text" name="pet-age" placeholder="7">
                   </label>
@@ -78,8 +77,8 @@
               </div>
             </fieldset>
             <fieldset class="profile__target">
+              <legend class="visually-hidden">Укажите цель программы</legend>
               <div class = "profile__inner">
-                <legend class="visually-hidden">Укажите цель программы</legend>
                 <ul class="profile__list profile__list--border">
                   <li class="profile__item">
                     <label class="profile__label" for="slimming">
@@ -108,9 +107,9 @@
           </div>
         </div>
         <fieldset class="profile__сontaсt">
+          <legend class="visually-hidden">Укажите контактные данные владельца кота</legend>
           <div class="container">
             <div class="profile__inner">
-              <legend class="visually-hidden">Укажите контактные данные владельца кота</legend>
               <p class="profile__title">Контактные&nbsp;данные (владельца&nbsp;кота)</p>
               <ul class="profile__list-contact">
                 <li class="profile__item">
@@ -132,18 +131,18 @@
           </div>
         </fieldset>
         <fieldset class="profile__comment">
+          <legend class="visually-hidden">Комментарий</legend>
           <div class="container">
             <div class="profile__inner">
-              <legend class="visually-hidden">Комментарий</legend>
               <p class="profile__title">Комментарий</p>
               <textarea class="profile__message" id="client-message" name="client-message" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
           </div>
         </fieldset>
         <fieldset class="profile__extra">
+          <legend class="visually-hidden">Дополнительно</legend>
           <div class="container">
             <div class="profile__inner">
-              <legend class="visually-hidden">Дополнительно</legend>
               <p class="profile__title">Дополнительно</p>
               <ul class="profile__list-extra">
                 <li class="profile__item">
@@ -198,7 +197,7 @@
             </p>
           </div>
         </div>
-        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d706.5775358248248!2d30.323862133087545!3d59.940387633911946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310e16dab5b1%3A0xc1a76ba3f99995eb!2sHermes%20Puiforcat%20Saint-Louis!5e0!3m2!1sru!2sru!4v1625770628880!5m2!1sru!2sru" width="100%" height="362" style ="border: none" allowfullscreen title="Как нас найти"></iframe>
+        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d706.5775358248248!2d30.323862133087545!3d59.940387633911946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310e16dab5b1%3A0xc1a76ba3f99995eb!2sHermes%20Puiforcat%20Saint-Louis!5e0!3m2!1sru!2sru!4v1625770628880!5m2!1sru!2sru" style = "width: 100%; height: 362px; border: none" allowfullscreen title="Как нас найти"></iframe>
       </section>
     </main>
     <footer class="page-footer">
