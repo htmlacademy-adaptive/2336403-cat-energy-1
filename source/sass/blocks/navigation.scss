@@ -18,11 +18,18 @@
   }
 }
 
+.navigation__item {
+  //max-width: min-content;
+  //white-space: nowrap;
+  //overflow: hidden;
+}
+
 .navigation__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
   text-align: center;
+  //max-width: 600px;
 }
 
 .navigation__link {
@@ -85,7 +92,10 @@
 
   .navigation__list {
     display: grid;
-    grid-template-columns: repeat(3, max-content);
+    grid-template-columns: repeat(3, auto);
+    //grid-template-columns: repeat(3, max-content);
+    //grid-template-columns: auto auto auto;
+    //gap: 12px;
     margin-right: -8px;
     column-gap: 10px;
     align-items: center;

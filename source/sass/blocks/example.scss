@@ -54,7 +54,6 @@
   padding: 12px 10px 16px;
   min-width: 124px;
   min-height: 56px;
-  //height: min-content;
 }
 
 .example__total {
@@ -145,6 +144,8 @@
   left: var(--divider-position);
   transform: translateX(-50%);
   z-index: 3;
+  transition: color 0.1s ease-out;
+  transition: background-color 0.1s ease-out;
 
   &:hover {
     background-color: variables.$basic-dark;
