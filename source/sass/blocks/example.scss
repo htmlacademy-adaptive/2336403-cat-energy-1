@@ -25,34 +25,36 @@
   color: variables.$gray-darken;
 }
 
-.example__statics {
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
+// .example__statics {
+//   position: relative;
+//   display: grid;
+//   grid-template-columns: repeat(4, 1fr);
+// }
 
 .example__wrap {
   display: flex;
+  //flex-direction: column;
   flex-direction: row;
   justify-content: space-between;
-  grid-column: 1/-1;
+  //grid-column: 1/-1;
   width: 280px;
   margin: 20px auto;
 }
 
-.example__numbers {
-  display: flex;
-  justify-content: space-between;
-}
+// .example__numbers {
+//   display: flex;
+//   justify-content: space-between;
+// }
 
 .example__item {
   position: relative;
-  display: flex;
+  //display: flex;
+  //flex-direction: column;
   justify-content: center;
   border: 1px solid variables.$gray;
   border-radius: 5px;
   padding: 12px 10px 16px;
-  min-width: 124px;
+  width: 124px;
   min-height: 56px;
 }
 
@@ -68,19 +70,20 @@
 }
 
 .example__description {
-  position: absolute;
-  display: block;
-  padding: 0 14px;
+  //position: absolute;
+  position: relative;
   font-family: "Lato", "Arial", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 100%;
   color: variables.$gray-darken;
+  background-color: variables.$gray-light;
+  padding: 0 14px;
   margin: 0;
   text-align: center;
-  background-color: variables.$gray-light;
   width: 85px;
-  transform: translateY(140%);
+  //transform: translateY(140%);
+  //overflow: hidden;
 }
 
 .example__costs-wrap {
@@ -144,8 +147,8 @@
   left: var(--divider-position);
   transform: translateX(-50%);
   z-index: 3;
-  transition: color 0.1s ease-out;
-  transition: background-color 0.1s ease-out;
+  transition: color 0.1s ease-out, background-color 0.1s ease-out;
+  //transition: background-color 0.1s ease-out;
 
   &:hover {
     background-color: variables.$basic-dark;

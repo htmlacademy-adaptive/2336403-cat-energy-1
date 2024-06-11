@@ -160,6 +160,7 @@
     font-size: 36px;
     line-height: 1;
     margin: 25px 0 26px 0;
+    max-width: 50%;
   }
 
   .catalog-select__subtitle {
@@ -208,14 +209,15 @@
   }
 
   .catalog-select__title {
-    max-width: none;
+    //max-width: 50;
+    transform: translateX(110px);
     margin: 28px 0 24px 18px;
     text-align: center;
     font-size: 36px;
     line-height: 1;
 
     &--desktop {
-      margin-left: 60px;
+      margin-left: 40px;
     }
   }
 
