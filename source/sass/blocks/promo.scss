@@ -100,10 +100,11 @@
   }
 
   .promo__button {
-    position: absolute;
+    //position: absolute;
+    position: relative;
     z-index: 1;
-    top: 228px;
-    left: 120px;
+    transform: translateY(-582px);
+    left: 90px;
     width: 244px;
     font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
@@ -146,6 +147,7 @@
 
   .promo__button {
     position: relative;
+    transform: inherit;
     top: 0;
     left: 0;
     display: block;
