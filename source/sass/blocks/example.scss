@@ -48,17 +48,20 @@
 
 .example__item {
   position: relative;
-  //display: flex;
-  //flex-direction: column;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  //justify-content: center;
   border: 1px solid variables.$gray;
   border-radius: 5px;
   padding: 12px 10px 16px;
   width: 124px;
+  //height: calc(100% + 100px);
   min-height: 56px;
 }
 
 .example__total {
+  display: block;
+  overflow: hidden;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -70,8 +73,9 @@
 }
 
 .example__description {
-  //position: absolute;
-  position: relative;
+  position: absolute;
+  display: block;
+  //position: relative;
   font-family: "Lato", "Arial", sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -81,9 +85,10 @@
   padding: 0 14px;
   margin: 0;
   text-align: center;
+  align-self: center;
   width: 85px;
-  //transform: translateY(140%);
-  //overflow: hidden;
+  transform: translateY(calc(100% + 10px));
+  overflow: hidden;
 }
 
 .example__costs-wrap {
