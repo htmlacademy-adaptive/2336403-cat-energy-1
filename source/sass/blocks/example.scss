@@ -148,7 +148,6 @@
   transform: translateX(-50%);
   z-index: 3;
   transition: color 0.1s ease-out, background-color 0.1s ease-out;
-  //transition: background-color 0.1s ease-out;
 
   &:hover {
     background-color: variables.$basic-dark;
@@ -224,13 +223,13 @@
     background-color: #ffffff;
     font-size: 14px;
     line-height: 1;
-    bottom: 14px;
-    width: fit-content;
+    width: 110%;
     padding: 0 8px;
   }
 
   .example__costs {
     margin: 0;
+    padding-left: 10px;
     font-size: 20px;
     line-height: 1;
   }

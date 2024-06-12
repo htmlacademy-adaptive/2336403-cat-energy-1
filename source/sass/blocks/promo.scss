@@ -97,19 +97,19 @@
   .promo__background-img {
     width: 709px;
     height: 609px;
+    margin-bottom: -77px;
   }
 
   .promo__button {
-    //position: absolute;
     position: relative;
     z-index: 1;
-    transform: translateY(-582px);
+    transform: translateY(-505px);
     left: 90px;
     width: 244px;
     font-family: "Oswald", "Arial", sans-serif;
     font-weight: 400;
     font-size: 20px;
-    line-height: 130%;
+    line-height: 1.3;
     color: #ffffff;
     text-transform: uppercase;
     padding: 14px 10px;
