@@ -8,9 +8,11 @@
   background-image: url("../../img/catalog/gift-mobile-bg@1x.png");
   background-size: cover;
   width: 100%;
-  height: 290px;
+  min-height: 290px;
   background-repeat: no-repeat;
   background-position: center;
+  padding: 10px 10px;
+  //overflow: hidden;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/catalog/gift-mobile-bg@2x.png");
@@ -28,6 +30,7 @@
   color: #ffffff;
   text-align: center;
   transform: translateY(104px);
+  //overflow: hidden;
 }
 
 .special-offer__img {
@@ -47,7 +50,7 @@
     justify-content: center;
     align-items: center;
     margin: 70px auto 72px;
-    height: 200px;
+    min-height: 200px;
     background-image: url("../../img/catalog/gift-tablet-bg@1x.png");
 
     @media (min-resolution: 2dppx) {
@@ -76,7 +79,7 @@
     position: relative;
     background-image: url("../../img/catalog/gift-desktop-bg@1x.png");
     width: 245px;
-    height: 288px;
+    min-height: 288px;
     background-repeat: no-repeat;
     background-position: center;
 
