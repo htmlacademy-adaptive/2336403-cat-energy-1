@@ -173,7 +173,7 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1440px) {
   .catalog-select__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -209,7 +209,6 @@
   }
 
   .catalog-select__title {
-    //max-width: 50;
     transform: translateX(110px);
     margin: 28px 0 24px 18px;
     text-align: center;
