@@ -22,15 +22,14 @@
 .special-offer__text {
   position: relative;
   margin: 0 auto;
-  width: 180px;
+  width: 64%;
   font-family: "Lato", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   color: #ffffff;
   text-align: center;
-  transform: translateY(104px);
-  //overflow: hidden;
+  transform: translateY(96px);
 }
 
 .special-offer__img {
@@ -38,7 +37,7 @@
   color: #ffffff;
   position: relative;
   margin: 0 auto;
-  transform: translateY(57px);
+  transform: translateY(47px);
 }
 
 
@@ -59,17 +58,18 @@
   }
 
   .special-offer__img {
-    transform: translateX(-35px);
+    transform: translate(-42px, -3px);
   }
 
   .special-offer__text {
     text-align: left;
-    transform: translateX(6px);
+    width: 170px;
+    transform: translateX(3px);
   }
 }
 
 // Desktop Viewport
-@media (min-width: 1280px) {
+@media (min-width: 1440px) {
   .special-offer {
     display: flex;
     flex-direction: column;
@@ -91,7 +91,7 @@
   .special-offer__text {
     text-align: center;
     transform: translateX(0);
-    width: 70%;
+    width: 78%;
     margin-top: 16px;
   }
 
