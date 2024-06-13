@@ -25,39 +25,41 @@
   color: variables.$gray-darken;
 }
 
-.example__statics {
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-}
+// .example__statics {
+//   position: relative;
+//   display: grid;
+//   grid-template-columns: repeat(4, 1fr);
+// }
 
 .example__wrap {
   display: flex;
+  //flex-direction: column;
   flex-direction: row;
   justify-content: space-between;
-  grid-column: 1/-1;
+  //grid-column: 1/-1;
   width: 280px;
   margin: 20px auto;
 }
 
-.example__numbers {
-  display: flex;
-  justify-content: space-between;
-}
+// .example__numbers {
+//   display: flex;
+//   justify-content: space-between;
+// }
 
 .example__item {
   position: relative;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   border: 1px solid variables.$gray;
   border-radius: 5px;
   padding: 12px 10px 16px;
-  min-width: 124px;
+  width: 124px;
   min-height: 56px;
-  //height: min-content;
 }
 
 .example__total {
+  display: block;
+  overflow: hidden;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -65,28 +67,27 @@
   color: variables.$gray-darken;
   text-align: center;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0 0 9px;
 }
 
 .example__description {
-  position: absolute;
   display: block;
-  padding: 0 14px;
   font-family: "Lato", "Arial", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 100%;
   color: variables.$gray-darken;
-  margin: 0;
-  text-align: center;
   background-color: variables.$gray-light;
+  padding: 0 14px;
+  text-align: center;
+  align-self: center;
   width: 85px;
-  transform: translateY(140%);
+  margin: 0 0 -30px;
+  overflow: hidden;
 }
 
 .example__costs-wrap {
   display: flex;
-  grid-column: 1/-1;
   margin: 0;
   justify-content: center;
   gap: 2px;
@@ -96,8 +97,9 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 143%;
+  line-height: 1.43;
   color: #000000;
+  margin: 13px 0;
   text-transform: uppercase;
 }
 
@@ -145,6 +147,7 @@
   left: var(--divider-position);
   transform: translateX(-50%);
   z-index: 3;
+  transition: color 0.1s ease-out, background-color 0.1s ease-out;
 
   &:hover {
     background-color: variables.$basic-dark;
@@ -220,13 +223,13 @@
     background-color: #ffffff;
     font-size: 14px;
     line-height: 1;
-    bottom: 14px;
-    width: fit-content;
+    width: 110%;
     padding: 0 8px;
   }
 
   .example__costs {
     margin: 0;
+    padding-left: 10px;
     font-size: 20px;
     line-height: 1;
   }
@@ -269,7 +272,7 @@
 }
 
 //Desktop Viewport
-@media (min-width: 1280px) {
+@media (min-width: 1440px) {
   .example {
     border: none;
     background-image: linear-gradient(360deg, variables.$gray-light 462px, #ffffff 462px);
@@ -278,6 +281,7 @@
   .example__inner {
     display: grid;
     grid-template-columns: 570px 1fr;
+    overflow: hidden;
     padding: 52px 0 66px;
     column-gap: 88px;
   }
@@ -305,12 +309,13 @@
 
   .example__item {
     width: 162px;
-    height: 72px;
+    min-height: 72px;
     padding: 15px 25px;
   }
 
   .example__description {
     background-color: variables.$gray-light;
+    width: 130%;
   }
 
   .example__costs-wrap {
@@ -323,10 +328,13 @@
     padding: 0;
     align-self: end;
     bottom: 10px;
+    max-height: 50%;
+    overflow: hidden;
   }
 
   .example__costs {
     font-size: 20px;
+    padding-left: 0;
   }
 
   .example__compare-slider {

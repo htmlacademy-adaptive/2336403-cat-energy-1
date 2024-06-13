@@ -5,7 +5,6 @@
   margin: 0 auto;
   padding: 0 20px;
   max-width: 100%;
-  //outline: red 1px solid;
 }
 
 // Tablet Viewport
@@ -15,17 +14,15 @@
     margin: 0 auto;
     padding: 0 30px;
     max-width: 100%;
-    //outline: green 1px solid;
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1440px) {
   .container {
     position: relative;
     margin: 0 auto;
     padding: 0;
     width: 100%;
     max-width: 1220px;
-    //outline: blue 1px solid;
   }
 }

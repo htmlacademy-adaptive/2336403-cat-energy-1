@@ -85,10 +85,11 @@
 
   .navigation__list {
     display: grid;
-    grid-template-columns: repeat(3, max-content);
+    grid-template-columns: repeat(3, auto);
     margin-right: -8px;
     column-gap: 10px;
     align-items: center;
+    max-width: 500px;
   }
 
   .navigation__link {
@@ -113,7 +114,7 @@
 }
 
 
-@media (min-width: 1280px) {
+@media (min-width: 1440px) {
   .navigation {
     background-color: transparent;
   }
@@ -136,5 +137,8 @@
   .navigation__list {
     margin: -10px;
     padding: 0;
+    max-width: 550px;
+    max-height: 650px;
+    overflow: hidden;
   }
 }

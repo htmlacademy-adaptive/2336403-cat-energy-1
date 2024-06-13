@@ -31,6 +31,7 @@
 .page-footer__social-list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 28px;
   justify-content: center;
   align-items: center;
@@ -39,6 +40,7 @@
   border-bottom: 2px solid variables.$gray;
   margin: 0;
   font-size: 0;
+  overflow: hidden;
 }
 
 .page-footer__social-icon {

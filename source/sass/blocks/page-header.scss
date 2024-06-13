@@ -120,7 +120,6 @@
 
   .page-header__wrapper {
     padding: 12px 0 0;
-    //gap: 30px;
   }
 
   .page-header__toggle {
@@ -128,7 +127,7 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1440px) {
   .page-header__wrapper {
     padding: 42px 0 0;
   }
@@ -147,7 +146,12 @@
       top: 0;
       right: 0;
       left: inherit;
-      background-image: url("../../img/promo/promo-desktop-bg.jpg");
+      background-image: image-set(
+        url("../img/promo/promo-desktop-bg.webp") 1x type("image/webp"),
+        url("../img/promo/promo-desktop-bg.jpg") 1x,
+        url("../img/promo/promo-desktop-bg@2x.webp") 2x type("image/webp"),
+        url("../img/promo/promo-desktop-bg@2x.jpg") 2x
+      );
       background-color: #63a73a;
       background-position: 0%;
       background-repeat: no-repeat;
