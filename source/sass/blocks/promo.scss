@@ -3,10 +3,10 @@
 .promo {
   position: relative;
   background-image: image-set(
-    url("../img/promo/promo-mobile-bg.webp") 1x type("image/webp"),
-    url("./img/promo/promo-mobile-bg.jpg") 1x,
-    url("../img/promo/promo-mobile-bg@2x.webp") 2x type("image/webp"),
-    url("../img/promo/promo-mobile-bg@2x.jpg") 2x
+    url("/img/promo/promo-mobile-bg.webp") 1x type("image/webp"),
+    url("/img/promo/promo-mobile-bg.jpg") 1x,
+    url("/img/promo/promo-mobile-bg@2x.webp") 2x type("image/webp"),
+    url("/img/promo/promo-mobile-bg@2x.jpg") 2x
   );
   background-repeat: no-repeat;
   background-position: top;
@@ -38,7 +38,7 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 1;
   color: #ffffff;
   text-transform: uppercase;
   margin: 0 0 29px;
@@ -80,7 +80,7 @@
     line-height: 100%;
     color: #000000;
     padding: 0;
-    margin: 50px auto 43px 88px;
+    margin: 50px auto 39px 88px;
     text-align: left;
   }
 
@@ -103,7 +103,7 @@
   .promo__button {
     position: relative;
     z-index: 1;
-    transform: translateY(-505px);
+    transform: translateY(-507px);
     left: 90px;
     width: 244px;
     font-family: "Oswald", "Arial", sans-serif;
@@ -143,6 +143,7 @@
     font-size: 20px;
     line-height: 1;
     margin: 0 auto 52px 79px;
+    max-width: 40%;
   }
 
   .promo__button {

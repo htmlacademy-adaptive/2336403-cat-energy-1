@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
     <link rel="stylesheet" href="./css/style.min.css">
-    <!-- favicons links -->
     <link rel="apple-touch-icon" sizes="152x152" href="/img/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <link rel="preload" href="/fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/oswald/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
   </head>
   <body class="page__body">
     <header class="page-header page-header--special">
@@ -129,23 +131,21 @@
               Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
             </p>
             <div class="example__wrap">
-                <div class="example__item">
-                  <p class="example__total">5 кг</p>
-                  <p class="example__description">снижение веса</p>
-                </div>
-                <div class="example__item">
-                  <p class="example__total">60 дней</p>
-                  <p class="example__description">затрачено времени</p>
-                </div>
+              <div class="example__item">
+                <p class="example__total">5 кг</p>
+                <p class="example__description">снижение веса</p>
+              </div>
+              <div class="example__item">
+                <p class="example__total">60 дней</p>
+                <p class="example__description">затрачено времени</p>
+              </div>
             </div>
             <div class="example__costs-wrap">
               <p class="example__costs">Затраты на питание:</p>
               <p class="example__costs">15 000 руб.</p>
             </div>
             <div class="example__compare-slider">
-              <!-- Контейнер для слайдера -->
               <div class="example__compare-img" style="--divider-position: 50%">
-                <!-- Картинка слева -->
                 <div class="example__demo example__demo--before">
                   <picture>
                     <source
@@ -169,7 +169,7 @@
                       height="512"
                     />
                     <img
-                      class="example__slider-img--before"
+                      class="example__slider-img example__slider-img--before"
                       src="img/example/compare-mobile-before@1x.png"
                       srcset="img/example/compare-mobile-before@2x.png 2x"
                       alt="Кот с лишним весом"
@@ -179,7 +179,6 @@
                     />
                   </picture>
                 </div>
-                <!-- Картинка справа -->
                 <div class="example__demo">
                   <picture>
                     <source
@@ -203,7 +202,7 @@
                       height="512"
                     />
                     <img
-                      class="example__slider-img--before"
+                      class="example__slider-img example__slider-img--before"
                       src="img/example/compare-mobile-after@1x.png"
                       srcset="img/example/compare-mobile-after@2x.png 2x"
                       alt="Кот с нормальным весом"
@@ -213,10 +212,11 @@
                     />
                   </picture>
                 </div>
-                <div class="example__divider" style="left: var(--divider-position)">
+                <button class="example__divider" name="example-divider" type="button" style="left: var(--divider-position)">
                   <svg aria-hidden="true" class="example__compare-button" width="40" height="40" viewBox="0 0 40 40">
                     <use xlink:href="/img/icons/stack.svg#example_cbutton"></use>
                   </svg>
+                </button>
                 </div>
               </div>
             </div>
@@ -236,8 +236,10 @@
             </div>
           </div>
         </div>
-        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d706.5775358248248!2d30.323862133087545!3d59.940387633911946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310e16dab5b1%3A0xc1a76ba3f99995eb!2sHermes%20Puiforcat%20Saint-Louis!5e0!3m2!1sru!2sru!4v1625770628880!5m2!1sru!2sru" height="362" style = "width: 100%; border: none" allowfullscreen title="Как нас найти"></iframe>
-      </section>
+        <div class="contacts__map-wrap">
+          <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d706.5775358248248!2d30.323862133087545!3d59.940387633911946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310e16dab5b1%3A0xc1a76ba3f99995eb!2sHermes%20Puiforcat%20Saint-Louis!5e0!3m2!1sru!2sru!4v1625770628880!5m2!1sru!2sru" height="362" style = "width: 100%; border: none" allowfullscreen title="Как нас найти"></iframe>
+        </div>
+        </section>
     </main>
     <footer class="page-footer">
       <div class="container">

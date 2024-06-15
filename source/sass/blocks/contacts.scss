@@ -33,7 +33,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 125%;
-  color: variables.$gray-darkest;
+  color: #111111;
   text-transform: uppercase;
   width: 140px;
 }
@@ -56,6 +56,19 @@
 .contacts__map {
   overflow: hidden;
   display: block;
+}
+
+.contacts__map-wrap {
+  position: relative;
+  background-image: image-set(
+    url("/img/contacts/location-mobile.webp") 1x type("image/webp"),
+    url("/img/contacts/location-mobile.png") 1x,
+    url("/img/contacts/location-mobile@2x.webp") 2x type("image/webp"),
+    url("/img/contacts/location-mobile@2x.png") 2x
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 //Tablet Viewport
@@ -87,6 +100,15 @@
     margin-top: 20px;
   }
 
+  .contacts__map-wrap {
+    background-image: image-set(
+      url("/img/contacts/location-tablet.webp") 1x type("image/webp"),
+      url("/img/contacts/location-tablet.png") 1x,
+      url("/img/contacts/location-tablet@2x.webp") 2x type("image/webp"),
+      url("/img/contacts/location-tablet@2x.png") 2x
+    );
+  }
+
   .contacts__map {
     height: 400px;
   }
@@ -95,6 +117,16 @@
 @media (min-width: 1440px) {
   .contacts {
     padding: 0;
+  }
+
+
+  .contacts__map-wrap {
+    background-image: image-set(
+      url("/img/contacts/location-desktop.webp") 1x type("image/webp"),
+      url("/img/contacts/location-desktop.png") 1x,
+      url("/img/contacts/location-desktop@2x.webp") 2x type("image/webp"),
+      url("/img/contacts/location-desktop@2x.png") 2x
+    );
   }
 
   .contacts__map {

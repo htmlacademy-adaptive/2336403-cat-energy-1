@@ -42,10 +42,15 @@
   &--alt {
     color: #000000;
     background-color: variables.$gray-lighten;
+    margin-top: 3px;
     transform: translateY(9px);
 
     &:hover {
       background-color: variables.$gray-light;
+    }
+
+    &:active {
+      color: #444444;
     }
   }
 }
@@ -81,7 +86,7 @@
     margin-top: 30px;
 
     &--alt {
-      transform: translateY(20px);
+      transform: translateY(5px);
     }
   }
 }
@@ -112,7 +117,7 @@
     margin-top: 24px;
 
     &--alt {
-      transform: translateY(26px);
+      transform: translateY(4px);
     }
   }
 }

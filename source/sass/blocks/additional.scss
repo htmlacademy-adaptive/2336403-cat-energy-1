@@ -8,7 +8,6 @@
     content: "";
     background-color: variables.$basic-dark;
     height: 2px;
-    //top: -20px;
     left: 20px;
     right: 0;
     transform: translateY(22px);
@@ -32,7 +31,6 @@
 
 .additional__list {
   list-style: none;
-  //padding: 10px 0 0;
   margin: 0;
   padding: 0;
   border-bottom: 1px solid #cdcdcd;
@@ -40,8 +38,7 @@
 
 .additional__item {
   margin: 0;
-  padding: 12px 0 17px;
-  //padding: 0 0 25px;
+  padding: 12px 0 18px;
 }
 
 // Tablet Viewport

@@ -3,8 +3,8 @@
   font-style: normal;
   font-weight: 400;
   src: local("Lato"),
-    url("../fonts/lato/Lato-Regular.woff2") format("woff2"),
-    url("../fonts/lato/Lato-Regular.woff") format("woff");
+    url("/fonts/lato/Lato-Regular.woff2") format("woff2"),
+    url("/fonts/lato/Lato-Regular.woff") format("woff");
   font-display: swap;
 }
 
@@ -13,8 +13,8 @@
   font-style: normal;
   font-weight: 400;
   src: local("Oswald"),
-    url("../fonts/oswald/oswaldregular.woff2") format("woff2"),
-    url("../fonts/oswald/oswaldregular.woff") format("woff");
+    url("/fonts/oswald/oswaldregular.woff2") format("woff2"),
+    url("/fonts/oswald/oswaldregular.woff") format("woff");
   font-display: swap;
 }
 
@@ -23,7 +23,7 @@
   font-style: normal;
   font-weight: 500;
   src: local("Oswald"),
-    url("../fonts/oswald/oswaldmedium.woff2") format("woff2"),
-    url("../fonts/oswald/oswaldmedium.woff") format("woff");
+    url("/fonts/oswald/oswaldmedium.woff2") format("woff2"),
+    url("/fonts/oswald/oswaldmedium.woff") format("woff");
   font-display: swap;
 }
