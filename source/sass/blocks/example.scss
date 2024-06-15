@@ -25,26 +25,14 @@
   color: variables.$gray-darken;
 }
 
-// .example__statics {
-//   position: relative;
-//   display: grid;
-//   grid-template-columns: repeat(4, 1fr);
-// }
-
 .example__wrap {
   display: flex;
-  //flex-direction: column;
   flex-direction: row;
   justify-content: space-between;
-  //grid-column: 1/-1;
   width: 280px;
   margin: 20px auto;
 }
 
-// .example__numbers {
-//   display: flex;
-//   justify-content: space-between;
-// }
 
 .example__item {
   position: relative;
@@ -141,6 +129,10 @@
   background-color: variables.$gray-dark;
   color: variables.$gray-dark;
   position: absolute;
+  border: none;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
   width: 4px;
   height: 100%;
   top: 0;
