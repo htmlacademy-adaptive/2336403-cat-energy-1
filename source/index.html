@@ -11,6 +11,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/img/favicons/favicon-16x16.png">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
+    <!-- preloads -->
+    <link rel="preload" href="/fonts/lato/Lato-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/oswald/oswaldregular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/oswald/oswaldmedium.woff2" as="font" type="font/woff2" crossorigin>
   </head>
   <body class="page__body">
     <header class="page-header page-header--special">
@@ -129,14 +133,14 @@
               Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
             </p>
             <div class="example__wrap">
-                <div class="example__item">
-                  <p class="example__total">5 кг</p>
-                  <p class="example__description">снижение веса</p>
-                </div>
-                <div class="example__item">
-                  <p class="example__total">60 дней</p>
-                  <p class="example__description">затрачено времени</p>
-                </div>
+              <div class="example__item">
+                <p class="example__total">5 кг</p>
+                <p class="example__description">снижение веса</p>
+              </div>
+              <div class="example__item">
+                <p class="example__total">60 дней</p>
+                <p class="example__description">затрачено времени</p>
+              </div>
             </div>
             <div class="example__costs-wrap">
               <p class="example__costs">Затраты на питание:</p>
@@ -169,7 +173,7 @@
                       height="512"
                     />
                     <img
-                      class="example__slider-img--before"
+                      class="example__slider-img example__slider-img--before"
                       src="img/example/compare-mobile-before@1x.png"
                       srcset="img/example/compare-mobile-before@2x.png 2x"
                       alt="Кот с лишним весом"
@@ -203,7 +207,7 @@
                       height="512"
                     />
                     <img
-                      class="example__slider-img--before"
+                      class="example__slider-img example__slider-img--before"
                       src="img/example/compare-mobile-after@1x.png"
                       srcset="img/example/compare-mobile-after@2x.png 2x"
                       alt="Кот с нормальным весом"
@@ -213,15 +217,11 @@
                     />
                   </picture>
                 </div>
-                <button class="example__divider" name="example-divider" style="left: var(--divider-position)">
+                <button class="example__divider" name="example-divider" type="button" style="left: var(--divider-position)">
                   <svg aria-hidden="true" class="example__compare-button" width="40" height="40" viewBox="0 0 40 40">
                     <use xlink:href="/img/icons/stack.svg#example_cbutton"></use>
                   </svg>
                 </button>
-                <!-- <div class="example__divider" style="left: var(--divider-position)">
-                  <svg aria-hidden="true" class="example__compare-button" width="40" height="40" viewBox="0 0 40 40">
-                    <use xlink:href="/img/icons/stack.svg#example_cbutton"></use>
-                  </svg> -->
                 </div>
               </div>
             </div>

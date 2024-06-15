@@ -11,7 +11,6 @@
 .product-card__image {
   width: 140px;
   height: 107px;
-  //border: 1px red solid;
   object-fit: none;
   font-size: 0;
 }
@@ -19,7 +18,14 @@
 .product-card__link-image {
   position: relative;
   font-size: 0;
-  //top: 10px;
+}
+
+.product-card__link-title {
+  display: inline;
+  //font-size: 0;
+  //padding: 0;
+  //margin: 0;
+  grid-row: 1 / 2;
 }
 
 .product-card__title {
@@ -27,10 +33,9 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.33;
-  color: #000000;
+  color: #222222;
   text-transform: uppercase;
   margin: 0;
-  grid-row: 1 / 2;
 }
 
 .product-card__inner {
@@ -58,9 +63,13 @@
     background-image: linear-gradient(transparent 58px, #f2f2f2 58px);
   }
 
+  .product-card__link-title {
+    display: inline;
+    grid-column: 1 / -1;
+  }
+
   .product-card__title {
     text-align: center;
-    grid-column: 1 / -1;
     font-size: 20px;
     line-height: 1.2;
     width: 160px;

@@ -1,5 +1,11 @@
 @use "./base/variables.scss";
 
+.form-header__inner {
+  position: relative;
+  font-size: 0;
+  padding-bottom: 0;
+}
+
 .form-header__title {
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -23,6 +29,10 @@
 
 // Tablet Viewport
 @media (min-width: 768px) {
+  .form-header__inner {
+    padding: 0 40px;
+  }
+
   .form-header__title {
     font-size: 60px;
     line-height: 1;
@@ -40,6 +50,11 @@
 
 // Desktop Viewport
 @media (min-width: 1440px) {
+  .form-header__inner {
+    padding: 0;
+    margin: 0;
+  }
+
   .form-header__title {
     margin: 0;
     padding-top: 60px;

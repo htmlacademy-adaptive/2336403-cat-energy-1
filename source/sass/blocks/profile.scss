@@ -8,17 +8,6 @@
   padding-bottom: 35px;
 }
 
-.profile__inner {
-  position: relative;
-  font-size: 0;
-  padding-bottom: 0;
-}
-
-// .profile__item {
-//   max-width: 100%;
-//   overflow: hidden;
-// }
-
 .profile__info {
   position: relative;
   border: none;
@@ -93,9 +82,10 @@
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  line-height: 1.12;
   text-transform: uppercase;
   color: #444444;
-  border-color: #e7e7e7;
+  border: 1px solid #e7e7e7;
 }
 
 .profile__extra {
@@ -128,10 +118,7 @@
 .profile__label {
   position: relative;
   display: grid;
-  //grid-template-columns:  auto;
   grid-template-columns: max-content auto;
-  //grid-template-columns: minmax(min-content, 50px) auto;
-  //max-width: 100vh;
   gap: 13px;
   align-items: center;
 }
@@ -194,7 +181,7 @@
   width: 20px;
   height: 20px;
   background-color: #000000;
-  mask-image: url("../img/icons/stack.svg#profile_email-icon");
+  mask-image: url("/img/icons/stack.svg#profile_email-icon");
 }
 
 .profile__icon-phone {
@@ -204,7 +191,7 @@
   width: 20px;
   height: 20px;
   background-color: #000000;
-  mask-image: url("../img/icons/stack.svg#profile_phone-icon");
+  mask-image: url("/img/icons/stack.svg#profile_phone-icon");
 }
 
 .profile__list {
@@ -323,7 +310,7 @@
   width: 20px;
   height: 20px;
   background-color: variables.$basic-dark;
-  mask-image: url("../img/icons/stack.svg#profile_checkbox-tick");
+  mask-image: url("/img/icons/stack.svg#profile_checkbox-tick");
 }
 
 .profile__checkbox-input:disabled + .profile__checkbox-modified::after {
@@ -342,10 +329,6 @@
 
 // Tablet Viewport
 @media (min-width: 768px) {
-  .profile__inner {
-    padding: 0 40px;
-  }
-
   .profile__lead {
     font-size: 20px;
     line-height: 1;

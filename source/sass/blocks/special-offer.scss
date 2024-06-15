@@ -2,20 +2,30 @@
 
 .special-offer {
   display: block;
-  margin: 36px auto;
+  margin: 35px auto;
   position: relative;
   background-color: #7fc256;
-  background-image: url("../../img/catalog/gift-mobile-bg@1x.png");
+  background-image: url("/img/catalog/gift-mobile-bg@1x.png");
   background-size: cover;
   width: 100%;
   min-height: 290px;
   background-repeat: no-repeat;
   background-position: center;
   padding: 10px 10px;
-  //overflow: hidden;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/catalog/gift-mobile-bg@2x.png");
+    background-image: url("/img/catalog/gift-mobile-bg@2x.png");
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 82px;
+    left: 50%;
+    transform: translate(-50%, 46px);
+    background-color: #ffffff;
+    mask-image: url("/img/icons/stack.svg#catalog_icon_gift");
   }
 }
 
@@ -29,73 +39,67 @@
   line-height: 1.25;
   color: #ffffff;
   text-align: center;
-  transform: translateY(96px);
+  transform: translateY(175px);
+  max-height: 120px;
+  overflow: hidden;
 }
-
-.special-offer__img {
-  display: block;
-  color: #ffffff;
-  position: relative;
-  margin: 0 auto;
-  transform: translateY(47px);
-}
-
 
 // Tablet Viewport
 @media (min-width: 768px) {
   .special-offer {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+
     margin: 70px auto 72px;
     min-height: 200px;
-    background-image: url("../../img/catalog/gift-tablet-bg@1x.png");
+    background-image: url("/img/catalog/gift-tablet-bg@1x.png");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/catalog/gift-tablet-bg@2x.png");
+      background-image: url("/img/catalog/gift-tablet-bg@2x.png");
+    }
+
+    &::before {
+      top: 50%;
+      left: 0;
+      transform: translate(78px, -44px);
     }
   }
 
-  .special-offer__img {
-    transform: translate(-42px, -3px);
-  }
-
   .special-offer__text {
+    margin: 0 107px 0 auto;
+    align-self: center;
     text-align: left;
     width: 170px;
-    transform: translateX(3px);
+    transform: inherit;
   }
 }
 
 // Desktop Viewport
 @media (min-width: 1440px) {
   .special-offer {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    justify-content: center;
+    justify-items: center;
     margin: 0;
     position: relative;
-    background-image: url("../../img/catalog/gift-desktop-bg@1x.png");
+    background-image: url("/img/catalog/gift-desktop-bg@1x.png");
     width: 245px;
     min-height: 288px;
     background-repeat: no-repeat;
     background-position: center;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../img/catalog/gift-desktop-bg@2x.png");
+      background-image: url("/img/catalog/gift-desktop-bg@2x.png");
+
+      &::before {
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 55px);
+      }
     }
   }
 
   .special-offer__text {
     text-align: center;
-    transform: translateX(0);
+    align-self: end;
     width: 78%;
-    margin-top: 16px;
-  }
-
-  .special-offer__img {
-    transform: translate(0, 10px);
+    margin: 0 auto 34px;
   }
 }
