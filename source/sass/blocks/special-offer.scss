@@ -87,12 +87,12 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("/img/catalog/gift-desktop-bg@2x.png");
+    }
 
-      &::before {
-        top: 0;
-        left: 50%;
-        transform: translate(-50%, 55px);
-      }
+    &::before {
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 55px);
     }
   }
 
